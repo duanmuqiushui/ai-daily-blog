@@ -35,74 +35,69 @@
 <p><img src="./images/cover.excalidraw" alt="AI 日报封面图"></p>
 <hr>
 <h2>📊 今日概述</h2>
-<p>本期AI领域呈现“底层算力适配突破、模型架构持续演进与Agent工程化落地”三大主线。DeepSeek V4完成昇腾异构算力迁移，验证了MoE与稀疏注意力在万卡集群的可行性；GPT-5.5进一步强化系统2推理能力。学术界在参数高效微调、多模态幻觉归因及视频时序建模方面取得进展。同时，Claude Code与科学工作流Agent的迭代表明，AI正从通用对话向高可靠性、闭环自动化的工程基础设施演进，软硬件协同与可解释性成为下一阶段核心壁垒。</p>
+<p>本期AI技术演进呈现三大主线：底层模型向高效稀疏化与长上下文深度优化，DeepSeek V4与GPT-5.5均强化MoE架构与原生Agent能力；应用层加速向“智能体+技能”的模块化架构迁移，推动SaaS交付与科研工作流从辅助工具向自主决策引擎跃迁；多模态研究聚焦可靠性与细粒度控制，LVLM幻觉机制解耦与视频时间流建模为工业级视觉应用奠定安全基础。整体趋势表明，大模型正从单纯参数竞赛转向工程化落地、异构算力适配与垂直场景的深度融合，Agent范式成为产业数智化的核心驱动力。</p>
 <h2>📄 重点解读</h2>
 <h3>1. DeepSeek V4终于发布，但它留下的5道主观题还没有答案</h3>
-<p><a href="https://excalidraw.com/#json=x5SzbT40HBbXDoJt_9yD7,v-1D--o32x0ekgMqngNUBA"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图1"></a></p>
+<p><a href="https://excalidraw.com/#json=IgYqVBjngv1gFZ_lOGYlt,ISvC8KKNQCdGZ_vkgXyDYw"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图1"></a></p>
 <p><strong>来源</strong>: 📰 资讯</p>
 <p><strong>AI 解读</strong>:
-基于MoE架构与稀疏注意力机制，结合昇腾异构算力进行分布式训练。创新在于突破万卡集群通信瓶颈，实现1.6T参数高效稀疏激活与1M长上下文无损检索。适用于复杂代码Agent、超长文档分析及国产化算力底座部署，推动大模型训练框架去英伟达化。</p>
+基于MoE与稀疏注意力DSA架构，实现1.6T参数与1M长上下文的高效推理。创新在于全面适配昇腾算力并完成训练框架迁移，显著降低显存开销。适用于复杂Agent任务调度、超长文档分析及国产化算力生态的大模型部署。</p>
 <p><strong>标签</strong>: llm, openai, anthropic, deepmind, agent, agi, 大模型, 语言模型</p>
 <p><strong>链接</strong>: <a href="https://36kr.com/p/3780375304312072?f=rss">原文链接</a></p>
 <h3>2. GPT-5.5</h3>
-<p><a href="https://excalidraw.com/#json=NHg-IaJwHf2ssq5IlgwpO,4qEOR55O8YuqXIs16ThJ-w"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图2"></a></p>
+<p><a href="https://excalidraw.com/#json=2Ygz0HgUm3p954CagWc5Z,v8Fj4myRUTjRvqw2iHUCYw"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图2"></a></p>
 <p><strong>来源</strong>: 💬 Hacker News</p>
 <p><strong>AI 解读</strong>:
-延续自回归架构并强化系统2推理与多模态对齐机制。创新点在于引入动态计算分配与强化学习对齐策略，显著提升复杂逻辑链的连贯性与Agent自主规划能力。适用于高阶代码开发、自动化工作流编排及垂直领域专家系统构建。</p>
+预计采用更深层的混合专家架构与强化学习对齐策略，强化多步逻辑推理与代码生成能力。创新点在于原生集成高级Agent框架，实现从对话到自主执行的范式跃迁。适用于复杂工作流自动化、科研辅助及企业级智能决策系统。</p>
 <p><strong>标签</strong>: gpt-5.5</p>
 <p><strong>链接</strong>: <a href="https://openai.com/index/introducing-gpt-5-5/">原文链接</a></p>
-<h3>3. GiVA: Gradient-Informed Bases for Vector-Based Adaptation</h3>
-<p><a href="https://excalidraw.com/#json=KAzEXDk3Ac6DC9CJd504l,gsiIoB0I_b95yXXmEvPcAA"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图3"></a></p>
+<h3>3. Seeing Fast and Slow: Learning the Flow of Time in Videos</h3>
+<p><a href="https://excalidraw.com/#json=o7eHBgBIQ-FWOTlVGLUds,fwvIBBVXa3wTvVvIPytCJg"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图3"></a></p>
 <p><strong>来源</strong>: 📚 论文</p>
 <p><strong>AI 解读</strong>:
-利用梯度信息构建低秩向量基进行参数高效微调，替代传统LoRA的随机初始化。创新在于通过梯度引导的基向量投影，以更低秩实现同等性能，显著降低显存占用。适用于边缘端模型快速适配、多任务微调及低算力大模型定制。</p>
-<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2604.21901v1">原文链接</a></p>
-<h3>4. When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs</h3>
-<p><a href="https://excalidraw.com/#json=Gl_uBqbd0CuCfRZKODbyf,ztHpirekMgPjdfSBVFNgJw"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图4"></a></p>
-<p><strong>来源</strong>: 📚 论文</p>
-<p><strong>AI 解读</strong>:
-通过构建HalluScope基准，量化提示词先验覆盖视觉特征的机制。创新在于精准剥离视觉骨干与语言解码器的贡献权重，揭示提示诱导幻觉的边界条件。适用于多模态模型鲁棒性评测、医疗工业质检及抗干扰对齐算法研发。</p>
+提出将时间流速作为可学习的视觉概念，利用视频多模态线索与时间结构建模，实现视频变速的精准感知与生成控制。创新在于突破传统逐帧插值局限，引入显式时间流表征网络。适用于影视后期变速、运动轨迹分析及高帧率视频数据增强。</p>
 <p><strong>标签</strong>: rag</p>
 <p><strong>链接</strong>: <a href="https://arxiv.org/abs/2604.21911v1">原文链接</a></p>
-<h3>5. Seeing Fast and Slow: Learning the Flow of Time in Videos</h3>
-<p><a href="https://excalidraw.com/#json=5J-WxJBA5C8N9aUXETB7e,4s0_3KwQMdZOnCDoOV47OA"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图5"></a></p>
+<h3>4. When Prompts Override Vision: Prompt-Induced Hallucinations in LVLMs</h3>
+<p><a href="https://excalidraw.com/#json=OjFzYz_HYRSNRMOQbnkqC,5mHyNbaH_726JsVNJL3VvQ"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图4"></a></p>
 <p><strong>来源</strong>: 📚 论文</p>
 <p><strong>AI 解读</strong>:
-将时间流速建模为可学习的视觉概念，通过多模态时序线索提取视频动态特征。创新在于解耦物理运动与帧率变化，实现视频时序生成与变速控制的端到端学习。适用于影视特效自动化生成、物理仿真数据增强及安防动作分析。</p>
-<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2604.21931v1">原文链接</a></p>
-<h3>6. From Research Question to Scientific Workflow: Leveraging Agentic AI for Science Automation</h3>
-<p><a href="https://excalidraw.com/#json=ggFdEHB77mmcIVsMjom-Q,lkpxcaqGevLNk7EnnD5n5A"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图6"></a></p>
-<p><strong>来源</strong>: 📚 论文</p>
-<p><strong>AI 解读</strong>:
-提出三层Agent架构，将自然语言研究问题转化为结构化意图，并自动生成可复现的执行代码。创新在于打通语义理解与底层工作流调度的断层，实现科研流程端到端自动化。适用于自动化实验设计、生物信息学分析及计算管线编排。</p>
+揭示LVLM中提示词过度覆盖视觉输入导致幻觉的机制，提出HalluScope基准量化视觉与语言模态的权重失衡。创新点在于解耦模态主导性并定位幻觉触发边界。适用于多模态安全对齐、医疗工业视觉质检及高可靠交互系统。</p>
 <p><strong>标签</strong>: llm, agent, rag, agi</p>
 <p><strong>链接</strong>: <a href="https://arxiv.org/abs/2604.21910v1">原文链接</a></p>
-<h3>7. An update on recent Claude Code quality reports</h3>
-<p><a href="https://excalidraw.com/#json=-0T3wysyXquodYgm9WYIl,TbLNPUFnnaEs8stlE4dAMw"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图7"></a></p>
-<p><strong>来源</strong>: 💬 Hacker News</p>
+<h3>5. From Research Question to Scientific Workflow: Leveraging Agentic AI for Science Automation</h3>
+<p><a href="https://excalidraw.com/#json=revc9MjfzP3T5zH4g_SHH,lSpcjjDFKZH-9YkTbfUt6Q"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图5"></a></p>
+<p><strong>来源</strong>: 📚 论文</p>
 <p><strong>AI 解读</strong>:
-针对AI编程Agent在复杂上下文下的代码质量与幻觉问题进行工程复盘。创新在于引入静态分析校验与动态执行沙箱，构建代码生成的质量评估与迭代反馈闭环。适用于企业级辅助开发、自动化CI/CD集成及高可靠性系统构建。</p>
-<p><strong>标签</strong>: claude</p>
-<p><strong>链接</strong>: <a href="https://www.anthropic.com/engineering/april-23-postmortem">原文链接</a></p>
+构建包含语义解析、代码生成与资源调度的三层智能体架构，将自然语言意图转化为可复现的科学工作流。创新在于填补高层语义与底层执行间的鸿沟，实现端到端科研自动化。适用于生物信息学、高通量材料筛选及跨学科实验流程的智能编排。</p>
+<p><strong>标签</strong>: diffusion</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2604.21903v1">原文链接</a></p>
+<h3>6. 最前线｜AI收入破亿后的路径选择：微盟推行AI First战略与B端交付的挑战</h3>
+<p><a href="https://excalidraw.com/#json=IgYqVBjngv1gFZ_lOGYlt,ISvC8KKNQCdGZ_vkgXyDYw"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-Excalidraw%E6%89%8B%E7%BB%98%E9%85%8D%E5%9B%BE-blue?style=for-the-badge" alt="配图6"></a></p>
+<p><strong>来源</strong>: 📰 资讯</p>
+<p><strong>AI 解读</strong>:
+将技术底座升级为“Agent+Skills”架构，通过解耦智能体调度与领域技能模块，实现复杂SaaS业务的动态编排。创新在于将AI从辅助插件升维为业务核心引擎，支持按需热插拔。适用于电商营销自动化、跨境出海运营及企业级数字化交付。</p>
+<p><strong>标签</strong>: agent</p>
+<p><strong>链接</strong>: <a href="https://36kr.com/p/3780556402531330?f=rss">原文链接</a></p>
 <h2>💬 技术热议话题</h2>
 <ol>
-<li>异构算力与大模型训练框架适配</li>
-<li>参数高效微调(PEFT)与低秩优化</li>
-<li>多模态幻觉机理与鲁棒性评测</li>
-<li>AI Agent科学工作流自动化</li>
-<li>视频时序建模与动态生成控制</li>
+<li>稀疏大模型与异构算力适配</li>
+<li>原生Agent架构与技能解耦</li>
+<li>多模态幻觉对齐与可靠性评估</li>
+<li>视频时序建模与生成控制</li>
 </ol>
 <h2>📋 全部资讯</h2>
 <ul>
+<li>💬 <a href="https://www.anthropic.com/engineering/april-23-postmortem">An update on recent Claude Code quality reports</a></li>
 <li>💬 <a href="https://socket.dev/blog/bitwarden-cli-compromised">Bitwarden CLI compromised in ongoing Checkmarx supply chain campaign</a></li>
+<li>💬 <a href="https://ynarwal.github.io/how-llms-work/">Show HN: How LLMs Work – Interactive visual guide based on Karpathy&#39;s lecture</a></li>
 <li>💬 <a href="https://felixbarbalet.com/familiarity-is-the-enemy/">Familiarity is the enemy: On why Enterprise systems have failed for 60 years</a></li>
 <li>💬 <a href="https://www.cnn.com/2026/04/23/politics/us-special-forces-soldier-arrested-maduro-raid-trade">US special forces soldier arrested after allegedly winning $400k on Maduro raid</a></li>
-<li>💬 <a href="https://blog.meshcore.io/2026/04/23/the-split">MeshCore development team splits over trademark dispute and AI-generated code</a></li>
 </ul>
 <hr>
-<p><strong>📈 共收录 26 条资讯</strong>
+<p><strong>📈 共收录 27 条资讯</strong>
 <strong>来源</strong>: hackernews, rss, arxiv
-<strong>生成时间</strong>: 2026-04-24T07:52:32.345Z</p>
+<strong>生成时间</strong>: 2026-04-24T08:50:29.914Z</p>
 <hr>
 <p><em>本文由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</em></p>
 
