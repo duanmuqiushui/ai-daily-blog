@@ -109,13 +109,15 @@ function sanitizeFilename(name: string): string {
 /**
  * 生成博客文章内容
  */
-function generateBlogContent(report: DailyReport, illustrations: Map<string, { localPath: string; shareUrl: string }>): string {
+function generateBlogContent(report: DailyReport, coverShareUrl: string, illustrations: Map<string, { localPath: string; shareUrl: string }>): string {
   const lines: string[] = [];
 
   // 标题
   lines.push(`# ${report.title}`);
   lines.push('');
-  lines.push('![AI 日报封面图](./images/cover.excalidraw)');
+  if (coverShareUrl) {
+    lines.push(`[![🤖 AI 日报封面图](https://img.shields.io/badge/点击查看-AI技术日报封面手绘图-blue?style=for-the-badge)](${coverShareUrl})`);
+  }
   lines.push('');
   lines.push('---');
   lines.push('');
@@ -359,29 +361,11 @@ async function main() {
     fs.copyFileSync(coverResult.localPath, destPath);
   }
 
-  // 3. 为每条重点资讯生成配图
-  const illustrations = new Map<string, { localPath: string; shareUrl: string }>();
+  // 3. 资讯配图生成已移除（通用骨架图与内容无关，无实际价值）
 
-  if (report.highlights.length > 0) {
-    console.log(`\n🎨 开始生成 ${report.highlights.length} 张配图...`);
-
-    for (let i = 0; i < report.highlights.length; i++) {
-      const item = report.highlights[i];
-      const illustResult = await generateIllustration(item, i, dateStr);
-      if (illustResult.localPath) {
-        illustrations.set(item.id, illustResult);
-      }
-
-      // 间隔，避免过快
-      if (i < report.highlights.length - 1) {
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      }
-    }
-  }
-
-  // 4. 生成博客内容
+  // 4. 生成博客内容（只用封面图，移除无意义的内容无关配图）
   console.log('\n📝 生成博客文章...');
-  const blogContent = generateBlogContent(report, illustrations);
+  const blogContent = generateBlogContent(report, coverResult.shareUrl, new Map());
 
   // 5. 生成 Jekyll 格式
   const { filename, content } = generateJekyllPost(report, blogContent);
@@ -413,13 +397,13 @@ async function main() {
 
   console.log('\n📋 生成完成！');
   console.log(`   - 博客文章: ${filename}`);
-  console.log(`   - 配图数量: ${illustrations.size}`);
+  console.log(`   - 配图数量: 0`);
   console.log(`   - 输出目录: ${path.join(__dirname, '../output')}`);
 
   return {
     filename,
     blogPath: outputPath,
-    illustrations: Array.from(illustrations.entries())
+    illustrations: []
   };
 }
 
