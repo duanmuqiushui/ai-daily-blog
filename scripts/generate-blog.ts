@@ -39,7 +39,7 @@ interface DailyReport {
 /**
  * 为每条资讯生成 Excalidraw 配图
  */
-async function generateIllustration(item: NewsItem, index: number, date: string): Promise<string> {
+async function generateIllustration(item: NewsItem, index: number, date: string): Promise<{ localPath: string; shareUrl: string }> {
   console.log(`🎨 为第 ${index + 1} 条生成配图: ${item.title.slice(0, 30)}...`);
 
   const prompt = generateIllustrationPrompt(item);
@@ -53,12 +53,12 @@ async function generateIllustration(item: NewsItem, index: number, date: string)
   }
 
   try {
-    await createExcalidrawDiagram(prompt, outputPath);
+    const result = await createExcalidrawDiagram(prompt, outputPath);
     console.log(`  ✅ 配图已保存: ${filename}`);
-    return outputPath;
+    return result;
   } catch (error) {
     console.error(`  ❌ 配图生成失败: ${error}`);
-    return '';
+    return { localPath: '', shareUrl: '' };
   }
 }
 
@@ -108,7 +108,7 @@ function sanitizeFilename(name: string): string {
 /**
  * 生成博客文章内容
  */
-function generateBlogContent(report: DailyReport, illustrations: Map<string, string>): string {
+function generateBlogContent(report: DailyReport, illustrations: Map<string, { localPath: string; shareUrl: string }>): string {
   const lines: string[] = [];
 
   // 标题
@@ -131,18 +131,16 @@ function generateBlogContent(report: DailyReport, illustrations: Map<string, str
     lines.push('');
 
     report.highlights.forEach((item, index) => {
-      const illustPath = illustrations.get(item.id);
+      const illust = illustrations.get(item.id);
 
       lines.push(`### ${index + 1}. ${item.title}`);
       lines.push('');
 
-      // 配图
-      if (illustPath) {
-        const relativePath = path.relative(
-          path.join(__dirname, '../output/_posts'),
-          illustPath
-        ).replace(/\\/g, '/');
-        lines.push(`![配图${index + 1}](./${relativePath})`);
+      // 配图 - 优先使用 Excalidraw 分享链接
+      if (illust) {
+        if (illust.shareUrl) {
+          lines.push(`[![配图${index + 1}](https://img.shields.io/badge/点击查看-Excalidraw手绘配图-blue?style=for-the-badge)](${illust.shareUrl})`);
+        }
         lines.push('');
       }
 
@@ -150,13 +148,6 @@ function generateBlogContent(report: DailyReport, illustrations: Map<string, str
       const sourceLabel = item.source === 'arxiv' ? '📚 论文' : item.source === 'hackernews' ? '💬 Hacker News' : '📰 资讯';
       lines.push(`**来源**: ${sourceLabel}`);
       lines.push('');
-
-      // 内容摘要
-      if (item.summary) {
-        lines.push('**摘要**:');
-        lines.push(item.summary);
-        lines.push('');
-      }
 
       // AI 解读
       if (item.analysis) {
@@ -194,7 +185,7 @@ function generateBlogContent(report: DailyReport, illustrations: Map<string, str
 
     const otherNews = report.details.filter(d => !report.highlights.some(h => h.id === d.id));
 
-    otherNews.slice(0, 15).forEach((item, index) => {
+    otherNews.slice(0, 15).forEach((item) => {
       const sourceLabel = item.source === 'arxiv' ? '📚' : item.source === 'hackernews' ? '💬' : '📰';
       lines.push(`- ${sourceLabel} [${item.title}](${item.url})`);
     });
@@ -206,6 +197,7 @@ function generateBlogContent(report: DailyReport, illustrations: Map<string, str
 
     lines.push('');
   }
+
 
   // 元信息
   lines.push('---');
@@ -220,7 +212,6 @@ function generateBlogContent(report: DailyReport, illustrations: Map<string, str
 
   return lines.join('\n');
 }
-
 /**
  * 生成 Jekyll 格式的博客文章
  */
@@ -249,7 +240,7 @@ tags: [AI, ${report.metadata.sources.join(', ')}]
 /**
  * 生成封面图
  */
-async function generateCover(date: string): Promise<string> {
+async function generateCover(date: string): Promise<{ localPath: string; shareUrl: string }> {
   console.log('🎨 生成日报封面图...');
 
   const prompt = `hand-drawn style technology blog cover illustration, AI and machine learning theme, neural network brain concept, data streams and circuits, Chinese and English text "AI技术日报", modern tech aesthetic, clean white background, professional sketch style`;
@@ -263,12 +254,12 @@ async function generateCover(date: string): Promise<string> {
   }
 
   try {
-    await createExcalidrawDiagram(prompt, outputPath);
+    const result = await createExcalidrawDiagram(prompt, outputPath);
     console.log('  ✅ 封面图已生成');
-    return outputPath;
+    return result;
   } catch (error) {
     console.error(`  ❌ 封面图生成失败: ${error}`);
-    return '';
+    return { localPath: '', shareUrl: '' };
   }
 }
 
@@ -314,24 +305,24 @@ async function main() {
   const dateStr = new Date().toISOString().split('T')[0].replace(/-/g, '');
 
   // 2. 生成封面图
-  const coverPath = await generateCover(dateStr);
-  if (coverPath) {
+  const coverResult = await generateCover(dateStr);
+  if (coverResult.localPath) {
     // 复制到 output/images
     const destPath = path.join(__dirname, '../output/images', `${dateStr}-cover.excalidraw`);
-    fs.copyFileSync(coverPath, destPath);
+    fs.copyFileSync(coverResult.localPath, destPath);
   }
 
   // 3. 为每条重点资讯生成配图
-  const illustrations = new Map<string, string>();
+  const illustrations = new Map<string, { localPath: string; shareUrl: string }>();
 
   if (report.highlights.length > 0) {
     console.log(`\n🎨 开始生成 ${report.highlights.length} 张配图...`);
 
     for (let i = 0; i < report.highlights.length; i++) {
       const item = report.highlights[i];
-      const illustPath = await generateIllustration(item, i, dateStr);
-      if (illustPath) {
-        illustrations.set(item.id, illustPath);
+      const illustResult = await generateIllustration(item, i, dateStr);
+      if (illustResult.localPath) {
+        illustrations.set(item.id, illustResult);
       }
 
       // 间隔，避免过快

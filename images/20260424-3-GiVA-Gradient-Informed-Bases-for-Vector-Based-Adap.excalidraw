@@ -1,0 +1,392 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent-blog-generator",
+  "elements": [
+    {
+      "type": "text",
+      "id": "title",
+      "x": 250,
+      "y": 20,
+      "width": 100.79999999999998,
+      "height": 32,
+      "text": "AI 技术架构",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "originalText": "AI 技术架构",
+      "autoResize": false
+    },
+    {
+      "type": "rectangle",
+      "id": "data",
+      "x": 50,
+      "y": 100,
+      "width": 150,
+      "height": 70,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "fillColor": "#a5d8ff",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "boundElements": [
+        {
+          "id": "data-label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "data-label",
+      "x": 105,
+      "y": 123,
+      "width": 48,
+      "height": 24,
+      "text": "数据输入",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "data",
+      "originalText": "数据输入",
+      "autoResize": false
+    },
+    {
+      "type": "text",
+      "id": "data-desc",
+      "x": 70,
+      "y": 180,
+      "width": 86.39999999999999,
+      "height": 20,
+      "text": "文本 | 图像 | 音频",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "originalText": "文本 | 图像 | 音频",
+      "autoResize": false
+    },
+    {
+      "type": "ellipse",
+      "id": "model",
+      "x": 280,
+      "y": 100,
+      "width": 200,
+      "height": 80,
+      "fillStyle": "solid",
+      "fillColor": "#d0bfff",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "boundElements": [
+        {
+          "id": "model-label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "model-label",
+      "x": 360,
+      "y": 130,
+      "width": 50,
+      "height": 20,
+      "text": "AI 模型",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "model",
+      "originalText": "AI 模型",
+      "autoResize": false
+    },
+    {
+      "type": "text",
+      "id": "model-desc",
+      "x": 320,
+      "y": 190,
+      "width": 28.799999999999997,
+      "height": 20,
+      "text": "神经网络",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "originalText": "神经网络",
+      "autoResize": false
+    },
+    {
+      "type": "rectangle",
+      "id": "output",
+      "x": 550,
+      "y": 100,
+      "width": 150,
+      "height": 70,
+      "roundness": {
+        "type": 3
+      },
+      "fillStyle": "solid",
+      "fillColor": "#b2f2bb",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "boundElements": [
+        {
+          "id": "output-label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "output-label",
+      "x": 605,
+      "y": 123,
+      "width": 48,
+      "height": 24,
+      "text": "智能输出",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "output",
+      "originalText": "智能输出",
+      "autoResize": false
+    },
+    {
+      "type": "text",
+      "id": "output-desc",
+      "x": 570,
+      "y": 180,
+      "width": 86.39999999999999,
+      "height": 20,
+      "text": "预测 | 决策 | 生成",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "originalText": "预测 | 决策 | 生成",
+      "autoResize": false
+    },
+    {
+      "type": "text",
+      "id": "arrow1-label",
+      "x": 230,
+      "y": 115,
+      "width": 20,
+      "height": 20,
+      "text": "处理",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "arrow1",
+      "originalText": "处理",
+      "autoResize": false
+    },
+    {
+      "type": "arrow",
+      "id": "arrow1",
+      "x": 200,
+      "y": 135,
+      "width": 80,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          80,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "boundElements": [
+        {
+          "id": "arrow1-label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "arrow2-label",
+      "x": 505,
+      "y": 115,
+      "width": 20,
+      "height": 20,
+      "text": "结果",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "arrow2",
+      "originalText": "结果",
+      "autoResize": false
+    },
+    {
+      "type": "arrow",
+      "id": "arrow2",
+      "x": 480,
+      "y": 135,
+      "width": 70,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          70,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "boundElements": [
+        {
+          "id": "arrow2-label",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "type": "arrow",
+      "id": "feedback",
+      "x": 625,
+      "y": 200,
+      "width": 0,
+      "height": 100,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          100
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "arrow",
+      "id": "feedback2",
+      "x": 625,
+      "y": 300,
+      "width": 495,
+      "height": 0,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -495,
+          0
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "arrow",
+      "id": "feedback3",
+      "x": 130,
+      "y": 300,
+      "width": 0,
+      "height": 130,
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          -130
+        ]
+      ],
+      "endArrowhead": "arrow",
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "feedback-label",
+      "x": 640,
+      "y": 240,
+      "width": 14.399999999999999,
+      "height": 20,
+      "text": "反馈",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "fillColor": "transparent",
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "originalText": "反馈",
+      "autoResize": false
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null,
+    "stats": {
+      "totalCanvasWidth": 800,
+      "totalCanvasHeight": 600
+    }
+  },
+  "files": {}
+}

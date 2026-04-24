@@ -415,21 +415,21 @@ function selectTemplate(prompt: string): any {
 }
 
 /**
- * 生成 Excalidraw 图表
+ * 生成 Excalidraw 图表并上传，返回可嵌入的 URL
  */
-export async function createExcalidrawDiagram(prompt: string, outputPath: string): Promise<string> {
+export async function createExcalidrawDiagram(prompt: string, outputPath: string): Promise<{ localPath: string; shareUrl: string }> {
   console.log(`🎨 创建 Excalidraw 图表: ${path.basename(outputPath)}`);
-  console.log(`   Prompt: ${prompt.slice(0, 80)}...`);
 
   // 根据 prompt 选择模板
   const diagram = selectTemplate(prompt);
 
-  // 保存文件
+  // 保存本地文件
   const content = JSON.stringify(diagram, null, 2);
   fs.writeFileSync(outputPath, content, 'utf-8');
-  console.log(`   已保存: ${outputPath}`);
+  console.log(`   已保存本地: ${path.basename(outputPath)}`);
 
-  // 上传到 excalidraw.com
+  // 上传到 excalidraw.com 获取分享链接
+  let shareUrl = '';
   try {
     const uploadScript = '/home/sola/.hermes/skills/creative/excalidraw/scripts/upload.py';
     if (fs.existsSync(uploadScript)) {
@@ -437,21 +437,20 @@ export async function createExcalidrawDiagram(prompt: string, outputPath: string
         encoding: 'utf-8',
         timeout: 30000
       }).trim();
-
-      console.log(`   已上传: ${result}`);
-      return result; // 返回分享链接
+      shareUrl = result;
+      console.log(`   ✅ 已上传 Excalidraw: ${shareUrl}`);
     }
-  } catch (error) {
-    console.log(`   上传失败，使用本地文件: ${error}`);
+  } catch (error: any) {
+    console.log(`   ⚠️ 上传失败，将使用本地文件: ${error?.message || error}`);
   }
 
-  return outputPath;
+  return { localPath: outputPath, shareUrl };
 }
 
 /**
  * 生成封面图
  */
-export async function generateCoverDiagram(date: string): Promise<string> {
+export async function generateCoverDiagram(date: string): Promise<{ localPath: string; shareUrl: string }> {
   const outputPath = path.join(
     path.dirname(fileURLToPath(import.meta.url)),
     '../output/images',
@@ -484,6 +483,7 @@ export async function generateCoverDiagram(date: string): Promise<string> {
   fs.writeFileSync(outputPath, content, 'utf-8');
 
   // 尝试上传
+  let shareUrl = '';
   try {
     const uploadScript = '/home/sola/.hermes/skills/creative/excalidraw/scripts/upload.py';
     if (fs.existsSync(uploadScript)) {
@@ -491,12 +491,12 @@ export async function generateCoverDiagram(date: string): Promise<string> {
         encoding: 'utf-8',
         timeout: 30000
       }).trim();
-      console.log(`封面图已上传: ${result}`);
-      return result;
+      shareUrl = result;
+      console.log(`封面图已上传: ${shareUrl}`);
     }
-  } catch (error) {
-    console.log(`封面上传失败: ${error}`);
+  } catch (error: any) {
+    console.log(`封面上传失败: ${error?.message || error}`);
   }
 
-  return outputPath;
+  return { localPath: outputPath, shareUrl };
 }
