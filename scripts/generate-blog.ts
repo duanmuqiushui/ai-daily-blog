@@ -7,6 +7,7 @@ dotenv.config();
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { marked } from 'marked';
 import { createExcalidrawDiagram } from './create-excalidraw.js';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -212,6 +213,52 @@ function generateBlogContent(report: DailyReport, illustrations: Map<string, { l
 
   return lines.join('\n');
 }
+
+/**
+ * 用 HTML 模板包装 Markdown 生成的 HTML 内容
+ */
+function wrapHtml(title: string, body: string): string {
+  return `<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${title}</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+    a { color: #2c5282; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #2c5282; margin-top: 30px; }
+    h1 { font-size: 1.8em; margin-top: 0; }
+    h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3 { font-size: 1.15em; color: #2d3748; margin-top: 25px; }
+    pre { background: #f7f7f7; padding: 15px; overflow-x: auto; border-radius: 6px; font-size: 0.9em; }
+    code { background: #f7f7f7; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    img { max-width: 100%; border-radius: 6px; }
+    .back-link { margin-bottom: 20px; }
+    .highlight-item { background: #f8f9fa; border-left: 4px solid #2c5282; padding: 15px 20px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+    .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em; }
+    hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+    blockquote { border-left: 4px solid #2c5282; margin: 0; padding: 0 0 0 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+  ${body}
+  <footer class="footer">
+    <p>由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</p>
+  </footer>
+</body>
+</html>`;
+}
+
 /**
  * 生成 Jekyll 格式的博客文章
  */
@@ -339,7 +386,12 @@ async function main() {
   // 5. 生成 Jekyll 格式
   const { filename, content } = generateJekyllPost(report, blogContent);
 
-  // 6. 保存到 _posts 目录
+  // 5b. 用 marked 将 Markdown 转为 HTML（GitHub Pages Jekyll 处理 _posts/ 失败，改为直接预编译 HTML）
+  const markdownBody = content.replace(/^---[\s\S]*?---\n/, ''); // 去掉 frontmatter
+  const htmlBody = marked(markdownBody) as string;
+  const htmlPost = wrapHtml(report.title, htmlBody);
+
+  // 6. 保存到 _posts 目录（Markdown 备份）
   const outputDir = path.join(__dirname, '../output/_posts');
   if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
@@ -349,11 +401,15 @@ async function main() {
   fs.writeFileSync(outputPath, content, 'utf-8');
   console.log(`\n✅ 博客文章已保存: ${outputPath}`);
 
-  // 7. 同时保存到博客根目录（如果需要 GitHub Pages）
-  const blogRoot = path.join(__dirname, '../output');
-  const blogPath = path.join(blogRoot, filename);
-  fs.writeFileSync(blogPath, content, 'utf-8');
-  console.log(`✅ 博客副本已保存: ${blogPath}`);
+  // 7. 保存预编译 HTML 到 posts/ 目录（GitHub Pages 直接服务）
+  const postsDir = path.join(__dirname, '../posts');
+  if (!fs.existsSync(postsDir)) {
+    fs.mkdirSync(postsDir, { recursive: true });
+  }
+  const htmlFilename = filename.replace(/\.md$/, '.html');
+  const htmlPath = path.join(postsDir, htmlFilename);
+  fs.writeFileSync(htmlPath, htmlPost, 'utf-8');
+  console.log(`✅ HTML 博客已保存: ${htmlPath}`);
 
   console.log('\n📋 生成完成！');
   console.log(`   - 博客文章: ${filename}`);
