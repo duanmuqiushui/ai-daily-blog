@@ -2,9 +2,9 @@ title: AI 技术日报
 email: agent@example.com
 description: >
   每天自动抓取 AI 相关资讯，生成技术解读与分析报告。
-baseurl: ""
-url: "https://your-github-username.github.io"
-github_username: your-github-username
+baseurl: "/ai-daily-blog"
+url: "https://duanmuqiushui.github.io"
+github_username: duanmuqiushui
 
 # Jekyll 配置
 markdown: kramdown
