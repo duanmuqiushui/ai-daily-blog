@@ -395,6 +395,30 @@ async function main() {
   fs.writeFileSync(htmlPath, htmlPost, 'utf-8');
   console.log(`✅ HTML 博客已保存: ${htmlPath}`);
 
+  // 8. 更新 index.html 列表
+  const indexPath = path.join(__dirname, '../index.html');
+  const postDate = filename.match(/(\d{4}-\d+-\d+)/)?.[1] || '';
+  const postTitle = report.title;
+  const excerpt = `📊 今日概述 | ${report.highlights.length}篇重点解读 | 技术热议话题 | ${report.metadata.totalCount}条资讯`;
+  const postLink = `/ai-daily-blog/posts/${htmlFilename}`;
+  const newPostEntry = `      <li>
+        <span class="post-meta">${postDate}</span>
+        <h2><a href="${postLink}">${postTitle}</a></h2>
+        <p class="post-excerpt">${excerpt}</p>
+      </li>\n`;
+  if (fs.existsSync(indexPath)) {
+    let indexContent = fs.readFileSync(indexPath, 'utf-8');
+    // 在 post-list 的 <li> 之后插入新条目（保持最新在前）
+    if (!indexContent.includes(postLink)) {
+      indexContent = indexContent.replace(
+        '      <li>\n        <span class="post-meta">',
+        newPostEntry + '      <li>\n        <span class="post-meta">'
+      );
+      fs.writeFileSync(indexPath, indexContent, 'utf-8');
+      console.log('✅ index.html 已更新');
+    }
+  }
+
   console.log('\n📋 生成完成！');
   console.log(`   - 博客文章: ${filename}`);
   console.log(`   - 配图数量: 0`);
