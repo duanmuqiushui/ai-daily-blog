@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤖 2026年5月11日 AI 技术日报</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+    a { color: #2c5282; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #2c5282; margin-top: 30px; }
+    h1 { font-size: 1.8em; margin-top: 0; }
+    h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3 { font-size: 1.15em; color: #2d3748; margin-top: 25px; }
+    pre { background: #f7f7f7; padding: 15px; overflow-x: auto; border-radius: 6px; font-size: 0.9em; }
+    code { background: #f7f7f7; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    img { max-width: 100%; border-radius: 6px; }
+    .back-link { margin-bottom: 20px; }
+    .highlight-item { background: #f8f9fa; border-left: 4px solid #2c5282; padding: 15px 20px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+    .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em; }
+    hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+    blockquote { border-left: 4px solid #2c5282; margin: 0; padding: 0 0 0 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+  <h1>🤖 2026年5月11日 AI 技术日报</h1>
+<p><a href="https://excalidraw.com/#json=BuqGUTE8A1df6ZngOwsQH,B3h3_pb9l3afhHp8lOIUhg"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-AI%E6%8A%80%E6%9C%AF%E6%97%A5%E6%8A%A5%E5%B0%81%E9%9D%A2%E6%89%8B%E7%BB%98%E5%9B%BE-blue?style=for-the-badge" alt="🤖 AI 日报封面图"></a></p>
+<hr>
+<h2>📊 今日概述</h2>
+<p>本期AI技术演进呈现“架构轻量化、控制精细化、训练稳态化”三大主线。模型架构层面，MoE全局共享专家池与优化器一致性微调打破了传统参数量与深度扩展的线性绑定，显著缓解灾难性遗忘并降低算力门槛。生成与Agent领域，视频生成实现运镜与动作的零样本联合控制，GUI Grounding通过训练-free归因校准提升复杂界面交互精度，检索Agent向强先验专家导航范式跃迁。同时，高质量数学数据自动生成与无基准安全评估机制，正推动大模型向自主科学推理与合规部署迈进。基础设施能耗与本地化部署需求亦凸显工程落地挑战。</p>
+<h2>📄 重点解读</h2>
+<h3>1. UniPool: A Globally Shared Expert Pool for Mixture-of-Experts</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：打破传统MoE每层独立专家集的刚性分配，构建全局共享专家池，通过统一路由机制动态分配计算资源。创新点：解耦深度扩展与参数量线性增长，路由探针实验证明深层随机路由仅损失1-1.6%精度，验证了专家冗余性。应用：大幅降低大模型训练/推理显存开销，适用于边缘部署与多任务自适应微调场景。</p>
+<p><strong>标签</strong>: transformer</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06665v1">原文链接</a></p>
+<h3>2. ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：基于预训练I2V扩散模型，引入场景深度与相机内外参条件，实现角色动作迁移与逐帧相机轨迹的联合零样本控制。创新点：解耦表演与运镜，无需额外训练即可精准控制3D空间内的摄像机运动与演员姿态。应用：影视级短视频自动化生成、游戏过场动画制作、交互式虚拟制片，提升AIGC内容工业可控性。</p>
+<p><strong>标签</strong>: diffusion</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06667v1">原文链接</a></p>
+<h3>3. Optimizer-Model Consistency: Full Finetuning with the Same Optimizer as Pretraining Forgets Less</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：在SFT阶段沿用预训练优化器，保持参数更新轨迹与损失地形的一致性，从而缓解灾难性遗忘。创新点：发现优化器-模型一致性现象，全量微调在同等或更优新任务性能下，遗忘率显著低于LoRA及更换优化器的方案。应用：垂直领域大模型高效迭代、持续学习系统构建、降低微调超参调优成本。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06654v1">原文链接</a></p>
+<h3>4. BAMI: Training-Free Bias Mitigation in GUI Grounding</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：提出掩码预测分布归因方法，定位GUI Grounding中高分辨率导致的精度偏差与复杂UI元素引发的歧义偏差。创新点：无需重新训练，通过动态掩码与分布校准实现零样本偏差缓解，显著提升复杂界面元素定位准确率。应用：桌面/移动端GUI智能体自动化操作、跨平台RPA流程优化、无障碍辅助交互系统。</p>
+<p><strong>标签</strong>: agent, rag</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06664v1">原文链接</a></p>
+<h3>5. Verifier-Backed Hard Problem Generation for Mathematical Reasoning</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：引入形式化验证器作为生成回路的核心约束，过滤自博弈中因奖励黑客产生的无效题目，确保数学问题的有效性与难度梯度。创新点：构建“生成-验证-筛选”闭环，摆脱对人工专家的依赖，实现高质量、高挑战性数学推理数据的自动化合成。应用：大模型数学能力持续对齐、自主科学发现数据引擎、教育测评题库生成。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06660v1">原文链接</a></p>
+<h3>6. Superintelligent Retrieval Agent: The Next Frontier of Information Retrieval</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：将检索视为具备领域先验的专家导航过程，而非黑盒迭代查询。通过构建结构化知识映射与术语约束，实现单次精准检索与证据链推理。创新点：摒弃传统“查询-重排”试错范式，引入强先验引导的检索规划，显著降低延迟与冗余轮次。应用：企业级知识库问答、法律/医疗专业文献检索、复杂多跳推理Agent。</p>
+<p><strong>标签</strong>: llm, agent</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06647v1">原文链接</a></p>
+<h2>💬 技术热议话题</h2>
+<ol>
+<li>MoE架构全局共享与路由优化</li>
+<li>视频生成零样本运镜与动作解耦</li>
+<li>大模型微调优化器一致性与抗遗忘</li>
+<li>零样本GUI智能体交互与偏差校准</li>
+<li>验证器驱动的高质量推理数据合成</li>
+</ol>
+<h2>📋 全部资讯</h2>
+<ul>
+<li>💬 <a href="https://unix.foo/posts/local-ai-needs-to-be-norm/">Local AI needs to be the norm</a></li>
+<li>💬 <a href="https://kotaku.com/playstation-3-emulator-devs-politely-ask-that-people-stop-flooding-it-with-ai-code-pull-requests-2000694656">PS3 Emulator Devs Politely Ask That People Stop Flooding It with AI PRs</a></li>
+<li>💬 <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/maryland-citizens-slapped-with-usd2-billion-grid-upgrade-bill-for-out-of-state-ai-data-centers-state-complains-to-federal-energy-regulators-says-additional-cost-breaks-ratepayer-protection-pledge-promises">Maryland citizens hit with $2B power grid upgrade for out-of-state AI</a></li>
+<li>💬 <a href="https://janrosenow.substack.com/p/spain-just-became-one-of-europes">Spain has become one of Europe’s cheapest power markets</a></li>
+<li>💬 <a href="https://g5t.de/articles/20260510-task-paralysis-and-ai/index.html">Task Paralysis and AI</a></li>
+<li>📰 <a href="https://36kr.com/p/3802822550839047?f=rss">Ozon大中华区总裁Simon Huang：中国卖家，正在涌向俄罗斯｜专访</a></li>
+</ul>
+<hr>
+<p><strong>📈 共收录 25 条资讯</strong>
+<strong>来源</strong>: hackernews, rss, arxiv
+<strong>生成时间</strong>: 2026-05-11T00:30:13.717Z</p>
+<hr>
+<p><em>本文由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</em></p>
+
+  <footer class="footer">
+    <p>由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</p>
+  </footer>
+</body>
+</html>
