@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤖 2026年5月10日 AI 技术日报</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+    a { color: #2c5282; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #2c5282; margin-top: 30px; }
+    h1 { font-size: 1.8em; margin-top: 0; }
+    h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3 { font-size: 1.15em; color: #2d3748; margin-top: 25px; }
+    pre { background: #f7f7f7; padding: 15px; overflow-x: auto; border-radius: 6px; font-size: 0.9em; }
+    code { background: #f7f7f7; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    img { max-width: 100%; border-radius: 6px; }
+    .back-link { margin-bottom: 20px; }
+    .highlight-item { background: #f8f9fa; border-left: 4px solid #2c5282; padding: 15px 20px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+    .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em; }
+    hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+    blockquote { border-left: 4px solid #2c5282; margin: 0; padding: 0 0 0 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+  <h1>🤖 2026年5月10日 AI 技术日报</h1>
+<p><a href="https://excalidraw.com/#json=RCCGVjOpmQpLaZGrl7UTJ,RQ2tseyfS8gVr-s5MpLSfw"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-AI%E6%8A%80%E6%9C%AF%E6%97%A5%E6%8A%A5%E5%B0%81%E9%9D%A2%E6%89%8B%E7%BB%98%E5%9B%BE-blue?style=for-the-badge" alt="🤖 AI 日报封面图"></a></p>
+<hr>
+<h2>📊 今日概述</h2>
+<p>今日AI技术演进呈现“架构优化、可控生成与智能体可靠性”三大主线。在模型架构层面，MoE专家池共享机制与预训练优化器一致性研究，正推动大模型向更高参数效率与更低灾难性遗忘方向演进。在应用控制端，零样本视频生成实现镜头与角色运动的联合解耦控制，GUI智能体的精度偏差缓解技术进一步夯实了自动化交互基础。同时，智能体在数学推理与科研协作中的验证器回环机制，以及无基准安全评估框架的提出，标志着AI正从“能力涌现”迈向“可验证、可部署”的工程化深水区。实时通信架构的瓶颈也凸显了端云协同推理对底层网络协议的依赖升级。</p>
+<h2>📄 重点解读</h2>
+<h3>1. ActCam: Zero-Shot Joint Camera and 3D Motion Control for Video Generation</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+基于预训练图像到视频扩散模型，通过深度图与相机内外参条件注入，实现角色运动与镜头轨迹的零样本联合控制。创新在于解耦了3D运动先验与2D生成流形，无需额外微调即可保持时序一致性。适用于影视预演、虚拟制片及游戏资产自动化生成场景。</p>
+<p><strong>标签</strong>: diffusion</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06667v1">原文链接</a></p>
+<h3>2. UniPool: A Globally Shared Expert Pool for Mixture-of-Experts</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+突破传统MoE逐层独立分配专家的范式，构建全局共享专家池。原理通过路由探针验证深层网络对独立专家依赖度低，采用全局路由降低冗余参数。创新在于实现专家容量跨层复用，显著压缩模型体积。适用于边缘端大模型部署与高吞吐推理服务。</p>
+<p><strong>标签</strong>: transformer</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06665v1">原文链接</a></p>
+<h3>3. BAMI: Training-Free Bias Mitigation in GUI Grounding</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+针对GUI智能体定位偏差，提出掩码预测分布归因法，识别高分辨率精度偏差与复杂元素歧义偏差。创新在于无需重新训练，通过推理时动态重加权与掩码校正即可提升定位鲁棒性。适用于跨平台RPA自动化、操作系统级AI助手交互。</p>
+<p><strong>标签</strong>: agent, rag</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06664v1">原文链接</a></p>
+<h3>4. Optimizer-Model Consistency: Full Finetuning with the Same Optimizer as Pretraining Forgets Less</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+揭示全量微调阶段沿用预训练优化器可显著缓解灾难性遗忘。原理在于保持优化轨迹在损失景观中的平滑过渡，维持预训练表征的拓扑结构。创新点在于以零额外参数代价实现优于LoRA的学忘权衡。适用于垂直领域大模型快速适配与持续学习系统。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06654v1">原文链接</a></p>
+<h3>5. When No Benchmark Exists: Validating Comparative LLM Safety Scoring Without Ground-Truth Labels</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+针对新兴领域缺乏标注基准的安全评估难题，构建无真值标签的对比评分契约。原理通过固定场景包、评分规则与采样配置，以审计一致性替代绝对准确率验证。创新在于提供可复现的部署级安全证据链。适用于金融、医疗等强监管行业的模型准入。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06652v1">原文链接</a></p>
+<h3>6. AI Co-Mathematician: Accelerating Mathematicians with Agentic AI</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+构建面向数学研究的异步有状态智能体工作台。原理整合文献检索、计算探索与定理证明模块，通过意图细化与失败假设追踪管理不确定性。创新在于将单点推理升级为探索性科研工作流协同。适用于基础科学研究加速、复杂算法形式化验证。</p>
+<p><strong>标签</strong>: agent, rag, ai agent</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.06651v1">原文链接</a></p>
+<h2>💬 技术热议话题</h2>
+<ol>
+<li>MoE架构与参数效率优化</li>
+<li>视频生成细粒度运动控制</li>
+<li>智能体交互可靠性与科研协同</li>
+<li>无真值标签的模型安全评估</li>
+</ol>
+<h2>📋 全部资讯</h2>
+<ul>
+<li>💬 <a href="https://reclaimthenet.org/france-moves-to-break-encrypted-messaging">France Moves to Break Encrypted Messaging</a></li>
+<li>💬 <a href="https://gowers.wordpress.com/2026/05/08/a-recent-experience-with-chatgpt-5-5-pro/">A recent experience with ChatGPT 5.5 Pro</a></li>
+<li>💬 <a href="https://arxiv.org/abs/2604.15597">LLMs corrupt your documents when you delegate</a></li>
+<li>💬 <a href="https://moq.dev/blog/webrtc-is-the-problem/">OpenAI’s WebRTC problem</a></li>
+<li>💬 <a href="https://adele.pages.casa/md/blog/all-my-clients-wanted-a-carousel-now-it-s-an-ai-chatbot.md">All my clients wanted a carousel, now it&#39;s an AI chatbot</a></li>
+<li>📰 <a href="https://36kr.com/p/3801461350702855?f=rss">AI开始接管年轻人的「精神自留地」</a></li>
+<li>📰 <a href="https://36kr.com/p/3797202414820359?f=rss">获高秉强、蓝驰领投数千万融资，浙大00后创业者从远景观测切入AI智能影像｜硬氪首发</a></li>
+<li>📰 <a href="https://36kr.com/p/3801348046151428?f=rss">9点1氪丨DeepSeek拟募资最高500亿；“全国销冠”被刑拘，泰康人寿回应；OPPO就母亲节文案致歉</a></li>
+</ul>
+<hr>
+<p><strong>📈 共收录 25 条资讯</strong>
+<strong>来源</strong>: hackernews, rss, arxiv
+<strong>生成时间</strong>: 2026-05-10T00:31:06.299Z</p>
+<hr>
+<p><em>本文由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</em></p>
+
+  <footer class="footer">
+    <p>由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</p>
+  </footer>
+</body>
+</html>
