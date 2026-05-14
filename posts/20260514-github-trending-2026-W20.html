@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🏆 GitHub Trending 周报 | 2026-W20</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-secondary: #12121a;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-color: rgba(168, 85, 247, 0.2);
+      --border-color-hover: rgba(168, 85, 247, 0.5);
+      --accent: #A855F7;
+      --accent-soft: rgba(168, 85, 247, 0.15);
+      --text-primary: #f0f0f5;
+      --text-secondary: #8b8b9a;
+      --text-muted: #5a5a6a;
+      --pill-bg: rgba(168, 85, 247, 0.15);
+      --pill-border: rgba(168, 85, 247, 0.3);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    .back-link { margin-bottom: 24px; }
+    .back-link a { color: var(--accent); font-size: 0.9rem; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(20px);
+    }
+    .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .card-title-group { display: flex; align-items: center; gap: 12px; }
+    .card-icon { font-size: 1.5rem; }
+    .card-title { font-size: 1.3rem; font-weight: 600; }
+    .card-badge { font-size: 0.7rem; padding: 4px 10px; background: var(--pill-bg); border: 1px solid var(--pill-border); border-radius: 20px; color: var(--accent); }
+    .intro { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 20px; }
+    .stats-row { display: flex; gap: 24px; margin-bottom: 20px; }
+    .stat-item { display: flex; flex-direction: column; gap: 4px; }
+    .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+    .stat-value { font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; font-weight: 600; color: var(--accent); }
+    .pill { display: inline-flex; align-items: center; padding: 4px 10px; background: var(--pill-bg); border: 1px solid var(--pill-border); border-radius: 20px; font-size: 0.8rem; color: var(--accent); font-family: 'JetBrains Mono', monospace; }
+    .repo-list { margin-top: 16px; }
+    .repo-item { display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .repo-item:last-child { border-bottom: none; }
+    .repo-rank { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 600; color: var(--accent); min-width: 32px; }
+    .repo-info { flex: 1; min-width: 0; }
+    .repo-name { font-size: 1rem; font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .repo-name a { color: var(--text-primary); }
+    .repo-name a:hover { color: var(--accent); }
+    .repo-desc { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px; line-height: 1.5; }
+    .repo-meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .repo-lang { font-size: 0.8rem; color: var(--text-secondary); }
+    .topic-tag { font-size: 0.7rem; padding: 2px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: var(--text-muted); margin-right: 6px; }
+    .lang-section { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.05); }
+    .lang-title { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-bottom: 12px; }
+    .lang-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+    .lang-stat { display: flex; align-items: center; gap: 8px; }
+    .lang-name { font-size: 0.85rem; color: var(--accent); }
+    .lang-count { font-size: 0.8rem; color: var(--text-muted); }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+
+    <article class="card">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="card-icon">🏆</span>
+          <h1 class="card-title">GitHub Trending 周报</h1>
+        </div>
+        <span class="card-badge">2026-W20</span>
+      </div>
+
+      <p class="intro">
+        本周 GitHub 热门仓库榜单揭晓！共收录 <strong>10</strong> 个热门项目，其中 <strong>zero-native</strong> 以 <strong>0</strong> 颗新增 Star 领跑榜单。本周总新增 Star 达 <strong>0</strong>。
+      </p>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-label">热门仓库</span>
+          <span class="stat-value">10</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">本周新增 Star</span>
+          <span class="stat-value">0</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Top 语言</span>
+          <span class="stat-value" style="font-family: 'Inter', sans-serif; font-size: 1rem;">Unknown</span>
+        </div>
+      </div>
+
+      <div class="repo-list">
+        
+      <div class="repo-item">
+        <span class="repo-rank">#1</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/vercel-labs/zero-native" target="_blank">vercel-labs/zero-native</a>
+            <span class="pill">⭐ 3,361</span>
+          </div>
+          <div class="repo-desc">Build desktop + mobile apps with Zig and web UI</div>
+          <div class="repo-meta">
+            <span class="pill">Zig</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#2</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/FULU-Foundation/OrcaSlicer-bambulab" target="_blank">FULU-Foundation/OrcaSlicer-bambulab</a>
+            <span class="pill">⭐ 3,103</span>
+          </div>
+          <div class="repo-desc">暂无描述</div>
+          <div class="repo-meta">
+            <span class="pill">C++</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#3</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/huangserva/3DCellForge" target="_blank">huangserva/3DCellForge</a>
+            <span class="pill">⭐ 1,906</span>
+          </div>
+          <div class="repo-desc">AI-powered interactive 3D model generation, inspection, and presentation studio.</div>
+          <div class="repo-meta">
+            <span class="pill">JavaScript</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#4</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/Nightmare-Eclipse/YellowKey" target="_blank">Nightmare-Eclipse/YellowKey</a>
+            <span class="pill">⭐ 1,204</span>
+          </div>
+          <div class="repo-desc">YellowKey Bitlocker Bypass Vulnerability</div>
+          <div class="repo-meta">
+            <span class="pill">Unknown</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#5</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/ywnd1144/Gopay_plus_automatic" target="_blank">ywnd1144/Gopay_plus_automatic</a>
+            <span class="pill">⭐ 737</span>
+          </div>
+          <div class="repo-desc">暂无描述</div>
+          <div class="repo-meta">
+            <span class="pill">Python</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#6</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/HermannBjorgvin/Clawdmeter" target="_blank">HermannBjorgvin/Clawdmeter</a>
+            <span class="pill">⭐ 728</span>
+          </div>
+          <div class="repo-desc">ESP32 desk dashboard that shows Claude Code usage</div>
+          <div class="repo-meta">
+            <span class="pill">C</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#7</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/haydenbleasel/files-sdk" target="_blank">haydenbleasel/files-sdk</a>
+            <span class="pill">⭐ 655</span>
+          </div>
+          <div class="repo-desc">A unified storage SDK for object and blob backends. One small, honest API. Web-standards I/O.</div>
+          <div class="repo-meta">
+            <span class="pill">TypeScript</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            <span class="topics"><span class="topic-tag">agents</span><span class="topic-tag">blob</span><span class="topic-tag">cloudflare</span></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#8</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/TencentARC/Pixal3D" target="_blank">TencentARC/Pixal3D</a>
+            <span class="pill">⭐ 565</span>
+          </div>
+          <div class="repo-desc">[SIGGRAPH 2026] Pixal3D: Pixel-Aligned 3D Generation from Images</div>
+          <div class="repo-meta">
+            <span class="pill">Python</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#9</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/cclank/cell-architecture-studio" target="_blank">cclank/cell-architecture-studio</a>
+            <span class="pill">⭐ 541</span>
+          </div>
+          <div class="repo-desc">Interactive 3D cell architecture gallery built with React and Three.js</div>
+          <div class="repo-meta">
+            <span class="pill">TypeScript</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#10</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/thakur-works/DarkGPT" target="_blank">thakur-works/DarkGPT</a>
+            <span class="pill">⭐ 534</span>
+          </div>
+          <div class="repo-desc">Darkgpt mod free #chatgpt</div>
+          <div class="repo-meta">
+            <span class="pill">Unknown</span>
+            <span class="repo-lang">📈 本周 +0</span>
+            <span class="topics"><span class="topic-tag">chatgpt-bypass</span><span class="topic-tag">chatgpt5</span><span class="topic-tag">darkgpt</span></span>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+
+      <div class="lang-section">
+        <div class="lang-title">📈 语言分布</div>
+        <div class="lang-stats">
+          
+      <div class="lang-stat">
+        <span class="lang-name">Unknown</span>
+        <span class="lang-count">2 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">Python</span>
+        <span class="lang-count">2 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">TypeScript</span>
+        <span class="lang-count">2 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">Zig</span>
+        <span class="lang-count">1 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">C++</span>
+        <span class="lang-count">1 个仓库</span>
+      </div>
+    
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <p>由 GitHub Trending Agent 自动生成 | 生成时间：2026/5/14 16:12:17</p>
+    </footer>
+  </div>
+</body>
+</html>

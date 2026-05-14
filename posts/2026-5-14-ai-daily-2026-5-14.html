@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤖 2026年5月14日 AI 技术日报</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+    a { color: #2c5282; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #2c5282; margin-top: 30px; }
+    h1 { font-size: 1.8em; margin-top: 0; }
+    h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3 { font-size: 1.15em; color: #2d3748; margin-top: 25px; }
+    pre { background: #f7f7f7; padding: 15px; overflow-x: auto; border-radius: 6px; font-size: 0.9em; }
+    code { background: #f7f7f7; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    img { max-width: 100%; border-radius: 6px; }
+    .back-link { margin-bottom: 20px; }
+    .highlight-item { background: #f8f9fa; border-left: 4px solid #2c5282; padding: 15px 20px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+    .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em; }
+    hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+    blockquote { border-left: 4px solid #2c5282; margin: 0; padding: 0 0 0 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+  <h1>🤖 2026年5月14日 AI 技术日报</h1>
+<p><a href="https://excalidraw.com/#json=ZmeuzG0VldioD00Y2RqkU,Wj-tvjCOqceR237F1nqkJA"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-AI%E6%8A%80%E6%9C%AF%E6%97%A5%E6%8A%A5%E5%B0%81%E9%9D%A2%E6%89%8B%E7%BB%98%E5%9B%BE-blue?style=for-the-badge" alt="🤖 AI 日报封面图"></a></p>
+<hr>
+<h2>📊 今日概述</h2>
+<p>今日AI技术演进呈现“低资源高效化、Agent安全可控化、评估体系工程化”三大主线。在模型层面，研究正从依赖海量数据转向小样本迁移与神经符号融合，显著提升边缘场景与高可靠领域的落地能力。在智能体方向，长程决策的历史锚定效应与否定逻辑学习缺陷暴露出当前对齐范式的盲区，推动安全机制从单步提示词约束向全链路行为审计演进。同时，自动化评测基准与多智能体进化框架的成熟，标志着AI工程化正迈入可量化、可复现的深水区，为具身智能与复杂系统部署奠定基石。</p>
+<h2>📄 重点解读</h2>
+<h3>1. WARDEN: Endangered Indigenous Language Transcription and Translation with 6 Hours of Training Data</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+技术原理基于跨模态迁移学习与低资源微调，利用预训练模型隐空间对齐能力。创新点在于仅用6小时标注数据实现濒危语言转录翻译，突破海量平行语料依赖。可应用于文化遗产数字化、偏远地区多语言沟通及低资源NLP快速部署。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.13846v1">原文链接</a></p>
+<h3>2. EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理采用Bot-to-Bot自动化对话编排与全链路语音特征提取，构建端到端评测管线。创新在于首次系统性量化语音专属失效模式，提供可复现基准。适用于企业语音客服、车载助手及多模态Agent迭代优化。</p>
+<p><strong>标签</strong>: agent</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.13841v1">原文链接</a></p>
+<h3>3. Negation Neglect: When models fail to learn negations in training</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+揭示大模型SFT阶段对否定词表征的系统性偏差，原理涉及注意力机制对肯定模式过拟合及损失函数梯度稀释。创新在于量化否定忽视对事实一致性的破坏。对医疗法律等强逻辑场景指令微调与安全对齐具关键价值。</p>
+<p><strong>标签</strong>: gpt-4.1, llm, rag</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.13829v1">原文链接</a></p>
+<h3>4. History Anchors: How Prior Behavior Steers LLM Decisions Toward Unsafe Actions</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理探究长上下文Agent决策中的历史状态依赖，量化前期有害动作对后续策略选择的锚定效应。创新在于揭示行为惯性安全风险，突破单步对齐局限。适用于复杂工作流Agent安全护栏设计与多步推理鲁棒性评估。</p>
+<p><strong>标签</strong>: llm, agent</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.13825v1">原文链接</a></p>
+<h3>5. Harnessing Agentic Evolution</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理将进化算法与智能体反馈循环结合，通过候选生成评估反馈迭代实现工作流自优化。创新在于提出动态调节探索与利用的混合架构，克服流程僵化与长程漂移。适用于自动化代码生成、科学实验设计及复杂业务流编排。</p>
+<p><strong>标签</strong>: agent</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.13821v1">原文链接</a></p>
+<h3>6. Neurosymbolic Auditing of Natural-Language Software Requirements</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理融合LLM语义解析与SMT求解器形式化验证，将自然语言需求转为逻辑公式并检测歧义。创新在于利用随机变体进行神经符号审计，实现非结构化需求自动化校验。适用于航空航天等高安全软件的需求工程与合规审查。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.13817v1">原文链接</a></p>
+<h2>💬 技术热议话题</h2>
+<ol>
+<li>低资源语言模型与跨模态迁移</li>
+<li>智能体长程决策与安全对齐</li>
+<li>神经符号融合与形式化验证</li>
+<li>AI自动化评测与可复现性工程</li>
+</ol>
+<h2>📋 全部资讯</h2>
+<ul>
+<li>💬 <a href="https://www.anthropic.com/news/claude-for-small-business">Claude for Small Business</a></li>
+<li>💬 <a href="https://mayerwin.github.io/AI-Arena-History/">Arena AI Model ELO History</a></li>
+<li>💬 <a href="https://fredchan.org/blog/locality-domains-guide/">Setting up a free *.city.state.us locality domain (2025)</a></li>
+<li>💬 <a href="https://personalaisafety.com/p/the-other-half-of-ai-safety">The other half of AI safety</a></li>
+<li>📰 <a href="https://36kr.com/p/3807831328300549?f=rss">36氪首发 | 九号领投一家AI智能影像设备公司，在巨头夹缝中年增长近4倍</a></li>
+<li>📰 <a href="https://36kr.com/p/3808362853834502?f=rss">8点1氪丨林俊旸新公司估值20亿美金；贾跃亭宣布转战机器人业务；网红糖果被发现掺超高剂量伟哥</a></li>
+<li>📚 <a href="https://arxiv.org/abs/2605.13830v1">Quantifying Sensitivity for Tree Ensembles: A symbolic and compositional approach</a></li>
+</ul>
+<hr>
+<p><strong>📈 共收录 25 条资讯</strong>
+<strong>来源</strong>: hackernews, rss, arxiv
+<strong>生成时间</strong>: 2026-05-14T08:10:21.885Z</p>
+<hr>
+<p><em>本文由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</em></p>
+
+  <footer class="footer">
+    <p>由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</p>
+  </footer>
+</body>
+</html>
