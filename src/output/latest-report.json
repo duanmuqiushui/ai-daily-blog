@@ -1,198 +1,211 @@
 {
-  "date": "2026年5月15日",
-  "title": "🤖 2026年5月15日 AI 技术日报",
-  "summary": "今日AI领域呈现“工程落地深化”与“可信治理前置”双主线并行。工业界加速推进Agentic AI的垂直整合，头部厂商通过底层算力集群与MoE架构重构全业务矩阵，同时金融、医疗等强监管场景聚焦数据就绪度评估与主权架构设计，依托联邦学习与可信执行环境实现合规可控。学术界在低资源语言建模与语音智能体评估上取得关键突破，分别从少样本泛化与全链路仿真测试切入。整体技术演进正从“单一能力堆砌”转向“系统工程优化与可信治理并重”。",
+  "date": "2026年5月16日",
+  "title": "🤖 2026年5月16日 AI 技术日报",
+  "summary": "今日AI领域呈现“生成一致性、推理效率与动态评测”三大核心演进趋势。视频与3D生成技术正从单帧视角向长程实体一致性与原生3D编辑跨越，通过残差场预测与细粒度基准解决几何失真痛点。视觉推理架构探索隐空间与智能体调用的动态路由，以极简Token实现计算与延迟的平衡。Agent评测迈向真实世界时序回放，强化开放环境自适应能力。同时，稀疏MoE路由有效破解多物理场科学大模型的负迁移难题。产业侧，AI正从内容生产工具升级为消费决策前置入口，品牌竞争焦点转向“AI推荐力”占位，标志着大模型应用进入深水区。",
   "highlights": [
     {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Data readiness for agentic AI in financial services",
-      "url": "https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services/",
-      "source": "rss",
-      "publishedAt": "2026-05-14T13:00:00.000Z",
-      "summary": "Financial services companies have unique needs when it comes to business AI. They operate in one of the most highly regulated sectors while responding to external events that are updated by the second. As a result, the success of agentic AI in financial services depends less on the sophistication of",
+      "id": "arxiv-2605.15199v1",
+      "title": "EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation",
+      "url": "https://arxiv.org/abs/2605.15199v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:55.000Z",
+      "summary": "Multi-shot video generation extends single-shot generation to coherent visual narratives, yet maintaining consistent characters, objects, and locations across shots remains a challenge over long sequences. Existing evaluations typically use independently generated prompt sets with limited entity coverage and simple consistency metrics, making standardized comparison difficult. We introduce EntityBench, a benchmark of 140 episodes (2,491 shots) derived from real narrative media, with explicit per",
+      "keywords": [
+        "rag"
+      ],
+      "score": 0,
+      "analysis": "技术原理：基于真实叙事媒体构建多镜头数据集，通过显式实体标注与长程一致性度量评估模型。创新点：突破传统独立提示词评测局限，提供标准化、细粒度的跨镜头角色与场景一致性基准。应用场景：影视级AI视频生成管线优化、虚拟制片与交互式叙事内容自动化生产。"
+    },
+    {
+      "id": "arxiv-2605.15198v1",
+      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
+      "url": "https://arxiv.org/abs/2605.15198v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:55.000Z",
+      "summary": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, whi",
       "keywords": [
         "agent"
       ],
-      "score": 5.2,
-      "analysis": "技术原理基于实时数据流处理与动态知识图谱的融合，解决智能体在金融高频场景下的状态一致性难题。创新在于提出“数据就绪度”动态评估框架，将传统ETL升级为Agent可自主寻址与调用的标准化服务层。潜在应用于高频量化风控、自动化监管合规及实时智能投顾系统，显著提升决策链路的鲁棒性。"
+      "score": 0,
+      "analysis": "技术原理：提出统一视觉推理框架，通过单Token路由在外部工具调用与隐空间内部推理间动态切换。创新点：以极简架构解决显式图像生成计算昂贵与上下文切换延迟高的问题，实现效率与精度平衡。应用场景：多模态大模型实时视觉问答、具身智能决策与复杂图表解析。"
     },
     {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Establishing AI and data sovereignty in the age of autonomous systems",
-      "url": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
-      "source": "rss",
-      "publishedAt": "2026-05-14T13:00:00.000Z",
-      "summary": "When generative AI first moved from research labs into real-world business applications, enterprises made a tacit bargain: “Capability now, control later.” Feed your proprietary data into third-party AI models, and you will get powerful results. But your data passes through systems you do not own, u",
+      "id": "arxiv-2605.15188v1",
+      "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
+      "url": "https://arxiv.org/abs/2605.15188v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:28.000Z",
+      "summary": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over t",
+      "keywords": [
+        "agent",
+        "ai agent"
+      ],
+      "score": 0,
+      "analysis": "技术原理：按时间顺序回放真实世界事件流构建仿真环境，要求智能体在知识截止后持续接收动态信息并预测演化。创新点：首创基于真实新闻流的时序回放评测范式，精准量化开放环境下的自适应与前瞻推理能力。应用场景：金融风控Agent训练、舆情推演与自动驾驶长尾策略优化。"
+    },
+    {
+      "id": "arxiv-2605.15186v1",
+      "title": "VGGT-Edit: Feed-forward Native 3D Scene Editing with Residual Field Prediction",
+      "url": "https://arxiv.org/abs/2605.15186v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:04.000Z",
+      "summary": "High-quality 3D scene reconstruction has recently advanced toward generalizable feed-forward architectures, enabling the generation of complex environments in a single forward pass. However, despite their strong performance in static scene perception, these models remain limited in responding to dynamic human instructions, which restricts their use in interactive applications. Existing editing methods typically rely on a 2D-lifting strategy, where individual views are edited independently and th",
       "keywords": [],
-      "score": 5.2,
-      "analysis": "技术原理通过联邦学习与可信执行环境结合，实现数据可用不可见的自治计算。创新在于构建主权AI架构范式，将数据所有权、模型推理权与审计权解耦，支持本地化部署与跨域协同。潜在应用于政务大模型、跨国企业核心业务系统及医疗隐私计算网络，保障合规与自主可控。"
+      "score": 0,
+      "analysis": "技术原理：采用前馈式3D重建架构结合残差场预测，直接在原生3D表征上响应编辑指令。创新点：摒弃低效的2D升维独立编辑策略，实现单次前向传播下的全局几何一致性与高保真局部修改。应用场景：数字孪生场景快速迭代、VR/AR内容创作与工业CAD辅助设计。"
+    },
+    {
+      "id": "arxiv-2605.15179v1",
+      "title": "Eradicating Negative Transfer in Multi-Physics Foundation Models via Sparse Mixture-of-Experts Routing",
+      "url": "https://arxiv.org/abs/2605.15179v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:58:15.000Z",
+      "summary": "Scaling Scientific Machine Learning (SciML) toward universal foundation models is bottlenecked by negative transfer: the simultaneous co-training of disparate partial differential equation (PDE) regimes can induce gradient conflict, unstable optimization, and plasticity loss in dense neural operators. In particular, broadband open-channel fluid dynamics and boundary-dominated porous media flows impose incompatible spectral and geometric demands on a single dense parameter path. We introduce Shod",
+      "keywords": [
+        "transformer"
+      ],
+      "score": 0,
+      "analysis": "技术原理：针对多物理场PDE共训中的梯度冲突，引入稀疏混合专家路由机制动态分配计算路径。创新点：通过门控网络解耦宽带流体与多孔介质流的频谱需求，彻底消除负迁移并提升稠密算子可塑性。应用场景：科学计算大模型训练、气候模拟与航空航天流体动力学快速求解。"
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "腾讯，把AI塞入一切",
-      "url": "https://36kr.com/p/3808710182034944?f=rss",
+      "title": "36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」丨AI时代，品牌如何抢占「推荐力」新战场？",
+      "url": "https://36kr.com/p/3810308239465986?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-14T10:36:23.000Z",
-      "summary": "文｜王毓婵 2026年Q1，腾讯的一切都与AI相关。 一季度，腾讯营收1964.6亿元，同比增长9%；Non-IFRS经营利润756.3亿元，同比增长9%。从整体上来说，在AI上的高投入确实让Non-IFRS经营利润从本该有的双位数增长掉到了单位数。 财报显示，若剔除新AI产品（Hy、元宝、CodeBuddy、WorkBuddy及QClaw）的收入、成本及开支影响，Non-IFRS经营利润本该有17%的同比增长。 为支持模型迭代和AI基础设施建设，腾讯本季研发投入225.4亿元，同比增长19%；资本开支319.4亿元，同比增长16%。而且，接下来在AI上的投入还会稳步扩张。 “此前我们已经指引",
-      "keywords": [
-        "transformer",
-        "agent",
-        "人工智能",
-        "大模型",
-        "多模态",
-        "ai agent"
-      ],
-      "score": 4.2,
-      "analysis": "技术原理依托底层算力集群与MoE架构大模型，实现从基础设施到应用层的端到端AI原生重构。创新在于将AI推理能力深度嵌入全业务矩阵，并通过自研芯片与调度算法优化总体拥有成本。潜在应用于C端超级应用智能化升级、B端行业解决方案定制及内部研发工具链全面AI化。"
-    },
-    {
-      "id": "arxiv-2605.13841v1",
-      "title": "EVA-Bench: A New End-to-end Framework for Evaluating Voice Agents",
-      "url": "https://arxiv.org/abs/2605.13841v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-13T17:58:52.000Z",
-      "summary": "Voice agents, artificial intelligence systems that conduct spoken conversations to complete tasks, are increasingly deployed across enterprise applications. However, no existing benchmark jointly addresses two core evaluation challenges: generating realistic simulated conversations, and measuring quality across the full scope of voice-specific failure modes. We present EVA-Bench, an end-to-end evaluation framework that addresses both. On the simulation side, EVA-Bench orchestrates bot-to-bot aud",
-      "keywords": [
-        "agent"
-      ],
-      "score": 0,
-      "analysis": "技术原理采用Bot-to-Bot对抗式对话模拟与多模态信号对齐技术，构建全链路语音交互评估环境。创新在于首次统一语音延迟、语义漂移、意图打断等特有失效模式的量化指标，提供端到端自动化测试流水线。潜在应用于客服语音机器人、车载语音助手及医疗问诊AI的迭代验证。"
-    },
-    {
-      "id": "arxiv-2605.13846v1",
-      "title": "WARDEN: Endangered Indigenous Language Transcription and Translation with 6 Hours of Training Data",
-      "url": "https://arxiv.org/abs/2605.13846v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-13T17:59:52.000Z",
-      "summary": "This paper introduces WARDEN, an early language model system capable of transcribing and translating Wardaman, an endangered Australian indigenous language into English. The significant challenge we face is the lack of large-scale training data: in fact, we only have 6 hours of annotated audio. Therefore, while it is common practice to train a single model for transcription and translation using large datasets (like English to French), this practice is no longer viable in the Wardaman to English",
-      "keywords": [
-        "llm"
-      ],
-      "score": 0,
-      "analysis": "技术原理利用跨语言迁移学习与参数高效微调，结合语音表征对齐技术，在极小样本下实现音素到语义的映射。创新在于突破传统大模型对海量平行语料的依赖，提出少样本音素词素联合建模策略，实现零样本泛化。潜在应用于低资源语言保护、跨文化人机交互及边缘端离线翻译设备。"
+      "publishedAt": "2026-05-15T08:51:47.000Z",
+      "summary": "&nbsp; &nbsp; 当你打算入手一部新手机、一台冰箱，或是一瓶面霜时，你的第一个动作是什么？是打开电商平台浏览，还是搜索测评文章？当前，越来越多人的选择是：直接问AI。 “20-30万预算，有什么新能源轿车推荐？”“哪款手机拍照更好？”“敏感肌适用什么洁面？”……这些曾经需要查阅大量攻略、对比无数参数的消费决策，如今正被一个个简洁的AI问答窗口所承接。DeepSeek、豆包、通义千问、腾讯元宝等主流AI助手，正以前所未有的深度渗透进我们的消费生活，成为事实上的“第一入口”和“前置决策参谋”。 对各大品牌而言，一个全新的战场已经悄然形成。当消费者不再直接搜索品牌名称，而是向AI提出一个开",
+      "keywords": [],
+      "score": 3.48,
+      "analysis": "技术原理：基于大语言模型的意图理解与检索增强技术，重构消费者决策链路，将AI助手转化为前置推荐入口。创新点：从传统关键词搜索转向自然语言对话式导购，推动品牌营销从流量争夺向AI推荐力占位转型。应用场景：电商智能客服升级、个性化消费决策代理与品牌全域营销优化。"
     }
   ],
   "details": [
     {
-      "id": "hn-48139148",
-      "title": "AI is making me dumb",
-      "url": "https://jpain.io/god-damn-ai-is-making-me-dumb/",
+      "id": "hn-48155324",
+      "title": "The main thing about P2P meth is that there's so much of it (2022)",
+      "url": "https://dynomight.net/p2p-meth/",
       "source": "hackernews",
-      "publishedAt": "2026-05-14T18:19:28.000Z",
-      "score": 11.41,
+      "publishedAt": "2026-05-15T23:37:32.000Z",
+      "score": 9.75,
       "keywords": []
-    },
-    {
-      "id": "hn-48137145",
-      "title": "RTX 5090 and M4 MacBook Air: Can It Game?",
-      "url": "https://scottjg.com/posts/2026-05-05-egpu-mac-gaming/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-14T15:47:31.000Z",
-      "score": 11.02,
-      "keywords": []
-    },
-    {
-      "id": "hn-48142188",
-      "title": "Ontario auditors find doctors' AI note takers routinely blow basic facts",
-      "url": "https://www.theregister.com/ai-ml/2026/05/14/ontario-auditors-find-doctors-ai-note-takers-routinely-blow-basic-facts/5240771",
-      "source": "hackernews",
-      "publishedAt": "2026-05-14T22:37:40.000Z",
-      "score": 9.81,
-      "keywords": []
-    },
-    {
-      "id": "hn-48142553",
-      "title": "Have a Coherent AI Policy",
-      "url": "https://brianmeeker.me/2026/05/14/have-a-coherent-ai-policy/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-14T23:24:45.000Z",
-      "score": 9.65,
-      "keywords": []
-    },
-    {
-      "id": "hn-48140529",
-      "title": "Codex is now in the ChatGPT mobile app",
-      "url": "https://openai.com/index/work-with-codex-from-anywhere/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-14T20:06:14.000Z",
-      "score": 9.53,
-      "keywords": [
-        "chatgpt"
-      ]
-    },
-    {
-      "id": "hn-48141191",
-      "title": "Infracost (YC W21) Is Hiring Sr Dev Advocate to make agents cloud cost-aware",
-      "url": "https://www.ycombinator.com/companies/infracost/jobs/NzwUQ7c-senior-developer-advocate",
-      "source": "hackernews",
-      "publishedAt": "2026-05-14T21:00:37.000Z",
-      "score": 8.55,
-      "keywords": [
-        "agent"
-      ]
     },
     {
       "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Data readiness for agentic AI in financial services",
-      "url": "https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services/",
+      "title": "Musk v. Altman week 3: Musk and Altman traded blows over each other’s credibility. Now the jury will pick a side.",
+      "url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
       "source": "rss",
-      "publishedAt": "2026-05-14T13:00:00.000Z",
-      "summary": "Financial services companies have unique needs when it comes to business AI. They operate in one of the most highly regulated sectors while responding to external events that are updated by the second. As a result, the success of agentic AI in financial services depends less on the sophistication of",
+      "publishedAt": "2026-05-15T23:39:35.000Z",
+      "summary": "In the final week of the Musk v. Altman trial, lawyers traded blows over Elon Musk’s and OpenAI CEO Sam Altman’s credibility. Altman was grilled on his alleged history of lying and self-dealing involving companies that do business with OpenAI. But he fired back, painting Musk as a power-seeker who w",
       "keywords": [
-        "agent"
+        "openai"
       ],
-      "score": 5.2
+      "score": 9.65
     },
     {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Establishing AI and data sovereignty in the age of autonomous systems",
-      "url": "https://www.technologyreview.com/2026/05/14/1137168/establishing-ai-and-data-sovereignty-in-the-age-of-autonomous-systems/",
-      "source": "rss",
-      "publishedAt": "2026-05-14T13:00:00.000Z",
-      "summary": "When generative AI first moved from research labs into real-world business applications, enterprises made a tacit bargain: “Capability now, control later.” Feed your proprietary data into third-party AI models, and you will get powerful results. But your data passes through systems you do not own, u",
-      "keywords": [],
-      "score": 5.2
+      "id": "hn-48148460",
+      "title": "A 0-click exploit chain for the Pixel 10",
+      "url": "https://projectzero.google/2026/05/pixel-10-exploit.html",
+      "source": "hackernews",
+      "publishedAt": "2026-05-15T13:39:54.000Z",
+      "score": 8.78,
+      "keywords": []
     },
     {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "The Download: deepfake porn’s stolen bodies and AI sharing private numbers",
-      "url": "https://www.technologyreview.com/2026/05/14/1137257/the-download-deepfake-porn-bodies-ai-exposing-phone-numbers/",
-      "source": "rss",
-      "publishedAt": "2026-05-14T12:10:00.000Z",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. The shock of seeing your body used in deepfake porn When Jennifer got a research job in 2023, she ran her new professional headshot through a facial r",
-      "keywords": [],
-      "score": 4.85
+      "id": "hn-48147058",
+      "title": "O(x)Caml in Space",
+      "url": "https://gazagnaire.org/blog/2026-05-14-borealis.html",
+      "source": "hackernews",
+      "publishedAt": "2026-05-15T10:55:51.000Z",
+      "score": 6.59,
+      "keywords": []
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "腾讯要懂得花钱",
-      "url": "https://36kr.com/p/3808999399497221?f=rss",
+      "title": "2026 Shokz Day圆满收官：韶音以「随我动听」开启全场景声态新时代",
+      "url": "https://36kr.com/p/3810607581634056?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-14T10:36:59.000Z",
-      "summary": "作者&nbsp;|&nbsp;黄绎达 编辑&nbsp;|&nbsp;张帆 5月13日，腾讯公布了2026年一季度财报。 财报显示，腾讯在2026Q1实现收入1964.58亿元，同比增长9%；同期实现经营利润673.75亿元，同比增长17%；Non-IFRS经营利润录得756.3亿元，同比增长9%。若剔除新AI产品（Hy、元宝、CodeBuddy、WorkBuddy及QClaw）对收入、成本、开支等科目的影响，同期再调整后的Non-IFRS经营利润为844亿元，同比增长17%。 图：腾讯2026Q1财报摘要；资料来源：公司公告，36氪 腾讯2026Q1的业绩延续了长期以来的稳健增长态势，同时也整",
+      "publishedAt": "2026-05-15T13:50:58.000Z",
+      "summary": "2026年5月15日，全球开放式耳机领导品牌Shokz韶音在深圳湾文化广场举办2026「随我动听」Shokz Day。活动期间，韶音围绕OpenDots 2、OpenSwim Pro 2与OpenDots Air三款新品展开集中分享，系统阐释了「随我动听」的品牌主张。韶音全球品牌大使张婧仪登台分享，由韶音与国际设计大师Matteo Menotto合作的「缮己新声」艺术礼盒也在现场展出，带来一场关于听觉自由与生活质感的全新生活方式表达。 官方图片 锚定开放内核，解码「随我动听」 Shokz韶音中国区CEO杨云在现场分享了品牌对开放聆听的最新思考：“真实的世界从不静止。声音在流动，环境在变化，人的",
       "keywords": [],
-      "score": 4.21
+      "score": 5.56
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "麦肯锡推行人工智能时代薪酬改革，削减合伙人现金分红比例",
+      "url": "https://36kr.com/newsflashes/3810508672458248?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-15T12:31:45.000Z",
+      "summary": "为简化薪酬体系、扩充资本金规模，并抵御咨询行业市场波动风险，麦肯锡计划下调合伙人可直接现金支取的利润分成比例。据知情人士透露，这家顶尖咨询机构已告知全体合伙人，未来薪酬中将有更大比例以股权形式发放，以此增厚公司资金储备，部分合伙人收入因此变动金额可达数万美元。（新浪财经）",
+      "keywords": [
+        "人工智能"
+      ],
+      "score": 5.01
+    },
+    {
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "The Download: China’s AI drama factory and the WHO’s missing health targets",
+      "url": "https://www.technologyreview.com/2026/05/15/1137341/the-download-china-short-drama-ai-who-health-targets/",
+      "source": "rss",
+      "publishedAt": "2026-05-15T12:10:00.000Z",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How Chinese short dramas became AI content machines China’s short drama industry is fueled by bite-sized, melodramatic, and smutty shows built for sma",
+      "keywords": [],
+      "score": 4.86
+    },
+    {
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "How Chinese short dramas became AI content machines",
+      "url": "https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/",
+      "source": "rss",
+      "publishedAt": "2026-05-15T09:00:00.000Z",
+      "summary": "In a dimly lit bedroom, a frightened young woman is thrown onto a bed by a tall, muscular man. He grabs her hand, and flame-like vines crawl across her body, fusing with her flesh. She levitates, then drops. A dragon-shaped tattoo appears across her chest. “Two months,” the man says. “Give me an hei",
+      "keywords": [
+        "rag"
+      ],
+      "score": 3.54
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」丨AI时代，品牌如何抢占「推荐力」新战场？",
+      "url": "https://36kr.com/p/3810308239465986?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-15T08:51:47.000Z",
+      "summary": "&nbsp; &nbsp; 当你打算入手一部新手机、一台冰箱，或是一瓶面霜时，你的第一个动作是什么？是打开电商平台浏览，还是搜索测评文章？当前，越来越多人的选择是：直接问AI。 “20-30万预算，有什么新能源轿车推荐？”“哪款手机拍照更好？”“敏感肌适用什么洁面？”……这些曾经需要查阅大量攻略、对比无数参数的消费决策，如今正被一个个简洁的AI问答窗口所承接。DeepSeek、豆包、通义千问、腾讯元宝等主流AI助手，正以前所未有的深度渗透进我们的消费生活，成为事实上的“第一入口”和“前置决策参谋”。 对各大品牌而言，一个全新的战场已经悄然形成。当消费者不再直接搜索品牌名称，而是向AI提出一个开",
+      "keywords": [],
+      "score": 3.48
+    },
+    {
+      "id": "arxiv-2605.15199v1",
+      "title": "EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation",
+      "url": "https://arxiv.org/abs/2605.15199v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:55.000Z",
+      "summary": "Multi-shot video generation extends single-shot generation to coherent visual narratives, yet maintaining consistent characters, objects, and locations across shots remains a challenge over long sequences. Existing evaluations typically use independently generated prompt sets with limited entity coverage and simple consistency metrics, making standardized comparison difficult. We introduce EntityBench, a benchmark of 140 episodes (2,491 shots) derived from real narrative media, with explicit per",
+      "keywords": [
+        "rag"
+      ],
+      "score": 0
     }
   ],
   "hotTopics": [
-    "Agentic AI数据工程化",
-    "AI数据主权与可信计算",
-    "低资源语言小样本学习",
-    "语音智能体全链路评估"
+    "长程视频与3D场景一致性生成",
+    "视觉推理的高效架构与隐空间计算",
+    "动态开放环境下的智能体自适应评测",
+    "科学计算大模型的负迁移与MoE优化",
+    "AI驱动的消费决策与品牌推荐力重构"
   ],
   "metadata": {
-    "totalCount": 26,
+    "totalCount": 23,
     "sources": [
       "hackernews",
       "rss",
       "arxiv"
     ],
-    "generatedAt": "2026-05-15T00:31:10.830Z"
+    "generatedAt": "2026-05-16T00:30:13.426Z"
   },
   "technicalInsights": [
-    "Agentic AI的落地瓶颈已从模型推理能力转向数据管道质量与实时性，未来架构需内置数据感知与FinOps成本优化模块以实现自主资源调度。",
-    "强监管行业正推动AI架构从云端集中式向主权化边缘协同演进，TEE与联邦学习的结合将成为企业级大模型部署的默认基座。",
-    "评测体系正从静态基准测试向动态对抗仿真升级，引入Bot-to-Bot压力测试与长尾失效模式量化是暴露真实部署中延迟与意图漂移的关键。",
-    "极小样本训练验证了跨模态表征迁移的有效性，预示基础模型将向可插拔领域适配器架构演进，大幅降低垂直场景的数据冷启动门槛。"
+    "生成模型正从概率采样向几何/物理约束显式建模演进，未来需将3D先验与多物理场方程内化至模型表征层以突破保真度瓶颈。",
+    "视觉与多模态推理的瓶颈已从算力转向上下文切换延迟，隐状态推理与稀疏动态路由将成为下一代高效Agent的核心架构范式。",
+    "Agent评估需彻底脱离静态基准，转向基于真实世界事件流的时序仿真，以量化模型在信息增量下的动态适应与前瞻决策能力。",
+    "产业应用正经历从流量分发到意图代理的范式转移，品牌需将非结构化数据资产图谱化，以适配大模型的语义检索与推荐逻辑。"
   ]
 }
