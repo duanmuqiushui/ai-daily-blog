@@ -1,8 +1,20 @@
 {
-  "date": "2026年5月16日",
-  "title": "🤖 2026年5月16日 AI 技术日报",
-  "summary": "今日AI领域呈现“生成一致性、推理效率与动态评测”三大核心演进趋势。视频与3D生成技术正从单帧视角向长程实体一致性与原生3D编辑跨越，通过残差场预测与细粒度基准解决几何失真痛点。视觉推理架构探索隐空间与智能体调用的动态路由，以极简Token实现计算与延迟的平衡。Agent评测迈向真实世界时序回放，强化开放环境自适应能力。同时，稀疏MoE路由有效破解多物理场科学大模型的负迁移难题。产业侧，AI正从内容生产工具升级为消费决策前置入口，品牌竞争焦点转向“AI推荐力”占位，标志着大模型应用进入深水区。",
+  "date": "2026年5月17日",
+  "title": "🤖 2026年5月17日 AI 技术日报",
+  "summary": "本期AI技术演进呈现“推理范式重构”与“生成一致性攻坚”双主线。测试时计算从深度搜索转向并行广度采样与概率聚合，显著降低对单一验证器的依赖；视觉与3D生成聚焦隐状态推理与原生空间编辑，突破传统2D升维与外部工具调用的延迟瓶颈。多模态评测向长序列实体一致性与几何合理性深化，科学计算大模型通过稀疏路由解决异构负迁移。整体趋势表明，AI正从规模堆叠迈向架构解耦与精细化控制，工程落地更强调低延迟、高一致性与可验证推理。",
   "highlights": [
+    {
+      "id": "hn-48160807",
+      "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
+      "url": "https://www.seangoedecke.com/steering-vectors/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-16T14:58:16.000Z",
+      "score": 8.03,
+      "keywords": [
+        "llm"
+      ],
+      "analysis": "原理：通过干预Transformer隐藏层激活向量引导模型输出，无需参数微调。创新：轻量化模型证明低算力下线性探针即可实现精细控制，大幅降低干预成本。应用：实时安全过滤、动态角色设定、在线对齐补丁部署。"
+    },
     {
       "id": "arxiv-2605.15199v1",
       "title": "EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation",
@@ -14,7 +26,7 @@
         "rag"
       ],
       "score": 0,
-      "analysis": "技术原理：基于真实叙事媒体构建多镜头数据集，通过显式实体标注与长程一致性度量评估模型。创新点：突破传统独立提示词评测局限，提供标准化、细粒度的跨镜头角色与场景一致性基准。应用场景：影视级AI视频生成管线优化、虚拟制片与交互式叙事内容自动化生产。"
+      "analysis": "原理：针对多镜头视频实体一致性难题，构建真实叙事媒体基准，提供显式标注与跨镜头度量。创新：突破单提示词评估局限，引入长序列叙事逻辑与细粒度指标。应用：影视AI制作、长视频剧情生成、虚拟IP一致性维护。"
     },
     {
       "id": "arxiv-2605.15198v1",
@@ -27,21 +39,7 @@
         "agent"
       ],
       "score": 0,
-      "analysis": "技术原理：提出统一视觉推理框架，通过单Token路由在外部工具调用与隐空间内部推理间动态切换。创新点：以极简架构解决显式图像生成计算昂贵与上下文切换延迟高的问题，实现效率与精度平衡。应用场景：多模态大模型实时视觉问答、具身智能决策与复杂图表解析。"
-    },
-    {
-      "id": "arxiv-2605.15188v1",
-      "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
-      "url": "https://arxiv.org/abs/2605.15188v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-14T17:59:28.000Z",
-      "summary": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over t",
-      "keywords": [
-        "agent",
-        "ai agent"
-      ],
-      "score": 0,
-      "analysis": "技术原理：按时间顺序回放真实世界事件流构建仿真环境，要求智能体在知识截止后持续接收动态信息并预测演化。创新点：首创基于真实新闻流的时序回放评测范式，精准量化开放环境下的自适应与前瞻推理能力。应用场景：金融风控Agent训练、舆情推演与自动驾驶长尾策略优化。"
+      "analysis": "原理：提出统一视觉推理范式，通过极少量中间状态在隐空间与工具调用间切换，避免外部执行延迟。创新：将显式状态压缩为可学习嵌入，结合轻量解码平衡计算效率与推理深度。应用：移动端视觉问答、实时机器人感知、低延迟多模态部署。"
     },
     {
       "id": "arxiv-2605.15186v1",
@@ -52,7 +50,7 @@
       "summary": "High-quality 3D scene reconstruction has recently advanced toward generalizable feed-forward architectures, enabling the generation of complex environments in a single forward pass. However, despite their strong performance in static scene perception, these models remain limited in responding to dynamic human instructions, which restricts their use in interactive applications. Existing editing methods typically rely on a 2D-lifting strategy, where individual views are edited independently and th",
       "keywords": [],
       "score": 0,
-      "analysis": "技术原理：采用前馈式3D重建架构结合残差场预测，直接在原生3D表征上响应编辑指令。创新点：摒弃低效的2D升维独立编辑策略，实现单次前向传播下的全局几何一致性与高保真局部修改。应用场景：数字孪生场景快速迭代、VR/AR内容创作与工业CAD辅助设计。"
+      "analysis": "原理：基于前馈3D重建架构，通过预测残差场直接响应编辑指令，摒弃独立视图升维流水线。创新：原生支持3D空间端到端编辑，保证全局一致性，单次前向传播完成修改。应用：交互式3D创作、数字孪生更新、AR/VR场景构建。"
     },
     {
       "id": "arxiv-2605.15179v1",
@@ -65,113 +63,113 @@
         "transformer"
       ],
       "score": 0,
-      "analysis": "技术原理：针对多物理场PDE共训中的梯度冲突，引入稀疏混合专家路由机制动态分配计算路径。创新点：通过门控网络解耦宽带流体与多孔介质流的频谱需求，彻底消除负迁移并提升稠密算子可塑性。应用场景：科学计算大模型训练、气候模拟与航空航天流体动力学快速求解。"
+      "analysis": "原理：针对多物理场联合训练的梯度冲突，引入稀疏MoE路由，为异构物理谱分配专属专家。创新：有效解耦不同流体介质需求，消除负迁移，提升稠密算子优化稳定性。应用：科学计算大模型、复杂工程仿真、多尺度气候预测。"
     },
     {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」丨AI时代，品牌如何抢占「推荐力」新战场？",
-      "url": "https://36kr.com/p/3810308239465986?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-15T08:51:47.000Z",
-      "summary": "&nbsp; &nbsp; 当你打算入手一部新手机、一台冰箱，或是一瓶面霜时，你的第一个动作是什么？是打开电商平台浏览，还是搜索测评文章？当前，越来越多人的选择是：直接问AI。 “20-30万预算，有什么新能源轿车推荐？”“哪款手机拍照更好？”“敏感肌适用什么洁面？”……这些曾经需要查阅大量攻略、对比无数参数的消费决策，如今正被一个个简洁的AI问答窗口所承接。DeepSeek、豆包、通义千问、腾讯元宝等主流AI助手，正以前所未有的深度渗透进我们的消费生活，成为事实上的“第一入口”和“前置决策参谋”。 对各大品牌而言，一个全新的战场已经悄然形成。当消费者不再直接搜索品牌名称，而是向AI提出一个开",
-      "keywords": [],
-      "score": 3.48,
-      "analysis": "技术原理：基于大语言模型的意图理解与检索增强技术，重构消费者决策链路，将AI助手转化为前置推荐入口。创新点：从传统关键词搜索转向自然语言对话式导购，推动品牌营销从流量争夺向AI推荐力占位转型。应用场景：电商智能客服升级、个性化消费决策代理与品牌全域营销优化。"
+      "id": "arxiv-2605.15177v1",
+      "title": "OpenDeepThink: Parallel Reasoning via Bradley--Terry Aggregation",
+      "url": "https://arxiv.org/abs/2605.15177v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:57:40.000Z",
+      "summary": "Test-time compute scaling is a primary axis for improving LLM reasoning. Existing methods primarily scale depth by extending a single reasoning trace. Scaling breadth by sampling multiple candidates in parallel is straightforward, but introduces a selection bottleneck: choosing the best candidate without a ground-truth verifier, since pointwise LLM judging is noisy and biased. To address this, we introduce OpenDeepThink, a population-based test-time compute framework that selects via pairwise Br",
+      "keywords": [
+        "llm",
+        "gemini"
+      ],
+      "score": 0,
+      "analysis": "原理：测试时计算扩展中并行采样多条推理链，利用Bradley-Terry模型进行成对比较聚合。创新：解决无验证器下的选择瓶颈，以概率排序替代绝对打分，提升鲁棒性。应用：复杂逻辑推理、自动化代码验证、高可靠AI决策。"
     }
   ],
   "details": [
     {
-      "id": "hn-48155324",
-      "title": "The main thing about P2P meth is that there's so much of it (2022)",
-      "url": "https://dynomight.net/p2p-meth/",
+      "id": "hn-48164287",
+      "title": "Zerostack – A Unix-inspired coding agent written in pure Rust",
+      "url": "https://crates.io/crates/zerostack/1.0.0",
       "source": "hackernews",
-      "publishedAt": "2026-05-15T23:37:32.000Z",
-      "score": 9.75,
+      "publishedAt": "2026-05-16T22:23:50.000Z",
+      "score": 10.12,
+      "keywords": [
+        "agent"
+      ]
+    },
+    {
+      "id": "hn-48161861",
+      "title": "You don&#8217;t know HTML Lists &#8211; Frank M Taylor",
+      "url": "https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-16T16:58:26.000Z",
+      "score": 9.65,
       "keywords": []
     },
     {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Musk v. Altman week 3: Musk and Altman traded blows over each other’s credibility. Now the jury will pick a side.",
-      "url": "https://www.technologyreview.com/2026/05/15/1137357/musk-v-altman-week-3/",
-      "source": "rss",
-      "publishedAt": "2026-05-15T23:39:35.000Z",
-      "summary": "In the final week of the Musk v. Altman trial, lawyers traded blows over Elon Musk’s and OpenAI CEO Sam Altman’s credibility. Altman was grilled on his alleged history of lying and self-dealing involving companies that do business with OpenAI. But he fired back, painting Musk as a power-seeker who w",
+      "id": "hn-48163392",
+      "title": "OpenAI and Government of Malta partner to roll out ChatGPT Plus to all citizens",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-16T20:14:06.000Z",
+      "score": 8.67,
       "keywords": [
+        "chatgpt",
         "openai"
-      ],
-      "score": 9.65
+      ]
     },
     {
-      "id": "hn-48148460",
-      "title": "A 0-click exploit chain for the Pixel 10",
-      "url": "https://projectzero.google/2026/05/pixel-10-exploit.html",
+      "id": "hn-48160807",
+      "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
+      "url": "https://www.seangoedecke.com/steering-vectors/",
       "source": "hackernews",
-      "publishedAt": "2026-05-15T13:39:54.000Z",
-      "score": 8.78,
+      "publishedAt": "2026-05-16T14:58:16.000Z",
+      "score": 8.03,
+      "keywords": [
+        "llm"
+      ]
+    },
+    {
+      "id": "hn-48158400",
+      "title": "Moving away from Tailwind, and learning to structure my CSS",
+      "url": "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-16T09:14:26.000Z",
+      "score": 7.75,
       "keywords": []
     },
     {
-      "id": "hn-48147058",
-      "title": "O(x)Caml in Space",
-      "url": "https://gazagnaire.org/blog/2026-05-14-borealis.html",
+      "id": "hn-48157559",
+      "title": "Frontier AI has broken the open CTF format",
+      "url": "https://kabir.au/blog/the-ctf-scene-is-dead",
       "source": "hackernews",
-      "publishedAt": "2026-05-15T10:55:51.000Z",
-      "score": 6.59,
+      "publishedAt": "2026-05-16T07:01:55.000Z",
+      "score": 6.04,
       "keywords": []
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "2026 Shokz Day圆满收官：韶音以「随我动听」开启全场景声态新时代",
-      "url": "https://36kr.com/p/3810607581634056?f=rss",
+      "title": "36氪首发｜前苹果工程师跨界骨传导耳机，独创技术路线，打破头部企业专利垄断",
+      "url": "https://36kr.com/p/3810520138243593?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-15T13:50:58.000Z",
-      "summary": "2026年5月15日，全球开放式耳机领导品牌Shokz韶音在深圳湾文化广场举办2026「随我动听」Shokz Day。活动期间，韶音围绕OpenDots 2、OpenSwim Pro 2与OpenDots Air三款新品展开集中分享，系统阐释了「随我动听」的品牌主张。韶音全球品牌大使张婧仪登台分享，由韶音与国际设计大师Matteo Menotto合作的「缮己新声」艺术礼盒也在现场展出，带来一场关于听觉自由与生活质感的全新生活方式表达。 官方图片 锚定开放内核，解码「随我动听」 Shokz韶音中国区CEO杨云在现场分享了品牌对开放聆听的最新思考：“真实的世界从不静止。声音在流动，环境在变化，人的",
+      "publishedAt": "2026-05-16T02:00:00.000Z",
+      "summary": "作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，苏州索迩电子技术有限公司（骨传导运动耳机品牌Mojawa的母公司，以下简称“索迩电子”）于近日完成数千万元人民币的A+轮融资，本轮融资由正海资本领投。 据悉，本轮资金将主要用于拓展海外线下渠道，以及推进产品的AI智能化研发。 在音频产品市场中，由于对无线和开耳式聆听技术的需求不断增加，骨传导耳机市场出现了显著增长。 调研机构Market Growth统计的数据显示，2024年骨传导耳机市场规模为12.8亿美元，预计到2025年将增长到16.11亿美元，到2033年将超过81.5亿美元，复合年增长率为22.8%",
       "keywords": [],
-      "score": 5.56
+      "score": 0.62
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "麦肯锡推行人工智能时代薪酬改革，削减合伙人现金分红比例",
-      "url": "https://36kr.com/newsflashes/3810508672458248?f=rss",
+      "title": "9点1氪丨央视6000万美元获得世界杯版权；英伟达总市值超过德国GDP；iPhone 17 Pro系列全线下调1000元",
+      "url": "https://36kr.com/p/3811265856626440?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-15T12:31:45.000Z",
-      "summary": "为简化薪酬体系、扩充资本金规模，并抵御咨询行业市场波动风险，麦肯锡计划下调合伙人可直接现金支取的利润分成比例。据知情人士透露，这家顶尖咨询机构已告知全体合伙人，未来薪酬中将有更大比例以股权形式发放，以此增厚公司资金储备，部分合伙人收入因此变动金额可达数万美元。（新浪财经）",
+      "publishedAt": "2026-05-16T01:03:11.000Z",
+      "summary": "今日热点导览 OpenAI正考虑采取法律手段起诉苹果公司 三星电子开发下一代HBM封装技术，或用于智能手机等移动设备 海南：加快培育火箭链、卫星链、数据链，打造风电装备制造产业集群 世界银行首席经济学家英德米特・吉尔将于8月卸任退休 “海淘”智能穿戴设备或被植入窃密装置，国家安全部最新提示 TOP 3大新闻 央视确认获得2026年世界杯版权，费用为6000万美元&nbsp; 5月15日下午，中央广播电视总台与国际足球联合会共同宣布，就国际足联世界杯新周期版权合作达成共识。合作赛事包括2026年世界杯、2030年世界杯、2027年女足世界杯、2031年女足世界杯。 根据双方合作意向，中央广播电视",
       "keywords": [
-        "人工智能"
+        "chatgpt",
+        "openai",
+        "anthropic",
+        "agent",
+        "rag",
+        "cv",
+        "人工智能",
+        "大模型"
       ],
-      "score": 5.01
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "The Download: China’s AI drama factory and the WHO’s missing health targets",
-      "url": "https://www.technologyreview.com/2026/05/15/1137341/the-download-china-short-drama-ai-who-health-targets/",
-      "source": "rss",
-      "publishedAt": "2026-05-15T12:10:00.000Z",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. How Chinese short dramas became AI content machines China’s short drama industry is fueled by bite-sized, melodramatic, and smutty shows built for sma",
-      "keywords": [],
-      "score": 4.86
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "How Chinese short dramas became AI content machines",
-      "url": "https://www.technologyreview.com/2026/05/15/1137326/chinese-short-dramas-ai/",
-      "source": "rss",
-      "publishedAt": "2026-05-15T09:00:00.000Z",
-      "summary": "In a dimly lit bedroom, a frightened young woman is thrown onto a bed by a tall, muscular man. He grabs her hand, and flame-like vines crawl across her body, fusing with her flesh. She levitates, then drops. A dragon-shaped tattoo appears across her chest. “Two months,” the man says. “Give me an hei",
-      "keywords": [
-        "rag"
-      ],
-      "score": 3.54
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "36氪联合PureblueAI清蓝发布「2026消费品牌AI推荐力名册」丨AI时代，品牌如何抢占「推荐力」新战场？",
-      "url": "https://36kr.com/p/3810308239465986?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-15T08:51:47.000Z",
-      "summary": "&nbsp; &nbsp; 当你打算入手一部新手机、一台冰箱，或是一瓶面霜时，你的第一个动作是什么？是打开电商平台浏览，还是搜索测评文章？当前，越来越多人的选择是：直接问AI。 “20-30万预算，有什么新能源轿车推荐？”“哪款手机拍照更好？”“敏感肌适用什么洁面？”……这些曾经需要查阅大量攻略、对比无数参数的消费决策，如今正被一个个简洁的AI问答窗口所承接。DeepSeek、豆包、通义千问、腾讯元宝等主流AI助手，正以前所未有的深度渗透进我们的消费生活，成为事实上的“第一入口”和“前置决策参谋”。 对各大品牌而言，一个全新的战场已经悄然形成。当消费者不再直接搜索品牌名称，而是向AI提出一个开",
-      "keywords": [],
-      "score": 3.48
+      "score": 0.22
     },
     {
       "id": "arxiv-2605.15199v1",
@@ -184,28 +182,39 @@
         "rag"
       ],
       "score": 0
+    },
+    {
+      "id": "arxiv-2605.15198v1",
+      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
+      "url": "https://arxiv.org/abs/2605.15198v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:55.000Z",
+      "summary": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, whi",
+      "keywords": [
+        "agent"
+      ],
+      "score": 0
     }
   ],
   "hotTopics": [
-    "长程视频与3D场景一致性生成",
-    "视觉推理的高效架构与隐空间计算",
-    "动态开放环境下的智能体自适应评测",
-    "科学计算大模型的负迁移与MoE优化",
-    "AI驱动的消费决策与品牌推荐力重构"
+    "测试时计算扩展（Test-time Compute Scaling）",
+    "多模态生成一致性与几何评估",
+    "科学AI基础模型与稀疏路由",
+    "大模型隐空间干预与动态对齐"
   ],
   "metadata": {
-    "totalCount": 23,
+    "totalCount": 26,
     "sources": [
       "hackernews",
       "rss",
       "arxiv"
     ],
-    "generatedAt": "2026-05-16T00:30:13.426Z"
+    "generatedAt": "2026-05-17T00:30:50.604Z"
   },
   "technicalInsights": [
-    "生成模型正从概率采样向几何/物理约束显式建模演进，未来需将3D先验与多物理场方程内化至模型表征层以突破保真度瓶颈。",
-    "视觉与多模态推理的瓶颈已从算力转向上下文切换延迟，隐状态推理与稀疏动态路由将成为下一代高效Agent的核心架构范式。",
-    "Agent评估需彻底脱离静态基准，转向基于真实世界事件流的时序仿真，以量化模型在信息增量下的动态适应与前瞻决策能力。",
-    "产业应用正经历从流量分发到意图代理的范式转移，品牌需将非结构化数据资产图谱化，以适配大模型的语义检索与推荐逻辑。"
+    "视觉推理正从显式生成加外部工具调用向隐状态压缩加原生前馈演进，核心矛盾从算力消耗转向延迟与一致性的平衡。",
+    "视频与3D生成评估体系已跨越主观审美指标，全面转向几何透视、物理规律与跨镜头实体一致性的量化审计。",
+    "稀疏MoE架构在科学计算领域的成功应用，为多模态多任务大模型的负迁移问题提供了可复用的解耦范式。",
+    "测试时并行推理结合成对比较聚合，标志着LLM推理优化正从启发式搜索转向概率排序决策，降低对完美Reward Model的依赖。"
   ]
 }

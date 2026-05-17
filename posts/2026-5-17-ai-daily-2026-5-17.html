@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🤖 2026年5月17日 AI 技术日报</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      line-height: 1.7;
+      color: #333;
+    }
+    a { color: #2c5282; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h1, h2, h3 { color: #2c5282; margin-top: 30px; }
+    h1 { font-size: 1.8em; margin-top: 0; }
+    h2 { font-size: 1.4em; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+    h3 { font-size: 1.15em; color: #2d3748; margin-top: 25px; }
+    pre { background: #f7f7f7; padding: 15px; overflow-x: auto; border-radius: 6px; font-size: 0.9em; }
+    code { background: #f7f7f7; padding: 2px 5px; border-radius: 3px; font-size: 0.9em; }
+    img { max-width: 100%; border-radius: 6px; }
+    .back-link { margin-bottom: 20px; }
+    .highlight-item { background: #f8f9fa; border-left: 4px solid #2c5282; padding: 15px 20px; margin: 20px 0; border-radius: 0 6px 6px 0; }
+    .footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #eee; text-align: center; color: #666; font-size: 0.9em; }
+    hr { border: none; border-top: 1px solid #eee; margin: 30px 0; }
+    blockquote { border-left: 4px solid #2c5282; margin: 0; padding: 0 0 0 20px; color: #666; }
+  </style>
+</head>
+<body>
+  <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+  <h1>🤖 2026年5月17日 AI 技术日报</h1>
+<p><a href="https://excalidraw.com/#json=v5ihuHEfLDu4REb1Cl8BO,HXvjqsds7F5vUkOGKp-ykA"><img src="https://img.shields.io/badge/%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B-AI%E6%8A%80%E6%9C%AF%E6%97%A5%E6%8A%A5%E5%B0%81%E9%9D%A2%E6%89%8B%E7%BB%98%E5%9B%BE-blue?style=for-the-badge" alt="🤖 AI 日报封面图"></a></p>
+<hr>
+<h2>📊 今日概述</h2>
+<p>本期AI技术演进呈现“推理范式重构”与“生成一致性攻坚”双主线。测试时计算从深度搜索转向并行广度采样与概率聚合，显著降低对单一验证器的依赖；视觉与3D生成聚焦隐状态推理与原生空间编辑，突破传统2D升维与外部工具调用的延迟瓶颈。多模态评测向长序列实体一致性与几何合理性深化，科学计算大模型通过稀疏路由解决异构负迁移。整体趋势表明，AI正从规模堆叠迈向架构解耦与精细化控制，工程落地更强调低延迟、高一致性与可验证推理。</p>
+<h2>📄 重点解读</h2>
+<h3>1. DeepSeek-V4-Flash means LLM steering is interesting again</h3>
+<p><strong>来源</strong>: 💬 Hacker News</p>
+<p><strong>AI 解读</strong>:
+原理：通过干预Transformer隐藏层激活向量引导模型输出，无需参数微调。创新：轻量化模型证明低算力下线性探针即可实现精细控制，大幅降低干预成本。应用：实时安全过滤、动态角色设定、在线对齐补丁部署。</p>
+<p><strong>标签</strong>: llm</p>
+<p><strong>链接</strong>: <a href="https://www.seangoedecke.com/steering-vectors/">原文链接</a></p>
+<h3>2. EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：针对多镜头视频实体一致性难题，构建真实叙事媒体基准，提供显式标注与跨镜头度量。创新：突破单提示词评估局限，引入长序列叙事逻辑与细粒度指标。应用：影视AI制作、长视频剧情生成、虚拟IP一致性维护。</p>
+<p><strong>标签</strong>: rag</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.15199v1">原文链接</a></p>
+<h3>3. ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：提出统一视觉推理范式，通过极少量中间状态在隐空间与工具调用间切换，避免外部执行延迟。创新：将显式状态压缩为可学习嵌入，结合轻量解码平衡计算效率与推理深度。应用：移动端视觉问答、实时机器人感知、低延迟多模态部署。</p>
+<p><strong>标签</strong>: agent</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.15198v1">原文链接</a></p>
+<h3>4. VGGT-Edit: Feed-forward Native 3D Scene Editing with Residual Field Prediction</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：基于前馈3D重建架构，通过预测残差场直接响应编辑指令，摒弃独立视图升维流水线。创新：原生支持3D空间端到端编辑，保证全局一致性，单次前向传播完成修改。应用：交互式3D创作、数字孪生更新、AR/VR场景构建。</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.15186v1">原文链接</a></p>
+<h3>5. Eradicating Negative Transfer in Multi-Physics Foundation Models via Sparse Mixture-of-Experts Routing</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：针对多物理场联合训练的梯度冲突，引入稀疏MoE路由，为异构物理谱分配专属专家。创新：有效解耦不同流体介质需求，消除负迁移，提升稠密算子优化稳定性。应用：科学计算大模型、复杂工程仿真、多尺度气候预测。</p>
+<p><strong>标签</strong>: transformer</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.15179v1">原文链接</a></p>
+<h3>6. OpenDeepThink: Parallel Reasoning via Bradley--Terry Aggregation</h3>
+<p><strong>来源</strong>: 📚 论文</p>
+<p><strong>AI 解读</strong>:
+原理：测试时计算扩展中并行采样多条推理链，利用Bradley-Terry模型进行成对比较聚合。创新：解决无验证器下的选择瓶颈，以概率排序替代绝对打分，提升鲁棒性。应用：复杂逻辑推理、自动化代码验证、高可靠AI决策。</p>
+<p><strong>标签</strong>: llm, gemini</p>
+<p><strong>链接</strong>: <a href="https://arxiv.org/abs/2605.15177v1">原文链接</a></p>
+<h2>💬 技术热议话题</h2>
+<ol>
+<li>测试时计算扩展（Test-time Compute Scaling）</li>
+<li>多模态生成一致性与几何评估</li>
+<li>科学AI基础模型与稀疏路由</li>
+<li>大模型隐空间干预与动态对齐</li>
+</ol>
+<h2>📋 全部资讯</h2>
+<ul>
+<li>💬 <a href="https://crates.io/crates/zerostack/1.0.0">Zerostack – A Unix-inspired coding agent written in pure Rust</a></li>
+<li>💬 <a href="https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/">You don&#8217;t know HTML Lists &#8211; Frank M Taylor</a></li>
+<li>💬 <a href="https://openai.com/index/malta-chatgpt-plus-partnership/">OpenAI and Government of Malta partner to roll out ChatGPT Plus to all citizens</a></li>
+<li>💬 <a href="https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/">Moving away from Tailwind, and learning to structure my CSS</a></li>
+<li>💬 <a href="https://kabir.au/blog/the-ctf-scene-is-dead">Frontier AI has broken the open CTF format</a></li>
+<li>📰 <a href="https://36kr.com/p/3810520138243593?f=rss">36氪首发｜前苹果工程师跨界骨传导耳机，独创技术路线，打破头部企业专利垄断</a></li>
+<li>📰 <a href="https://36kr.com/p/3811265856626440?f=rss">9点1氪丨央视6000万美元获得世界杯版权；英伟达总市值超过德国GDP；iPhone 17 Pro系列全线下调1000元</a></li>
+</ul>
+<hr>
+<p><strong>📈 共收录 26 条资讯</strong>
+<strong>来源</strong>: hackernews, rss, arxiv
+<strong>生成时间</strong>: 2026-05-17T00:30:50.604Z</p>
+<hr>
+<p><em>本文由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</em></p>
+
+  <footer class="footer">
+    <p>由 AI 日报 Agent 自动生成 | 数据来源：Hacker News, ArXiv, RSS</p>
+  </footer>
+</body>
+</html>
