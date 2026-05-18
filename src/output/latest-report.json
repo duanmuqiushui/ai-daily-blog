@@ -1,19 +1,40 @@
 {
-  "date": "2026年5月17日",
-  "title": "🤖 2026年5月17日 AI 技术日报",
-  "summary": "本期AI技术演进呈现“推理范式重构”与“生成一致性攻坚”双主线。测试时计算从深度搜索转向并行广度采样与概率聚合，显著降低对单一验证器的依赖；视觉与3D生成聚焦隐状态推理与原生空间编辑，突破传统2D升维与外部工具调用的延迟瓶颈。多模态评测向长序列实体一致性与几何合理性深化，科学计算大模型通过稀疏路由解决异构负迁移。整体趋势表明，AI正从规模堆叠迈向架构解耦与精细化控制，工程落地更强调低延迟、高一致性与可验证推理。",
+  "date": "2026年5月18日",
+  "title": "🤖 2026年5月18日 AI 技术日报",
+  "summary": "本期AI技术演进呈现“Agent工程化落地”与“多模态生成物理一致性”双主线。工业界正从单点模型调用转向高并发、长链路的智能体工作流，但伴随算力成本激增与ROI重构，开源工具链正加速科研与开发范式的自动化。学术界则聚焦生成模型的底层一致性难题，通过引入实体级对齐基准、前馈式3D残差场编辑及几何透视量化评估，推动视频与3D生成从“视觉逼真”迈向“结构可信”。同时，隐式推理与智能体推理的架构融合、基于真实事件回溯的自适应Agent评测体系，标志着AI正从静态能力堆叠向动态环境交互演进。",
   "highlights": [
     {
-      "id": "hn-48160807",
-      "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
-      "url": "https://www.seangoedecke.com/steering-vectors/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-16T14:58:16.000Z",
-      "score": 8.03,
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "3个人带100个AI程序员，一个月烧掉130万美元！OpenAI：钱我出",
+      "url": "https://36kr.com/p/3812925591887368?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-17T06:08:32.000Z",
+      "summary": "Peter Steinberger 编辑：所罗门 【新智元导读】3个人，100个AI agent，一个月烧掉130万美元——OpenClaw之父把软件开发变成了「AI流水线」，OpenAI替他买单。 别人晒工资条，他晒账单——一个月130万美元！ 也就是将近900万人民币/每月。直接把网友们看傻了。 OpenClaw之父Peter Steinberger在X上轻描淡写地甩出一张截图。 Peter Steinberger 但截图上的数字，属实不淡定： 30天花费：$1,305,088.81。吞掉6030亿个token。发起760万次请求。 你没看错，是130万美元。也不是哪家大厂的季度AI预算—",
       "keywords": [
-        "llm"
+        "claude",
+        "gemini",
+        "openai",
+        "agent",
+        "ai agent"
       ],
-      "analysis": "原理：通过干预Transformer隐藏层激活向量引导模型输出，无需参数微调。创新：轻量化模型证明低算力下线性探针即可实现精细控制，大幅降低干预成本。应用：实时安全过滤、动态角色设定、在线对齐补丁部署。"
+      "score": 2.35,
+      "analysis": "基于大语言模型的智能体集群编排与自动化代码生成流水线。创新在于验证了“人机协同+Agent规模化并行”的极限开发模式，但暴露出高并发Token调用下的成本瓶颈。适用于大型软件架构重构与自动化运维，推动企业建立Agent算力成本监控与ROI优化机制，加速软件工程向“AI原生流水线”转型。"
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
+      "url": "https://36kr.com/p/3812800346742274?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-17T04:59:08.000Z",
+      "summary": "听雨 发自 凹非寺量子位 | 公众号 QbitAI 用Claude Code写论文的一整套流水线，有人打包开源出来了。 完全戳中了学生党的痛点，github星标直达6.4k。 academic-research-skills 项目名叫academic-research-skills（以下简称ARS），是一套Claude Code技能包。 里面涵盖4个skill，分别对应论文的研究、写作、审稿、定稿。 只需两行命令安装，直接一条龙串起整套学术研究流水线。 academic-research-skills 只能说，我读研的时候怎么没碰到这种好东西呢… 示意图 4个skill，跑通整套科研流程 AR",
+      "keywords": [
+        "llm",
+        "claude",
+        "anthropic",
+        "agent"
+      ],
+      "score": 1.87,
+      "analysis": "利用LLM代码执行能力构建结构化技能包，将文献检索、实验设计与文本撰写串联为确定性工作流。创新在于通过工具链编排实现科研流程的标准化与可复现。适用于学术研究与技术文档自动化生成，降低跨学科门槛，未来可集成至高校科研平台或企业研发知识库，提升知识生产效率。"
     },
     {
       "id": "arxiv-2605.15199v1",
@@ -26,7 +47,7 @@
         "rag"
       ],
       "score": 0,
-      "analysis": "原理：针对多镜头视频实体一致性难题，构建真实叙事媒体基准，提供显式标注与跨镜头度量。创新：突破单提示词评估局限，引入长序列叙事逻辑与细粒度指标。应用：影视AI制作、长视频剧情生成、虚拟IP一致性维护。"
+      "analysis": "针对长序列多镜头视频生成中的实体一致性难题，构建包含明确实体标注的叙事媒体基准。创新在于突破传统独立Prompt评估局限，引入细粒度实体追踪与跨镜头一致性量化指标。用于影视级AI视频生成模型的迭代优化，支撑复杂叙事内容的自动化生产与质量管控。"
     },
     {
       "id": "arxiv-2605.15198v1",
@@ -39,7 +60,21 @@
         "agent"
       ],
       "score": 0,
-      "analysis": "原理：提出统一视觉推理范式，通过极少量中间状态在隐空间与工具调用间切换，避免外部执行延迟。创新：将显式状态压缩为可学习嵌入，结合轻量解码平衡计算效率与推理深度。应用：移动端视觉问答、实时机器人感知、低延迟多模态部署。"
+      "analysis": "提出统一视觉推理框架，通过单一指令即可在外部工具调用与隐式状态推理间动态切换。创新在于消除架构切换延迟与上下文开销，实现计算效率与推理深度的自适应平衡。适用于资源受限的边缘端视觉分析、实时机器人决策及复杂多模态交互系统，推动轻量化推理架构落地。"
+    },
+    {
+      "id": "arxiv-2605.15188v1",
+      "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
+      "url": "https://arxiv.org/abs/2605.15188v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-14T17:59:28.000Z",
+      "summary": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over t",
+      "keywords": [
+        "agent",
+        "ai agent"
+      ],
+      "score": 0,
+      "analysis": "构建基于真实世界事件时间线回溯的仿真环境，评估智能体在动态信息流中的预测与适应能力。创新在于以“历史重放+实时问答”替代静态基准，提供高保真、可验证的开放环境测试范式。适用于金融预测、舆情分析与自动驾驶决策等强时效性系统的压力测试与鲁棒性验证。"
     },
     {
       "id": "arxiv-2605.15186v1",
@@ -50,171 +85,138 @@
       "summary": "High-quality 3D scene reconstruction has recently advanced toward generalizable feed-forward architectures, enabling the generation of complex environments in a single forward pass. However, despite their strong performance in static scene perception, these models remain limited in responding to dynamic human instructions, which restricts their use in interactive applications. Existing editing methods typically rely on a 2D-lifting strategy, where individual views are edited independently and th",
       "keywords": [],
       "score": 0,
-      "analysis": "原理：基于前馈3D重建架构，通过预测残差场直接响应编辑指令，摒弃独立视图升维流水线。创新：原生支持3D空间端到端编辑，保证全局一致性，单次前向传播完成修改。应用：交互式3D创作、数字孪生更新、AR/VR场景构建。"
-    },
-    {
-      "id": "arxiv-2605.15179v1",
-      "title": "Eradicating Negative Transfer in Multi-Physics Foundation Models via Sparse Mixture-of-Experts Routing",
-      "url": "https://arxiv.org/abs/2605.15179v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-14T17:58:15.000Z",
-      "summary": "Scaling Scientific Machine Learning (SciML) toward universal foundation models is bottlenecked by negative transfer: the simultaneous co-training of disparate partial differential equation (PDE) regimes can induce gradient conflict, unstable optimization, and plasticity loss in dense neural operators. In particular, broadband open-channel fluid dynamics and boundary-dominated porous media flows impose incompatible spectral and geometric demands on a single dense parameter path. We introduce Shod",
-      "keywords": [
-        "transformer"
-      ],
-      "score": 0,
-      "analysis": "原理：针对多物理场联合训练的梯度冲突，引入稀疏MoE路由，为异构物理谱分配专属专家。创新：有效解耦不同流体介质需求，消除负迁移，提升稠密算子优化稳定性。应用：科学计算大模型、复杂工程仿真、多尺度气候预测。"
-    },
-    {
-      "id": "arxiv-2605.15177v1",
-      "title": "OpenDeepThink: Parallel Reasoning via Bradley--Terry Aggregation",
-      "url": "https://arxiv.org/abs/2605.15177v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-14T17:57:40.000Z",
-      "summary": "Test-time compute scaling is a primary axis for improving LLM reasoning. Existing methods primarily scale depth by extending a single reasoning trace. Scaling breadth by sampling multiple candidates in parallel is straightforward, but introduces a selection bottleneck: choosing the best candidate without a ground-truth verifier, since pointwise LLM judging is noisy and biased. To address this, we introduce OpenDeepThink, a population-based test-time compute framework that selects via pairwise Br",
-      "keywords": [
-        "llm",
-        "gemini"
-      ],
-      "score": 0,
-      "analysis": "原理：测试时计算扩展中并行采样多条推理链，利用Bradley-Terry模型进行成对比较聚合。创新：解决无验证器下的选择瓶颈，以概率排序替代绝对打分，提升鲁棒性。应用：复杂逻辑推理、自动化代码验证、高可靠AI决策。"
+      "analysis": "突破传统2D升维编辑局限，采用前馈式架构直接预测3D场景残差场，实现单次前向传播下的局部几何与纹理修改。创新在于避免多视角不一致性，提升编辑的物理连贯性。赋能游戏资产快速迭代、数字孪生场景交互编辑及AR/VR内容实时生成，推动3D生成向实时交互演进。"
     }
   ],
   "details": [
     {
-      "id": "hn-48164287",
-      "title": "Zerostack – A Unix-inspired coding agent written in pure Rust",
-      "url": "https://crates.io/crates/zerostack/1.0.0",
+      "id": "hn-48168221",
+      "title": "I don't think AI will make your processes go faster",
+      "url": "https://frederickvanbrabant.com/blog/2026-05-15-i-dont-think-ai-will-make-your-processes-go-faster/",
       "source": "hackernews",
-      "publishedAt": "2026-05-16T22:23:50.000Z",
-      "score": 10.12,
-      "keywords": [
-        "agent"
-      ]
-    },
-    {
-      "id": "hn-48161861",
-      "title": "You don&#8217;t know HTML Lists &#8211; Frank M Taylor",
-      "url": "https://blog.frankmtaylor.com/2026/05/13/you-dont-know-html-lists/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-16T16:58:26.000Z",
-      "score": 9.65,
+      "publishedAt": "2026-05-17T12:13:45.000Z",
+      "score": 9.63,
       "keywords": []
     },
     {
-      "id": "hn-48163392",
-      "title": "OpenAI and Government of Malta partner to roll out ChatGPT Plus to all citizens",
-      "url": "https://openai.com/index/malta-chatgpt-plus-partnership/",
+      "id": "hn-48173468",
+      "title": "Two EA-18 fighter jets collide at Mountain Home airshow, pilots ejected safely",
+      "url": "https://idahonews.com/news/local/two-f-18-fighter-jets-have-crashed-during-an-airshow-at-mountain-home-air-force-base",
       "source": "hackernews",
-      "publishedAt": "2026-05-16T20:14:06.000Z",
-      "score": 8.67,
-      "keywords": [
-        "chatgpt",
-        "openai"
-      ]
-    },
-    {
-      "id": "hn-48160807",
-      "title": "DeepSeek-V4-Flash means LLM steering is interesting again",
-      "url": "https://www.seangoedecke.com/steering-vectors/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-16T14:58:16.000Z",
-      "score": 8.03,
-      "keywords": [
-        "llm"
-      ]
-    },
-    {
-      "id": "hn-48158400",
-      "title": "Moving away from Tailwind, and learning to structure my CSS",
-      "url": "https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-16T09:14:26.000Z",
-      "score": 7.75,
+      "publishedAt": "2026-05-17T21:45:30.000Z",
+      "score": 9.52,
       "keywords": []
     },
     {
-      "id": "hn-48157559",
-      "title": "Frontier AI has broken the open CTF format",
-      "url": "https://kabir.au/blog/the-ctf-scene-is-dead",
+      "id": "hn-48173547",
+      "title": "ThinkPad: From IBM's Bento Box to Lenovo's AI Workstations",
+      "url": "https://www.jdhodges.com/blog/thinkpad-history/",
       "source": "hackernews",
-      "publishedAt": "2026-05-16T07:01:55.000Z",
-      "score": 6.04,
+      "publishedAt": "2026-05-17T21:56:40.000Z",
+      "score": 9.32,
+      "keywords": []
+    },
+    {
+      "id": "hn-48168626",
+      "title": "AI is a technology not a product",
+      "url": "https://daringfireball.net/2026/05/ai_is_technology_not_a_product",
+      "source": "hackernews",
+      "publishedAt": "2026-05-17T13:11:20.000Z",
+      "score": 8.37,
+      "keywords": []
+    },
+    {
+      "id": "hn-48168159",
+      "title": "Trials on veterans suggest ibogaine could provide a new treatment for PTSD",
+      "url": "https://www.bbc.com/future/article/20260514-how-hallucinogenic-ibogaine-helps-veterans-overcome-ptsd",
+      "source": "hackernews",
+      "publishedAt": "2026-05-17T12:03:04.000Z",
+      "score": 5.56,
       "keywords": []
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "36氪首发｜前苹果工程师跨界骨传导耳机，独创技术路线，打破头部企业专利垄断",
-      "url": "https://36kr.com/p/3810520138243593?f=rss",
+      "title": "3个人带100个AI程序员，一个月烧掉130万美元！OpenAI：钱我出",
+      "url": "https://36kr.com/p/3812925591887368?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-16T02:00:00.000Z",
-      "summary": "作者&nbsp;|&nbsp;张子怡 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，苏州索迩电子技术有限公司（骨传导运动耳机品牌Mojawa的母公司，以下简称“索迩电子”）于近日完成数千万元人民币的A+轮融资，本轮融资由正海资本领投。 据悉，本轮资金将主要用于拓展海外线下渠道，以及推进产品的AI智能化研发。 在音频产品市场中，由于对无线和开耳式聆听技术的需求不断增加，骨传导耳机市场出现了显著增长。 调研机构Market Growth统计的数据显示，2024年骨传导耳机市场规模为12.8亿美元，预计到2025年将增长到16.11亿美元，到2033年将超过81.5亿美元，复合年增长率为22.8%",
-      "keywords": [],
-      "score": 0.62
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "9点1氪丨央视6000万美元获得世界杯版权；英伟达总市值超过德国GDP；iPhone 17 Pro系列全线下调1000元",
-      "url": "https://36kr.com/p/3811265856626440?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-16T01:03:11.000Z",
-      "summary": "今日热点导览 OpenAI正考虑采取法律手段起诉苹果公司 三星电子开发下一代HBM封装技术，或用于智能手机等移动设备 海南：加快培育火箭链、卫星链、数据链，打造风电装备制造产业集群 世界银行首席经济学家英德米特・吉尔将于8月卸任退休 “海淘”智能穿戴设备或被植入窃密装置，国家安全部最新提示 TOP 3大新闻 央视确认获得2026年世界杯版权，费用为6000万美元&nbsp; 5月15日下午，中央广播电视总台与国际足球联合会共同宣布，就国际足联世界杯新周期版权合作达成共识。合作赛事包括2026年世界杯、2030年世界杯、2027年女足世界杯、2031年女足世界杯。 根据双方合作意向，中央广播电视",
+      "publishedAt": "2026-05-17T06:08:32.000Z",
+      "summary": "Peter Steinberger 编辑：所罗门 【新智元导读】3个人，100个AI agent，一个月烧掉130万美元——OpenClaw之父把软件开发变成了「AI流水线」，OpenAI替他买单。 别人晒工资条，他晒账单——一个月130万美元！ 也就是将近900万人民币/每月。直接把网友们看傻了。 OpenClaw之父Peter Steinberger在X上轻描淡写地甩出一张截图。 Peter Steinberger 但截图上的数字，属实不淡定： 30天花费：$1,305,088.81。吞掉6030亿个token。发起760万次请求。 你没看错，是130万美元。也不是哪家大厂的季度AI预算—",
       "keywords": [
-        "chatgpt",
+        "claude",
+        "gemini",
         "openai",
-        "anthropic",
         "agent",
-        "rag",
-        "cv",
-        "人工智能",
-        "大模型"
+        "ai agent"
       ],
-      "score": 0.22
+      "score": 2.35
     },
     {
-      "id": "arxiv-2605.15199v1",
-      "title": "EntityBench: Towards Entity-Consistent Long-Range Multi-Shot Video Generation",
-      "url": "https://arxiv.org/abs/2605.15199v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-14T17:59:55.000Z",
-      "summary": "Multi-shot video generation extends single-shot generation to coherent visual narratives, yet maintaining consistent characters, objects, and locations across shots remains a challenge over long sequences. Existing evaluations typically use independently generated prompt sets with limited entity coverage and simple consistency metrics, making standardized comparison difficult. We introduce EntityBench, a benchmark of 140 episodes (2,491 shots) derived from real narrative media, with explicit per",
-      "keywords": [
-        "rag"
-      ],
-      "score": 0
+      "id": "hn-48147091",
+      "title": "Prolog Basics Explained with Pokémon",
+      "url": "https://unplannedobsolescence.com/blog/prolog-basics-pokemon/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-15T11:02:14.000Z",
+      "score": 2.01,
+      "keywords": []
     },
     {
-      "id": "arxiv-2605.15198v1",
-      "title": "ATLAS: Agentic or Latent Visual Reasoning? One Word is Enough for Both",
-      "url": "https://arxiv.org/abs/2605.15198v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-14T17:59:55.000Z",
-      "summary": "Visual reasoning, often interleaved with intermediate visual states, has emerged as a promising direction in the field. A straightforward approach is to directly generate images via unified models during reasoning, but this is computationally expensive and architecturally non-trivial. Recent alternatives include agentic reasoning through code or tool calls, and latent reasoning with learnable hidden embeddings. However, agentic methods incur context-switching latency from external execution, whi",
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "6.4k Stars！用Claude Code写论文的全套流水线，有人打包开源了",
+      "url": "https://36kr.com/p/3812800346742274?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-17T04:59:08.000Z",
+      "summary": "听雨 发自 凹非寺量子位 | 公众号 QbitAI 用Claude Code写论文的一整套流水线，有人打包开源出来了。 完全戳中了学生党的痛点，github星标直达6.4k。 academic-research-skills 项目名叫academic-research-skills（以下简称ARS），是一套Claude Code技能包。 里面涵盖4个skill，分别对应论文的研究、写作、审稿、定稿。 只需两行命令安装，直接一条龙串起整套学术研究流水线。 academic-research-skills 只能说，我读研的时候怎么没碰到这种好东西呢… 示意图 4个skill，跑通整套科研流程 AR",
       "keywords": [
+        "llm",
+        "claude",
+        "anthropic",
         "agent"
       ],
-      "score": 0
+      "score": 1.87
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "36氪首发 | 宠物健康大模型公司连融两轮，软硬一体化布局，已服务超200家宠物医院",
+      "url": "https://36kr.com/p/3812788568907520?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-17T02:50:05.000Z",
+      "summary": "作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，宠物大模型健康公司重庆绮算法科技有限公司（以下简称“绮算法”）、智谱“Z计划”生态企业，近日完成数千万元融资，投资方为启赋资本与聚恒创投。本轮资金将主要用于产品迭代、模型能力深化及市场拓展。 绮算法成立于2022年7月，是一家聚焦宠物健康领域的大模型科技公司。依托多模态大模型能力，公司已打造一个融合线上线下、软硬件协同的宠物健康品牌。 绮算法创始人陈立毕业于英国国王学院，为Qlalgorithm Lab研究员，同时也是连续创业者；技术合伙人刘煜东为宾夕法尼亚大学博士，长期从事AI医疗方向研究；另一位技术合伙人",
+      "keywords": [
+        "大模型",
+        "多模态"
+      ],
+      "score": 0.97
+    },
+    {
+      "id": "hn-48155936",
+      "title": "Magical Realism: “Northern Exposure” 25 Years Later (2015)",
+      "url": "https://www.rogerebert.com/streaming/magical-realism-nothern-exposure-25-years-later",
+      "source": "hackernews",
+      "publishedAt": "2026-05-16T01:25:29.000Z",
+      "score": 0.61,
+      "keywords": [
+        "agi"
+      ]
     }
   ],
   "hotTopics": [
-    "测试时计算扩展（Test-time Compute Scaling）",
-    "多模态生成一致性与几何评估",
-    "科学AI基础模型与稀疏路由",
-    "大模型隐空间干预与动态对齐"
+    "AI智能体工作流工程化与成本管控",
+    "多模态生成的实体与几何一致性",
+    "统一视觉推理架构设计",
+    "基于真实事件回溯的Agent动态评测"
   ],
   "metadata": {
-    "totalCount": 26,
+    "totalCount": 27,
     "sources": [
       "hackernews",
       "rss",
       "arxiv"
     ],
-    "generatedAt": "2026-05-17T00:30:50.604Z"
+    "generatedAt": "2026-05-18T00:30:13.054Z"
   },
   "technicalInsights": [
-    "视觉推理正从显式生成加外部工具调用向隐状态压缩加原生前馈演进，核心矛盾从算力消耗转向延迟与一致性的平衡。",
-    "视频与3D生成评估体系已跨越主观审美指标，全面转向几何透视、物理规律与跨镜头实体一致性的量化审计。",
-    "稀疏MoE架构在科学计算领域的成功应用，为多模态多任务大模型的负迁移问题提供了可复用的解耦范式。",
-    "测试时并行推理结合成对比较聚合，标志着LLM推理优化正从启发式搜索转向概率排序决策，降低对完美Reward Model的依赖。"
+    "AI工程范式正从“模型能力堆叠”转向“工作流编排与成本敏感型架构”。高并发Agent调用暴露的Token成本瓶颈，将倒逼动态路由优化、KV Cache共享与端云协同推理技术的规模化落地。",
+    "生成式AI的下一阶段竞争核心在于“结构可信度”。视频与3D生成正从视觉拟真向物理/几何一致性演进，基于残差场预测、隐式世界模型与定量透视评估的架构将成为突破多视角漂移与长程叙事断裂的关键。",
+    "智能体评测体系正经历“静态基准→动态仿真”的范式迁移。基于真实事件时间线重放的评估方法更贴近开放世界部署需求，将推动Agent训练从监督微调向在线强化学习与持续适应演进。"
   ]
 }
