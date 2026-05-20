@@ -1,207 +1,232 @@
 {
-  "date": "2026年5月19日",
-  "title": "🤖 2026年5月19日 AI 技术日报",
-  "summary": "今日AI技术演进呈现三大核心趋势：其一，对齐范式由后期微调向预训练阶段前移，揭示语料分布与价值观学习的自证效应；其二，多智能体世界模型与物理AI加速融合，推动具身智能与复杂系统仿真迈向可微、因果化新阶段；其三，边缘多模态交互与隐式三维重建技术突破，显著降低高保真场景构建与战术级AR应用的算力门槛。产业侧Anthropic等巨头正通过并购补齐工程化工具链，标志着AI竞争从单一模型能力转向“基础模型+物理机理+开发者生态”的全栈体系化较量。",
+  "date": "2026年5月20日",
+  "title": "🤖 2026年5月20日 AI 技术日报",
+  "summary": "今日AI领域呈现“架构优化、智能体演进与安全治理”三线并进的态势。模型层面，Google Gemini系列推动多模态原生架构向实时流式交互迈进，而稀疏注意力机制的提出正从底层算力效率突破长上下文瓶颈。智能体方向，“代码即智能体基座”范式将代码从生成目标转化为推理与验证的执行基底，显著提升复杂任务的可控性；具身空间智能评估则通过主动感知-行动闭环重塑机器人训练范式。安全与合规方面，DeepSeek对推理特殊字符的响应及跨厂商水印协议的落地，标志着行业正从“能力竞赛”转向“可信部署”阶段。整体技术栈向端到端可微、主动交互与标准化溯源加速收敛。",
   "highlights": [
     {
-      "id": "hn-48182281",
-      "title": "Anthropic acquires Stainless",
-      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T17:01:21.000Z",
-      "score": 10.35,
-      "keywords": [
-        "anthropic"
-      ],
-      "analysis": "原理：聚焦AI工程化中间件，通过标准化Agent编排框架与代码生成流水线，优化大模型在复杂软件工程中的调用链。创新点：补齐Anthropic在开发者工具链与企业级部署层面的短板，实现从底层模型到上层应用的全栈闭环。场景：企业级AI原生应用开发、自动化代码审计、复杂工作流智能体协同及DevOps智能化升级。"
-    },
-    {
-      "id": "hn-48185938",
-      "title": "Alignment pretraining: AI discourse creates self-fulfilling (mis)alignment",
-      "url": "https://arxiv.org/abs/2601.10160",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T21:29:13.000Z",
-      "score": 8.91,
-      "keywords": [],
-      "analysis": "原理：在预训练阶段引入对齐数据分布，通过自回归生成与偏好反馈的隐式耦合，使模型早期学习价值观约束。创新点：揭示对齐非仅依赖后期微调，而是语料分布与训练目标的自证效应，提出“预训练即对齐”范式。场景：大幅降低RLHF成本，提升大模型在医疗、金融等高风险领域的初始安全性。"
-    },
-    {
-      "id": "hn-48183748",
-      "title": "Agora-1: The Multi-Agent World Model",
-      "url": "https://odyssey.ml/introducing-agora-1",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T18:43:30.000Z",
-      "score": 8.34,
-      "keywords": [
-        "agent"
-      ],
-      "analysis": "原理：基于多智能体交互轨迹训练世界模型，将环境动态与智能体决策解耦为可微的状态转移函数与策略网络。创新点：突破单智能体局限，引入博弈论与联合状态表征，实现复杂场景下的长程因果推理。场景：适用于自动驾驶车队协同、城市交通调度仿真及具身智能多机器人协作系统的低成本预训练。"
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Inside Anduril and Meta’s quest to make smart glasses for warfare",
-      "url": "https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/",
-      "source": "rss",
-      "publishedAt": "2026-05-18T16:01:39.000Z",
-      "summary": "The defense-tech company Anduril has shared new details about the augmented-reality headset for the military it’s prototyping with Meta, including a vision for ordering drone strikes via eye-tracking and voice commands. Quay Barnett, who leads the efforts as a vice president at Anduril following a c",
-      "keywords": [],
-      "score": 6.47,
-      "analysis": "原理：融合眼动追踪、骨传导语音与轻量化多模态大模型，在边缘端实现低延迟意图解析与战术指令生成。创新点：将消费级AR光学架构与军用级抗干扰通信结合，实现“注视-语音”双模态自然交互的战场实时决策闭环。场景：单兵态势感知、无人机群战术指挥及高危环境下的远程遥操作装备控制。"
-    },
-    {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "氪星晚报 ｜百度：一季度营收321亿元，AI业务收入136亿元；马斯克预计今年美国将广泛使用自动驾驶汽车；巨力索具旗下十余家企业已注销",
-      "url": "https://36kr.com/p/3814695536336387?f=rss",
+      "title": "8点1氪丨谷歌推出Gemini 3.5系列模型；DeepSeek回应用户“对话泄露”疑虑；全国存款十强城市出炉",
+      "url": "https://36kr.com/p/3816885092910212?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-18T11:11:14.000Z",
-      "summary": "大公司： 索辰科技：物理AI业务目前尚处于布局初期 36氪获悉，索辰科技公告，公司股票于2026年5月14日至5月18日连续三个交易日内收盘价格涨幅偏离值累计达到30%，属于股票交易异常波动情形。公司近期实施的募投项目“物理合成数据核心技术基座构建与多领域场景示范应用项目”尚处于筹备阶段，若出现募集资金投资项目未能顺利实施、新技术开发进度不达预期、研发遭遇技术瓶颈甚至失败，将会对公司经营业绩造成一定影响。公司物理AI业务目前尚处于布局初期。物理AI技术研发投入大、技术迭代快，存在研发进度不及预期、核心技术迭代风险；同时下游行业应用场景拓展、商业化变现存在不确定性，若市场需求、行业政策、技术竞争",
+      "publishedAt": "2026-05-20T00:20:10.000Z",
+      "summary": "今日热点导览 谷歌推出Gemini 3.5系列模型 洁丽雅回应豪门内斗传闻，“毛巾少爷”1个月带货超500万元 巨力索具连续第二日跌停 前三星芯片负责人：明年内存将降价 自费流感疫苗也可使用医保报销 谷歌搜索宣布大改版，AI模式与代理助手全面嵌入 TOP 3 大新闻 DeepSeek回应用户“对话泄露”疑虑 5月19日，DeepSeek发布关于&lt; think &gt;字符触发模型异常回复的说明。近期关注到有用户反馈，在与DeepSeek模型的对话中输入&lt; think &gt;这类特殊字符后，模型偶发返回不可预期的内容，使部分用户产生了“对话泄露”的疑虑。针对这一问题，技术团队经全面",
       "keywords": [
-        "自动驾驶",
+        "gemini",
+        "anthropic",
+        "deepmind",
         "人工智能",
-        "大模型"
+        "大模型",
+        "多模态"
       ],
-      "score": 4.45,
-      "analysis": "原理：将物理定律作为归纳偏置嵌入网络，通过神经算子实现高维物理场端到端求解。创新点：突破纯数据驱动泛化瓶颈，实现“数据-机理”双驱融合，大幅降低仿真算力开销。场景：工业数字孪生、新材料分子模拟、自动驾驶极端工况生成及机器人动力学控制。"
+      "score": 9.93,
+      "analysis": "原理：特殊控制符触发模型内部思维链生成。创新：通过强化底层词法解析与动态输出过滤，阻断提示注入与上下文泄露风险。应用：显著提升推理大模型在企业级部署、自动化客服及AI搜索代理中的安全性与交互稳定性。"
     },
     {
-      "id": "arxiv-2605.16258v1",
-      "title": "IVGT: Implicit Visual Geometry Transformer for Neural Scene Representation",
-      "url": "https://arxiv.org/abs/2605.16258v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-15T17:59:57.000Z",
-      "summary": "Reconstructing coherent 3D geometry and appearance from unposed multi-view images is a fundamental yet challenging problem in computer vision. Most existing visual geometry foundation models predict explicit geometry by regressing pixel-aligned pointmaps, often suffering from redundancy and limited geometric continuity. We propose IVGT, an Implicit Visual Geometry Transformer that implicitly models continuous and coherent geometry from pose-free multi-view images. This formulation learns a conti",
+      "id": "hn-48196609",
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-19T17:46:19.000Z",
+      "score": 9.65,
       "keywords": [
-        "transformer"
+        "gemini",
+        "deepmind"
+      ],
+      "analysis": "原理：统一多模态架构实现音视图文单前向传播与原生流式处理。创新：摒弃独立模态编码器，支持跨模态实时推理与低延迟交互。应用：赋能实时AI助手、交互式机器人控制及直播视频流实时分析。"
+    },
+    {
+      "id": "hn-48198291",
+      "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+      "url": "https://openai.com/index/advancing-content-provenance/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-19T19:34:30.000Z",
+      "score": 9.58,
+      "keywords": [
+        "openai"
+      ],
+      "analysis": "原理：在图像生成过程中嵌入不可见的统计分布水印，实现像素级内容溯源。创新：建立跨平台可验证的水印标准，兼顾鲁棒性与画质无损。应用：支撑版权保护、深度伪造检测及社交媒体可信内容分发体系。"
+    },
+    {
+      "id": "arxiv-2605.18753v1",
+      "title": "DashAttention: Differentiable and Adaptive Sparse Hierarchical Attention",
+      "url": "https://arxiv.org/abs/2605.18753v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-18T17:59:52.000Z",
+      "summary": "Current hierarchical attention methods, such as NSA and InfLLMv2, select the top-k relevant key-value (KV) blocks based on coarse attention scores and subsequently apply fine-grained softmax attention on the selected tokens. However, the top-k operation assumes the number of relevant tokens for any query is fixed and it precludes the gradient flow between the sparse and dense stages. In this work, we propose DashAttention (Differentiable and Adaptive Sparse Hierarchical Attention), which leverag",
+      "keywords": [
+        "llm",
+        "rag"
       ],
       "score": 0,
-      "analysis": "原理：采用隐式神经表示替代显式点图回归，通过Transformer对无位姿多视角图像进行全局特征聚合，连续建模几何流形。创新点：消除离散化冗余与拓扑断裂问题，实现无需相机标定的高保真三维场景重建与平滑插值。场景：自动驾驶高精地图构建、AR/VR沉浸式内容生成、无人机实景三维重建及机器人空间导航。"
+      "analysis": "原理：以连续可微门控机制替代非可微的Top-K KV块选择，实现稀疏分层注意力。创新：打通稀疏与稠密阶段的梯度流，支持查询级自适应Token分配。应用：优化长上下文LLM推理，降低显存占用同时保持生成精度。"
+    },
+    {
+      "id": "arxiv-2605.18747v1",
+      "title": "Code as Agent Harness",
+      "url": "https://arxiv.org/abs/2605.18747v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-18T17:59:03.000Z",
+      "summary": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that",
+      "keywords": [
+        "llm",
+        "agent",
+        "ai agent"
+      ],
+      "score": 0,
+      "analysis": "原理：将代码视为智能体推理、环境建模与执行验证的统一可执行基底。创新：通过代码Harness整合规划与执行，实现确定性交互与逻辑自洽。应用：驱动自主软件工程、复杂API编排及可复现的AI研究流水线。"
+    },
+    {
+      "id": "arxiv-2605.18746v1",
+      "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
+      "url": "https://arxiv.org/abs/2605.18746v1",
+      "source": "arxiv",
+      "publishedAt": "2026-05-18T17:59:02.000Z",
+      "summary": "Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what is seen, they actively uncover what is unseen - occluded structure, dynamics, containment, and functionality that cannot be resolved from passive sensing alone. We move beyond prior formulations of spatial intelligence that assume oracle observations by recasting the observer as an actor. We introd",
+      "keywords": [
+        "llm",
+        "agent"
+      ],
+      "score": 0,
+      "analysis": "原理：基于主动感知-行动闭环评估具身空间智能，智能体通过移动观测推断遮挡结构与3D动态。创新：突破被动视觉基准，以动作驱动感知重建空间认知。应用：赋能复杂环境自主导航、机器人灵巧操作及AR空间计算。"
     }
   ],
   "details": [
     {
-      "id": "hn-48182754",
-      "title": "Elon Musk has lost his lawsuit against Sam Altman and OpenAI",
-      "url": "https://techcrunch.com/2026/05/18/elon-musk-has-lost-his-lawsuit-against-sam-altman-and-openai/",
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "8点1氪丨谷歌推出Gemini 3.5系列模型；DeepSeek回应用户“对话泄露”疑虑；全国存款十强城市出炉",
+      "url": "https://36kr.com/p/3816885092910212?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T00:20:10.000Z",
+      "summary": "今日热点导览 谷歌推出Gemini 3.5系列模型 洁丽雅回应豪门内斗传闻，“毛巾少爷”1个月带货超500万元 巨力索具连续第二日跌停 前三星芯片负责人：明年内存将降价 自费流感疫苗也可使用医保报销 谷歌搜索宣布大改版，AI模式与代理助手全面嵌入 TOP 3 大新闻 DeepSeek回应用户“对话泄露”疑虑 5月19日，DeepSeek发布关于&lt; think &gt;字符触发模型异常回复的说明。近期关注到有用户反馈，在与DeepSeek模型的对话中输入&lt; think &gt;这类特殊字符后，模型偶发返回不可预期的内容，使部分用户产生了“对话泄露”的疑虑。针对这一问题，技术团队经全面",
+      "keywords": [
+        "gemini",
+        "anthropic",
+        "deepmind",
+        "人工智能",
+        "大模型",
+        "多模态"
+      ],
+      "score": 9.93
+    },
+    {
+      "id": "hn-48196609",
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
       "source": "hackernews",
-      "publishedAt": "2026-05-18T17:38:22.000Z",
-      "score": 14.58,
+      "publishedAt": "2026-05-19T17:46:19.000Z",
+      "score": 9.65,
+      "keywords": [
+        "gemini",
+        "deepmind"
+      ]
+    },
+    {
+      "id": "hn-48198291",
+      "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+      "url": "https://openai.com/index/advancing-content-provenance/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-19T19:34:30.000Z",
+      "score": 9.58,
       "keywords": [
         "openai"
       ]
     },
     {
-      "id": "hn-48182281",
-      "title": "Anthropic acquires Stainless",
-      "url": "https://www.anthropic.com/news/anthropic-acquires-stainless",
+      "id": "hn-48197995",
+      "title": "Mistral AI Acquires Emmi AI to Create the Leading AI Stack",
+      "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
       "source": "hackernews",
-      "publishedAt": "2026-05-18T17:01:21.000Z",
-      "score": 10.35,
-      "keywords": [
-        "anthropic"
-      ]
-    },
-    {
-      "id": "hn-48183579",
-      "title": "Haiku OS runs on M1 Macs now",
-      "url": "https://discuss.haiku-os.org/t/my-haiku-arm64-progress/19044?page=2",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T18:30:55.000Z",
-      "score": 10.17,
+      "publishedAt": "2026-05-19T19:14:12.000Z",
+      "score": 9.32,
       "keywords": []
     },
     {
-      "id": "hn-48181125",
-      "title": "We stopped AI bot spam in our GitHub repo using Git's –author flag",
-      "url": "https://archestra.ai/blog/only-responsible-ai",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T15:24:19.000Z",
-      "score": 10.14,
-      "keywords": []
-    },
-    {
-      "id": "hn-48187201",
-      "title": "Anthropic co-founder to present AI encyclical alongside Pope Leo XIV",
-      "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-first-encyclical-magnifica-humanitas.html",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T23:18:10.000Z",
-      "score": 9.97,
-      "keywords": [
-        "anthropic"
-      ]
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "8点1氪丨贾跃亭又融资4.77亿元；巨力索具旗下十余家企业已注销；超越茅台，A股“新股王”诞生",
-      "url": "https://36kr.com/p/3815459487587847?f=rss",
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "Roundtables: Inside the Musk v. Altman Trial",
+      "url": "https://www.technologyreview.com/2026/05/19/1137454/roundtables-inside-the-musk-v-altman-trial/",
       "source": "rss",
-      "publishedAt": "2026-05-19T00:08:58.000Z",
-      "summary": "今日热点导览 瑞幸咖啡正式上线两款含酒精的特调饮品 京张高铁试点推出“自行车随身行”服务 马斯克：计划今年进行首例用于治疗失明的Neuralink植入手术 韩国法院要求三星电子罢工行动不得影响产量 多家理财公司集中提前终止理财产品 TOP 3 大新闻 贾跃亭又拿到7000万美元投资 贾跃亭发布视频，宣布法拉第未来近期完成了7000万美元（现汇率约合4.77亿元人民币）机构投资者募资，并将启动战略、产品技术&amp;业务、财务、资本、AI体系五大变革。贾跃亭表示，其目标包括FFAI市值重回2021年上市水平，2027年第四季度实现经营性现金流为正，五年内在EAI人形与仿生机器人领域成为北美真实场",
+      "publishedAt": "2026-05-19T20:15:18.000Z",
+      "summary": "Listen to the session or watch below Elon Musk lost his suit against OpenAI, in which he alleged CEO Sam Altman and President Greg Brockman had deceived him over the company’s non-profit status. Watch as AI reporter and attorney Michelle Kim, who covered the trial for MIT Technology Review, joins in",
       "keywords": [
-        "openai",
-        "anthropic",
-        "agent",
-        "人工智能",
-        "大模型"
+        "openai"
       ],
-      "score": 9.85
+      "score": 8.22
     },
     {
-      "id": "hn-48182592",
-      "title": "Iran starts Bitcoin-backed ship insurance for Hormuz strait",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-18/iran-starts-bitcoin-backed-shipping-insurance-for-hormuz-strait",
+      "id": "hn-48194614",
+      "title": "Copy Fail, Dirty Frag, and Fragnesia kernel vulnerabilities",
+      "url": "https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html",
       "source": "hackernews",
-      "publishedAt": "2026-05-18T17:25:54.000Z",
-      "score": 9.52,
-      "keywords": []
-    },
-    {
-      "id": "hn-48185938",
-      "title": "Alignment pretraining: AI discourse creates self-fulfilling (mis)alignment",
-      "url": "https://arxiv.org/abs/2601.10160",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T21:29:13.000Z",
-      "score": 8.91,
-      "keywords": []
-    },
-    {
-      "id": "hn-48183301",
-      "title": "We let AIs run radio stations",
-      "url": "https://andonlabs.com/blog/andon-fm",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T18:12:18.000Z",
-      "score": 8.74,
-      "keywords": []
-    },
-    {
-      "id": "hn-48183748",
-      "title": "Agora-1: The Multi-Agent World Model",
-      "url": "https://odyssey.ml/introducing-agora-1",
-      "source": "hackernews",
-      "publishedAt": "2026-05-18T18:43:30.000Z",
-      "score": 8.34,
+      "publishedAt": "2026-05-19T15:27:53.000Z",
+      "score": 7.29,
       "keywords": [
-        "agent"
+        "rag"
+      ]
+    },
+    {
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "Understanding the modern cybercrime landscape",
+      "url": "https://www.technologyreview.com/2026/05/19/1136925/understanding-the-modern-cybercrime-landscape/",
+      "source": "rss",
+      "publishedAt": "2026-05-19T13:00:00.000Z",
+      "summary": "Throughout 2025, HPE observed significant changes in how cybercriminals operate. Analyzing real-world threats, our HPE Threat Labs highlighted an industrialization of the cyber criminals’ methods in its new In the Wild Report, enabling greater scale, speed and structure in their campaigns. They typi",
+      "keywords": [],
+      "score": 5.2
+    },
+    {
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "The Download: Musk v. Altman, smart glasses for warfare, and Google I/O",
+      "url": "https://www.technologyreview.com/2026/05/19/1137505/the-download-musk-altman-trial-smart-glasses-warfare-google-i-o/",
+      "source": "rss",
+      "publishedAt": "2026-05-19T12:10:00.000Z",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Here’s why Elon Musk lost his suit against OpenAI Elon Musk has lost his lawsuit against OpenAI, which centered on whether the company breached its fo",
+      "keywords": [
+        "openai"
+      ],
+      "score": 4.85
+    },
+    {
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "Colossal Biosciences is growing chickens in a 3D-printed artificial eggshell",
+      "url": "https://www.technologyreview.com/2026/05/19/1137471/colossal-biosciences-is-growing-chickens-in-a-3d-printed-container/",
+      "source": "rss",
+      "publishedAt": "2026-05-19T12:00:00.000Z",
+      "summary": "The baby chicks were shifting and starting to pip—or trying to hatch. But not from an egg.&#160; Instead, these chickens were growing inside transparent 3D-printed plastic cups at the Dallas headquarters of Colossal Biosciences. The biotech company today claimed it has developed a “fully artificial ",
+      "keywords": [],
+      "score": 4.79
+    },
+    {
+      "id": "hn-48170007",
+      "title": "Intro to TLA+ for the LLM Era: Prompt Your Way to Victory",
+      "url": "https://emptysqua.re/blog/intro-to-tla-plus-for-the-llm-era/",
+      "source": "hackernews",
+      "publishedAt": "2026-05-17T15:52:21.000Z",
+      "score": 1.05,
+      "keywords": [
+        "llm"
       ]
     }
   ],
   "hotTopics": [
-    "预训练对齐范式迁移",
-    "多智能体世界模型",
-    "物理AI与机理融合",
-    "隐式三维场景重建"
+    "多模态原生架构与实时流式推理",
+    "稀疏注意力与长上下文效率优化",
+    "代码驱动的智能体执行范式",
+    "AI内容溯源与可信水印标准化",
+    "具身智能的主动感知-行动闭环"
   ],
   "metadata": {
-    "totalCount": 29,
+    "totalCount": 26,
     "sources": [
-      "hackernews",
       "rss",
+      "hackernews",
       "arxiv"
     ],
-    "generatedAt": "2026-05-19T00:30:25.180Z"
+    "generatedAt": "2026-05-20T00:30:54.909Z"
   },
   "technicalInsights": [
-    "对齐技术正经历从后验修正向先验内化的架构级跃迁，预训练数据治理将取代复杂RLHF流程成为安全核心",
-    "多智能体世界模型通过解耦环境动力学与策略网络，正成为解决具身智能长程规划与复杂系统仿真的关键基础设施",
-    "物理机理与隐式神经表示的结合将重构3D视觉与科学计算管线，无位姿连续建模与神经算子有望突破传统离散化方法的算力瓶颈"
+    "注意力机制正从静态稀疏向可微自适应演进，DashAttention通过打通梯度流，有望在推理阶段实现动态KV缓存分配，显著降低长序列推理的显存墙压力。",
+    "智能体开发范式发生根本性转变，代码不再仅是LLM的输出产物，而是作为可执行、可验证的“Harness”承载环境交互与逻辑自洽，推动Agent从“对话式”向“工程化”跃迁。",
+    "AI安全治理正从模型对齐延伸至全生命周期可追溯，跨厂商水印协议（如SynthID）的互认与部署，将为生成式AI的版权界定与深度伪造防御提供底层基础设施。",
+    "具身智能评估体系突破被动视觉局限，ESI-Bench强调“动作驱动感知”，预示未来机器人训练将更依赖闭环仿真与主动探索策略，而非静态数据集微调。"
   ]
 }
