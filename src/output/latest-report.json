@@ -1,232 +1,238 @@
 {
-  "date": "2026年5月20日",
-  "title": "🤖 2026年5月20日 AI 技术日报",
-  "summary": "今日AI领域呈现“架构优化、智能体演进与安全治理”三线并进的态势。模型层面，Google Gemini系列推动多模态原生架构向实时流式交互迈进，而稀疏注意力机制的提出正从底层算力效率突破长上下文瓶颈。智能体方向，“代码即智能体基座”范式将代码从生成目标转化为推理与验证的执行基底，显著提升复杂任务的可控性；具身空间智能评估则通过主动感知-行动闭环重塑机器人训练范式。安全与合规方面，DeepSeek对推理特殊字符的响应及跨厂商水印协议的落地，标志着行业正从“能力竞赛”转向“可信部署”阶段。整体技术栈向端到端可微、主动交互与标准化溯源加速收敛。",
+  "date": "2026年5月21日",
+  "title": "🤖 2026年5月21日 AI 技术日报",
+  "summary": "2026年AI产业正经历从训练侧规模扩张向推理侧效能优化与应用层深耕的范式转移。算力需求呈指数级增长，推动高端芯片出口与超大规模算力采购协议常态化。硬件架构呈现显著分化，确定性数据流芯片专攻低延迟推理，传统GPU继续主导高吞吐训练。应用层加速向自主智能体与视觉优先交互演进，企业级数字劳动力平台与多模态流式模型成为商业化核心。同时，AI基础设施与能源、半导体制造深度耦合，算力供应链的垂直整合与长期租赁金融化正构筑行业新壁垒。",
   "highlights": [
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "8点1氪丨谷歌推出Gemini 3.5系列模型；DeepSeek回应用户“对话泄露”疑虑；全国存款十强城市出炉",
-      "url": "https://36kr.com/p/3816885092910212?f=rss",
+      "title": "黄仁勋：英伟达的Groq芯片在一段时间内仍将是小众产品",
+      "url": "https://36kr.com/newsflashes/3818307822388099?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-20T00:20:10.000Z",
-      "summary": "今日热点导览 谷歌推出Gemini 3.5系列模型 洁丽雅回应豪门内斗传闻，“毛巾少爷”1个月带货超500万元 巨力索具连续第二日跌停 前三星芯片负责人：明年内存将降价 自费流感疫苗也可使用医保报销 谷歌搜索宣布大改版，AI模式与代理助手全面嵌入 TOP 3 大新闻 DeepSeek回应用户“对话泄露”疑虑 5月19日，DeepSeek发布关于&lt; think &gt;字符触发模型异常回复的说明。近期关注到有用户反馈，在与DeepSeek模型的对话中输入&lt; think &gt;这类特殊字符后，模型偶发返回不可预期的内容，使部分用户产生了“对话泄露”的疑虑。针对这一问题，技术团队经全面",
+      "publishedAt": "2026-05-21T00:23:34.000Z",
+      "summary": "黄仁勋在周三的财报电话会议上表示，英伟达斥资200亿美元收购Groq的技术后，其定制的AI芯片“在一段时间内将是一款小众产品”。英伟达在3月的年度GTC大会上发布了全新的Groq语言处理单元，以及一个装满该定制芯片（名为LPX）的完整数据中心机架。“LPX专为低延迟和高token速率而设计，但它的吞吐量较低，”黄仁勋说。“LPX的使用场景并不广泛。”（新浪财经）",
+      "keywords": [],
+      "score": 9.95,
+      "analysis": "基于确定性数据流架构，摒弃传统GPU的HBM内存墙，采用SRAM实现权重常驻。创新点在于通过硬件级并行调度实现微秒级延迟与极高Token生成速率，专为交互式推理优化。适用于实时语音对话Agent、高频低延迟API服务，但因吞吐量瓶颈不适用于大规模模型训练。"
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "8点1氪丨英伟达Q1净利润583亿美元；谷歌CEO：Gemini月活跃用户达9亿；寿司郎回应“盘子抽检10抽10脏”",
+      "url": "https://36kr.com/p/3818280989443202?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T23:59:19.000Z",
+      "summary": "今日热点导览 俄罗斯将延长对中国公民的免签制度 张雪首度谈及签约德比斯原因 微信再度开放520大额红包，限时1天&nbsp; 罗欣药业回应阿奇霉素劣药事件 段永平最新持仓公布 TOP3大新闻 英伟达：第一财季净利润583亿美元，同比增长211% 36氪获悉，英伟达发布2027财年第一季度财报，财报显示，英伟达第一财季营收816.2亿美元，同比增长85%；净利润583.2亿美元，同比增长211%。 谷歌CEO：Gemini月活跃用户达9亿 谷歌CEO皮查伊在2026年I/O开发者大会上表示，Gemini AI应用的月活跃用户在过去一年中增长了一倍多，达到9亿人次，日请求量增长超过7倍。他补充称，",
       "keywords": [
+        "claude",
         "gemini",
+        "chatgpt",
+        "openai",
         "anthropic",
-        "deepmind",
-        "人工智能",
-        "大模型",
-        "多模态"
-      ],
-      "score": 9.93,
-      "analysis": "原理：特殊控制符触发模型内部思维链生成。创新：通过强化底层词法解析与动态输出过滤，阻断提示注入与上下文泄露风险。应用：显著提升推理大模型在企业级部署、自动化客服及AI搜索代理中的安全性与交互稳定性。"
-    },
-    {
-      "id": "hn-48196609",
-      "title": "Gemini Omni — Google DeepMind",
-      "url": "https://deepmind.google/models/gemini-omni/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-19T17:46:19.000Z",
-      "score": 9.65,
-      "keywords": [
-        "gemini",
-        "deepmind"
-      ],
-      "analysis": "原理：统一多模态架构实现音视图文单前向传播与原生流式处理。创新：摒弃独立模态编码器，支持跨模态实时推理与低延迟交互。应用：赋能实时AI助手、交互式机器人控制及直播视频流实时分析。"
-    },
-    {
-      "id": "hn-48198291",
-      "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
-      "url": "https://openai.com/index/advancing-content-provenance/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-19T19:34:30.000Z",
-      "score": 9.58,
-      "keywords": [
-        "openai"
-      ],
-      "analysis": "原理：在图像生成过程中嵌入不可见的统计分布水印，实现像素级内容溯源。创新：建立跨平台可验证的水印标准，兼顾鲁棒性与画质无损。应用：支撑版权保护、深度伪造检测及社交媒体可信内容分发体系。"
-    },
-    {
-      "id": "arxiv-2605.18753v1",
-      "title": "DashAttention: Differentiable and Adaptive Sparse Hierarchical Attention",
-      "url": "https://arxiv.org/abs/2605.18753v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-18T17:59:52.000Z",
-      "summary": "Current hierarchical attention methods, such as NSA and InfLLMv2, select the top-k relevant key-value (KV) blocks based on coarse attention scores and subsequently apply fine-grained softmax attention on the selected tokens. However, the top-k operation assumes the number of relevant tokens for any query is fixed and it precludes the gradient flow between the sparse and dense stages. In this work, we propose DashAttention (Differentiable and Adaptive Sparse Hierarchical Attention), which leverag",
-      "keywords": [
-        "llm",
-        "rag"
-      ],
-      "score": 0,
-      "analysis": "原理：以连续可微门控机制替代非可微的Top-K KV块选择，实现稀疏分层注意力。创新：打通稀疏与稠密阶段的梯度流，支持查询级自适应Token分配。应用：优化长上下文LLM推理，降低显存占用同时保持生成精度。"
-    },
-    {
-      "id": "arxiv-2605.18747v1",
-      "title": "Code as Agent Harness",
-      "url": "https://arxiv.org/abs/2605.18747v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-18T17:59:03.000Z",
-      "summary": "Recent large language models (LLMs) have demonstrated strong capabilities in understanding and generating code, from competitive programming to repository-level software engineering. In emerging agentic systems, code is no longer only a target output. It increasingly serves as an operational substrate for agent reasoning, acting, environment modeling, and execution-based verification. We frame this shift through the lens of agent harnesses and introduce code as agent harness: a unified view that",
-      "keywords": [
-        "llm",
         "agent",
+        "人工智能",
+        "大模型"
+      ],
+      "score": 9.78,
+      "analysis": "依托Blackwell架构与NVLink高速互联，实现算力密度与能效比的代际跃升。创新点在于软硬件协同生态构筑绝对壁垒，推动大模型从集中训练向分布式推理规模化迁移。广泛应用于云端AI集群部署、多模态大模型商业化服务及企业级私有化算力租赁。"
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "SpaceX招股书披露：Anthropic拟在未来三年向其支付近450亿美元购买算力",
+      "url": "https://36kr.com/newsflashes/3818261630157956?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T23:52:30.000Z",
+      "summary": "当地时间5月20日，SpaceX向美国证券交易委员会（SEC）正式递交的S-1招股说明书披露了一项重大的商业合作。文件显示，人工智能开发商Anthropic已同意在未来三年内向SpaceX支付近450亿美元，用于获取计算资源，以此支持其Claude人工智能软件的发展。根据协议条款，直至2029年5月，Anthropic预计每月将向SpaceX支付12.5亿美元，任何一方均可提前90天通知对方终止协议。（界面）",
+      "keywords": [
+        "claude",
+        "anthropic",
+        "人工智能"
+      ],
+      "score": 9.74,
+      "analysis": "通过长期算力租赁协议锁定底层GPU集群资源，有效规避算力现货价格波动风险。创新点在于将算力供应链金融化，保障大模型持续预训练与RLHF对齐微调的稳定性。适用于超大规模语言模型的迭代训练、分布式推理节点扩展及AI基础设施的长期资本规划。"
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "第四届中国AIGC产业峰会在京顺利举办！近20位行业大咖解码Agent与非共识机遇",
+      "url": "https://36kr.com/p/3817353357968516?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T08:22:01.000Z",
+      "summary": "今日，由量子位主办的第四届中国AIGC产业峰会在京启幕。 2026年，AI产业一路高歌猛进。从“龙虾”到“Harness”，爆款Agent接连出圈、风靡全网。面对层出不穷的新业态与新玩法，不少从业者和普通用户都感到困惑：如何找准AI的使用方式？怎样把握产业机遇？又该如何跟上行业发展的步伐？ 正是在这一背景下，本届大会以「@所有人，马上AI起来」为主题，集结近20位行业重磅嘉宾，联动产业头部企业、新锐创业公司、顶尖学术力量，围绕AI Agent商业化落地、多模态技术突破、千行百业场景深耕、算力基础设施变革等核心议题，开启了一场深度交流与思想碰撞。&nbsp; 嘉宾阵容堪称豪华： 既有昆仑万维、商",
+      "keywords": [
+        "agent",
+        "大模型",
+        "多模态",
         "ai agent"
       ],
-      "score": 0,
-      "analysis": "原理：将代码视为智能体推理、环境建模与执行验证的统一可执行基底。创新：通过代码Harness整合规划与执行，实现确定性交互与逻辑自洽。应用：驱动自主软件工程、复杂API编排及可复现的AI研究流水线。"
+      "score": 3.27,
+      "analysis": "聚焦大模型智能体编排技术，涵盖复杂工具调用、长程状态记忆与多智能体协同机制。创新点在于推动AI从被动问答向自主任务规划与闭环执行演进，突破单点模型能力瓶颈。广泛应用于企业复杂工作流自动化、跨系统数据集成及垂直行业决策辅助。"
     },
     {
-      "id": "arxiv-2605.18746v1",
-      "title": "ESI-Bench: Towards Embodied Spatial Intelligence that Closes the Perception-Action Loop",
-      "url": "https://arxiv.org/abs/2605.18746v1",
-      "source": "arxiv",
-      "publishedAt": "2026-05-18T17:59:02.000Z",
-      "summary": "Spatial intelligence unfolds through a perception-action loop: agents act to acquire observations, and reason about how observations vary as a function of action. Rather than passively processing what is seen, they actively uncover what is unseen - occluded structure, dynamics, containment, and functionality that cannot be resolved from passive sensing alone. We move beyond prior formulations of spatial intelligence that assume oracle observations by recasting the observer as an actor. We introd",
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "要做数字劳动力生产工厂，「未来式智能」完成Pre-A轮融资",
+      "url": "https://36kr.com/p/3816909945029760?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T01:21:27.000Z",
+      "summary": "文｜王欣逸 编辑｜邓咏仪 36氪获悉，未来式智能（AutoAgents.ai）近日完成Pre-A轮融资，新进投资方包括凡创资本、中关村资本、探元资本，老股东东证创新、麟阁创投跟投，本轮融资主要用于算力投入、团队扩张以及新产品的生态建设运营。 未来式智能成立于2023年6月，专注于以智能体技术赋能知识工作者。核心团队来自达摩院、腾讯、字节跳动和谷歌。创始人兼CEO杨劲松曾在达摩院担任产品/商业化总监，曾任字节飞书AI负责人、亚马逊AWS aPaaS平台负责人，主导推出阿里灵杰、通义-Alicemind，在AI产品和商业化方面有着多年经验。 作为核心产品之一的企业级智能体搭建平台“灵搭”，旨在解决",
       "keywords": [
-        "llm",
-        "agent"
+        "agent",
+        "大模型"
       ],
-      "score": 0,
-      "analysis": "原理：基于主动感知-行动闭环评估具身空间智能，智能体通过移动观测推断遮挡结构与3D动态。创新：突破被动视觉基准，以动作驱动感知重建空间认知。应用：赋能复杂环境自主导航、机器人灵巧操作及AR空间计算。"
+      "score": 0.35,
+      "analysis": "采用低代码智能体编排框架，深度融合RAG检索增强与标准化API动态路由。创新点在于构建“数字劳动力生产线”，实现企业级Agent的快速定制、细粒度权限管控与规模化部署。适用于智能客服自动化、内部知识库问答及财务法务流程机器人。"
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "早期项目 | Chance AI获美图等数百万美元投资，用户数已达20万",
+      "url": "https://36kr.com/p/3816947890471812?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T01:20:43.000Z",
+      "summary": "作者丨欧雪 编辑丨袁斯来 硬氪获悉，Visual Agent（视觉智能体）创业公司Chance AI宣布完成数百万美元天使轮融资。本轮由美图领投，NYX Ventures、阿里系投资机构等跟投。融资将用于模型能力迭代、北美学生群体增长、以及社区与商业化探索。 Chance AI成立于2025年，核心产品是全球第一款以摄像头为主要交互入口的AI产品——Visual Agent（视觉智能体）。 与传统AI产品依赖输入框不同，用户打开Chance AI后直接拍摄眼前内容，系统即可理解视觉意图并提供判断、建议和行动方案。 Chance AI APP 界面一览（图源/企业） 公司创始人曾熙，路径横跨学术",
+      "keywords": [
+        "agent",
+        "语言模型",
+        "多模态"
+      ],
+      "score": 0.35,
+      "analysis": "基于流式视觉语言模型（VLM），以摄像头为第一交互入口实现端到端视觉意图解析。创新点在于突破传统文本提示框限制，提供低延迟的实时环境理解与多模态反馈。适用于AR实时导览、无障碍辅助、教育互动及工业现场智能巡检。"
     }
   ],
   "details": [
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "8点1氪丨谷歌推出Gemini 3.5系列模型；DeepSeek回应用户“对话泄露”疑虑；全国存款十强城市出炉",
-      "url": "https://36kr.com/p/3816885092910212?f=rss",
+      "title": "韩国5月份贸易数据显示芯片出口继续保持强劲",
+      "url": "https://36kr.com/newsflashes/3818310498550662?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-20T00:20:10.000Z",
-      "summary": "今日热点导览 谷歌推出Gemini 3.5系列模型 洁丽雅回应豪门内斗传闻，“毛巾少爷”1个月带货超500万元 巨力索具连续第二日跌停 前三星芯片负责人：明年内存将降价 自费流感疫苗也可使用医保报销 谷歌搜索宣布大改版，AI模式与代理助手全面嵌入 TOP 3 大新闻 DeepSeek回应用户“对话泄露”疑虑 5月19日，DeepSeek发布关于&lt; think &gt;字符触发模型异常回复的说明。近期关注到有用户反馈，在与DeepSeek模型的对话中输入&lt; think &gt;这类特殊字符后，模型偶发返回不可预期的内容，使部分用户产生了“对话泄露”的疑虑。针对这一问题，技术团队经全面",
+      "publishedAt": "2026-05-21T00:26:17.000Z",
+      "summary": "韩国海关周四公布的数据显示，按工作日差异调整后，5月1日至20日出口同比增长52.6%，高于4月份前20天的增幅49.4%。按未经调整口径计算，出口增长64.8%，进口增长29.3%，贸易顺差110亿美元。芯片出口同比大增202%，计算机相关产品出口飙升305.5%，显示与人工智能相关的需求持续旺盛。（财联社）",
       "keywords": [
+        "人工智能"
+      ],
+      "score": 9.97
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "黄仁勋：英伟达的GroQ芯片在一段时间内仍将是小众产品",
+      "url": "https://36kr.com/newsflashes/3818307822388099?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-21T00:23:34.000Z",
+      "summary": "黄仁勋在周三的财报电话会议上表示，英伟达斥资200亿美元收购Groq的技术后，其定制的AI芯片“在一段时间内将是一款小众产品”。英伟达在3月的年度GTC大会上发布了全新的Groq语言处理单元，以及一个装满该定制芯片（名为LPX）的完整数据中心机架。“LPX专为低延迟和高token速率而设计，但它的吞吐量较低，”黄仁勋说。“LPX的使用场景并不广泛。”（新浪财经）",
+      "keywords": [],
+      "score": 9.95
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "8点1氪丨英伟达Q1净利润583亿美元；谷歌CEO：Gemini月活跃用户达9亿；寿司郎回应“盘子抽检10抽10脏”",
+      "url": "https://36kr.com/p/3818280989443202?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T23:59:19.000Z",
+      "summary": "今日热点导览 俄罗斯将延长对中国公民的免签制度 张雪首度谈及签约德比斯原因 微信再度开放520大额红包，限时1天&nbsp; 罗欣药业回应阿奇霉素劣药事件 段永平最新持仓公布 TOP3大新闻 英伟达：第一财季净利润583亿美元，同比增长211% 36氪获悉，英伟达发布2027财年第一季度财报，财报显示，英伟达第一财季营收816.2亿美元，同比增长85%；净利润583.2亿美元，同比增长211%。 谷歌CEO：Gemini月活跃用户达9亿 谷歌CEO皮查伊在2026年I/O开发者大会上表示，Gemini AI应用的月活跃用户在过去一年中增长了一倍多，达到9亿人次，日请求量增长超过7倍。他补充称，",
+      "keywords": [
+        "claude",
         "gemini",
+        "chatgpt",
+        "openai",
         "anthropic",
-        "deepmind",
+        "agent",
         "人工智能",
+        "大模型"
+      ],
+      "score": 9.78
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "SpaceX招股书披露关联交易：自2023年起向特斯拉采购达8.9亿美元",
+      "url": "https://36kr.com/newsflashes/3818275119399809?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T23:59:32.000Z",
+      "summary": "当地时间5月20日，SpaceX提交的IPO招股说明书披露，自2023年以来，SpaceX及此前并入的xAI已向特斯拉累计贡献了约8.9亿美元的营业收入。文件显示，这笔巨额交易的主要部分涉及能源存储业务。其中，xAI在2024年和2025年分别向特斯拉采购了价值1.91亿美元和5.06亿美元的Megapack储能电池，用于支持其AI基础设施建设。此外，SpaceX还在去年向特斯拉采购了价值约1.31亿美元的电动皮卡Cybertruck。除上述业务外，招股书还确认，特斯拉与SpaceX目前正在联合建设Terafab半导体制造工厂。（界面）",
+      "keywords": [],
+      "score": 9.78
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "SpaceX招股书披露：Anthropic拟在未来三年向其支付近450亿美元购买算力",
+      "url": "https://36kr.com/newsflashes/3818261630157956?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T23:52:30.000Z",
+      "summary": "当地时间5月20日，SpaceX向美国证券交易委员会（SEC）正式递交的S-1招股说明书披露了一项重大的商业合作。文件显示，人工智能开发商Anthropic已同意在未来三年内向SpaceX支付近450亿美元，用于获取计算资源，以此支持其Claude人工智能软件的发展。根据协议条款，直至2029年5月，Anthropic预计每月将向SpaceX支付12.5亿美元，任何一方均可提前90天通知对方终止协议。（界面）",
+      "keywords": [
+        "claude",
+        "anthropic",
+        "人工智能"
+      ],
+      "score": 9.74
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "氪星晚报｜2026福布斯中国人工智能科技企业TOP 50发布，中关村科金入选；三星劳资谈判破裂，威刚董事长称DRAM、NAND恐再掀涨价潮；新交所与中国银行签署新版战略合作备忘录",
+      "url": "https://36kr.com/p/3816942423000196?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T11:40:36.000Z",
+      "summary": "大公司： 新加坡加码人工智能布局，英伟达将落地本地研发中心 全球AI芯片巨头英伟达将在新加坡新设研发中心，这也是新加坡周三集中公布的一系列人工智能相关举措之一。这座全新实验室是英伟达在新加坡设立的首个研发据点，同时也是其在亚太地区布局的第二处同类研发机构。（新浪财经） 2026福布斯中国人工智能科技企业TOP 50发布，中关村科金入选 36氪获悉，《2026福布斯中国人工智能科技企业TOP 50》正式揭晓，中关村科金成功入选，是榜单中唯一的“企业级AI平台及应用公司”。据IDC最新报告，中关村科金位列中国大模型平台私有化市场份额第四；在2026年一季度应用类大模型项目公开中标数排名前五。公司服",
+      "keywords": [
+        "人工智能",
+        "大模型"
+      ],
+      "score": 4.65
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "第四届中国AIGC产业峰会在京顺利举办！近20位行业大咖解码Agent与非共识机遇",
+      "url": "https://36kr.com/p/3817353357968516?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T08:22:01.000Z",
+      "summary": "今日，由量子位主办的第四届中国AIGC产业峰会在京启幕。 2026年，AI产业一路高歌猛进。从“龙虾”到“Harness”，爆款Agent接连出圈、风靡全网。面对层出不穷的新业态与新玩法，不少从业者和普通用户都感到困惑：如何找准AI的使用方式？怎样把握产业机遇？又该如何跟上行业发展的步伐？ 正是在这一背景下，本届大会以「@所有人，马上AI起来」为主题，集结近20位行业重磅嘉宾，联动产业头部企业、新锐创业公司、顶尖学术力量，围绕AI Agent商业化落地、多模态技术突破、千行百业场景深耕、算力基础设施变革等核心议题，开启了一场深度交流与思想碰撞。&nbsp; 嘉宾阵容堪称豪华： 既有昆仑万维、商",
+      "keywords": [
+        "agent",
         "大模型",
+        "多模态",
+        "ai agent"
+      ],
+      "score": 3.27
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "要做数字劳动力生产工厂，「未来式智能」完成Pre-A轮融资",
+      "url": "https://36kr.com/p/3816909945029760?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T01:21:27.000Z",
+      "summary": "文｜王欣逸 编辑｜邓咏仪 36氪获悉，未来式智能（AutoAgents.ai）近日完成Pre-A轮融资，新进投资方包括凡创资本、中关村资本、探元资本，老股东东证创新、麟阁创投跟投，本轮融资主要用于算力投入、团队扩张以及新产品的生态建设运营。 未来式智能成立于2023年6月，专注于以智能体技术赋能知识工作者。核心团队来自达摩院、腾讯、字节跳动和谷歌。创始人兼CEO杨劲松曾在达摩院担任产品/商业化总监，曾任字节飞书AI负责人、亚马逊AWS aPaaS平台负责人，主导推出阿里灵杰、通义-Alicemind，在AI产品和商业化方面有着多年经验。 作为核心产品之一的企业级智能体搭建平台“灵搭”，旨在解决",
+      "keywords": [
+        "agent",
+        "大模型"
+      ],
+      "score": 0.35
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "早期项目 | Chance AI获美图等数百万美元投资，用户数已达20万",
+      "url": "https://36kr.com/p/3816947890471812?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-05-20T01:20:43.000Z",
+      "summary": "作者丨欧雪 编辑丨袁斯来 硬氪获悉，Visual Agent（视觉智能体）创业公司Chance AI宣布完成数百万美元天使轮融资。本轮由美图领投，NYX Ventures、阿里系投资机构等跟投。融资将用于模型能力迭代、北美学生群体增长、以及社区与商业化探索。 Chance AI成立于2025年，核心产品是全球第一款以摄像头为主要交互入口的AI产品——Visual Agent（视觉智能体）。 与传统AI产品依赖输入框不同，用户打开Chance AI后直接拍摄眼前内容，系统即可理解视觉意图并提供判断、建议和行动方案。 Chance AI APP 界面一览（图源/企业） 公司创始人曾熙，路径横跨学术",
+      "keywords": [
+        "agent",
+        "语言模型",
         "多模态"
       ],
-      "score": 9.93
-    },
-    {
-      "id": "hn-48196609",
-      "title": "Gemini Omni — Google DeepMind",
-      "url": "https://deepmind.google/models/gemini-omni/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-19T17:46:19.000Z",
-      "score": 9.65,
-      "keywords": [
-        "gemini",
-        "deepmind"
-      ]
-    },
-    {
-      "id": "hn-48198291",
-      "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
-      "url": "https://openai.com/index/advancing-content-provenance/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-19T19:34:30.000Z",
-      "score": 9.58,
-      "keywords": [
-        "openai"
-      ]
-    },
-    {
-      "id": "hn-48197995",
-      "title": "Mistral AI Acquires Emmi AI to Create the Leading AI Stack",
-      "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
-      "source": "hackernews",
-      "publishedAt": "2026-05-19T19:14:12.000Z",
-      "score": 9.32,
-      "keywords": []
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Roundtables: Inside the Musk v. Altman Trial",
-      "url": "https://www.technologyreview.com/2026/05/19/1137454/roundtables-inside-the-musk-v-altman-trial/",
-      "source": "rss",
-      "publishedAt": "2026-05-19T20:15:18.000Z",
-      "summary": "Listen to the session or watch below Elon Musk lost his suit against OpenAI, in which he alleged CEO Sam Altman and President Greg Brockman had deceived him over the company’s non-profit status. Watch as AI reporter and attorney Michelle Kim, who covered the trial for MIT Technology Review, joins in",
-      "keywords": [
-        "openai"
-      ],
-      "score": 8.22
-    },
-    {
-      "id": "hn-48194614",
-      "title": "Copy Fail, Dirty Frag, and Fragnesia kernel vulnerabilities",
-      "url": "https://www.gentoo.org/news/2026/05/19/copy-fail-fragnesia-vulnerabilities.html",
-      "source": "hackernews",
-      "publishedAt": "2026-05-19T15:27:53.000Z",
-      "score": 7.29,
-      "keywords": [
-        "rag"
-      ]
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Understanding the modern cybercrime landscape",
-      "url": "https://www.technologyreview.com/2026/05/19/1136925/understanding-the-modern-cybercrime-landscape/",
-      "source": "rss",
-      "publishedAt": "2026-05-19T13:00:00.000Z",
-      "summary": "Throughout 2025, HPE observed significant changes in how cybercriminals operate. Analyzing real-world threats, our HPE Threat Labs highlighted an industrialization of the cyber criminals’ methods in its new In the Wild Report, enabling greater scale, speed and structure in their campaigns. They typi",
-      "keywords": [],
-      "score": 5.2
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "The Download: Musk v. Altman, smart glasses for warfare, and Google I/O",
-      "url": "https://www.technologyreview.com/2026/05/19/1137505/the-download-musk-altman-trial-smart-glasses-warfare-google-i-o/",
-      "source": "rss",
-      "publishedAt": "2026-05-19T12:10:00.000Z",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Here’s why Elon Musk lost his suit against OpenAI Elon Musk has lost his lawsuit against OpenAI, which centered on whether the company breached its fo",
-      "keywords": [
-        "openai"
-      ],
-      "score": 4.85
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "Colossal Biosciences is growing chickens in a 3D-printed artificial eggshell",
-      "url": "https://www.technologyreview.com/2026/05/19/1137471/colossal-biosciences-is-growing-chickens-in-a-3d-printed-container/",
-      "source": "rss",
-      "publishedAt": "2026-05-19T12:00:00.000Z",
-      "summary": "The baby chicks were shifting and starting to pip—or trying to hatch. But not from an egg.&#160; Instead, these chickens were growing inside transparent 3D-printed plastic cups at the Dallas headquarters of Colossal Biosciences. The biotech company today claimed it has developed a “fully artificial ",
-      "keywords": [],
-      "score": 4.79
-    },
-    {
-      "id": "hn-48170007",
-      "title": "Intro to TLA+ for the LLM Era: Prompt Your Way to Victory",
-      "url": "https://emptysqua.re/blog/intro-to-tla-plus-for-the-llm-era/",
-      "source": "hackernews",
-      "publishedAt": "2026-05-17T15:52:21.000Z",
-      "score": 1.05,
-      "keywords": [
-        "llm"
-      ]
+      "score": 0.35
     }
   ],
   "hotTopics": [
-    "多模态原生架构与实时流式推理",
-    "稀疏注意力与长上下文效率优化",
-    "代码驱动的智能体执行范式",
-    "AI内容溯源与可信水印标准化",
-    "具身智能的主动感知-行动闭环"
+    "算力供应链金融化与长期租赁",
+    "确定性数据流推理芯片架构",
+    "AI智能体（Agent）自主编排与商业化",
+    "视觉优先的多模态交互范式"
   ],
   "metadata": {
-    "totalCount": 26,
+    "totalCount": 9,
     "sources": [
-      "rss",
-      "hackernews",
-      "arxiv"
+      "rss"
     ],
-    "generatedAt": "2026-05-20T00:30:54.909Z"
+    "generatedAt": "2026-05-21T00:30:34.201Z"
   },
   "technicalInsights": [
-    "注意力机制正从静态稀疏向可微自适应演进，DashAttention通过打通梯度流，有望在推理阶段实现动态KV缓存分配，显著降低长序列推理的显存墙压力。",
-    "智能体开发范式发生根本性转变，代码不再仅是LLM的输出产物，而是作为可执行、可验证的“Harness”承载环境交互与逻辑自洽，推动Agent从“对话式”向“工程化”跃迁。",
-    "AI安全治理正从模型对齐延伸至全生命周期可追溯，跨厂商水印协议（如SynthID）的互认与部署，将为生成式AI的版权界定与深度伪造防御提供底层基础设施。",
-    "具身智能评估体系突破被动视觉局限，ESI-Bench强调“动作驱动感知”，预示未来机器人训练将更依赖闭环仿真与主动探索策略，而非静态数据集微调。"
+    "AI算力需求正从训练侧堆叠转向推理侧优化，低延迟确定性架构将填补高并发交互式Agent的硬件空白，形成与通用GPU的互补生态。",
+    "大模型应用层进入去提示词化阶段，摄像头/传感器直连流式VLM的端侧推理架构将成为下一代自然人机交互的核心入口。",
+    "算力采购协议长期化与能源-半导体垂直整合表明，AI基础设施正演变为重资产公用事业，底层供应链控制力将决定模型迭代的可持续性。"
   ]
 }
