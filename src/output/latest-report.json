@@ -1,256 +1,222 @@
 {
-  "date": "2026年5月24日",
-  "title": "🤖 2026年5月24日 AI 技术日报",
-  "summary": "本期资讯折射出AI技术正从“通用大模型军备竞赛”向“垂直场景深耕与软硬协同”演进。产业共识表明，纯套壳应用已触及天花板，具备长期在线、多模态感知与物理世界交互能力的AI原生硬件与Agent成为新焦点。底层算力向具身智能专用芯片延伸，而上层应用则面临工程化落地的严峻考验：星巴克AI盘点工具的失败揭示了CV模型在复杂非结构化环境中的泛化瓶颈，医疗与HR等垂直领域则通过“领域知识微调+工作流编排”实现高ROI。整体技术范式正由“能力堆砌”转向“人机协同浓度控制”与“端云一体化部署”，标志着AI进入深水区。",
+  "date": "2026年6月8日",
+  "title": "🤖 2026年6月8日 AI 技术日报",
+  "summary": "本期AI技术演进呈现“底层架构重构、训练范式跃迁与工程流重塑”三大主线。基础设施端，算力瓶颈驱动互联架构向跨域Scale Across演进，光通信产业链价值重心上移。算法层面，持续学习通过谱分解保护主成分以抗遗忘，RNN训练范式突破BPTT实现全并行化，推理模型RL微调引入分段奖励重分配以优化信用分配。具身智能聚焦任务空间解耦与全身控制蒸馏。同时，人机协同编辑的细粒度检测基准推动内容安全向过程溯源演进。整体技术正从单点性能堆叠转向高效、可解释与系统级协同。",
   "highlights": [
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "圆桌对话：下一个杀手级AI产品，会出现在哪个赛道？| 2026AI Partner·北京亦庄AI+产业大会",
-      "url": "https://36kr.com/p/3821714896408713?f=rss",
+      "title": "中信证券：分布式拓展光互联边界，DCI产业链迎系统性重构",
+      "url": "https://36kr.com/newsflashes/3843784304134403?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-23T10:10:00.000Z",
-      "summary": "下一个杀手级AI产品，是眼镜、是Agent，还是某个尚未命名的“物理世界入口”？这场圆桌没有标准答案，却达成一个共识：单纯套壳大模型的应用注定短命，只有长期在线、连接物理世界、能完成真实交互闭环的产品，才可能成为下一个百亿级赛道。从AI眼镜到具身智能，入口之争已悄然打响。 硬件先行还是生态为王？C端规模还是B端付费？最终指向同一个逻辑：纯套壳应用、弱交互硬件注定被淘汰，只有“多模态底座+AI原生智能体+可穿戴硬件”三位一体，才能让AI从聊天框真正走进现实。 以下为圆桌对话内容，经36氪整理编辑： 刘子豪丨杭州颜柯教育联合创始人（主持） 赵维奇丨乐奇全球开放生态负责人 路少卿丨商汤科技研究院技术",
-      "keywords": [
-        "chatgpt",
-        "agent",
-        "人工智能",
-        "大模型",
-        "多模态",
-        "ai agent"
-      ],
-      "score": 4.02,
-      "analysis": "技术原理依托多模态大模型与端侧推理引擎的低延迟协同，创新点在于提出“多模态底座+AI原生智能体+可穿戴硬件”三位一体架构，突破纯软件交互局限。潜在应用场景涵盖具身智能控制、全天候个人助理及工业现场实时辅助，推动AI从虚拟对话向物理世界闭环交互演进。"
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "对话王小川：离开通用人工智能的主干道之后",
-      "url": "https://36kr.com/p/3821521291038856?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T06:53:35.000Z",
-      "summary": "“如果没有转型，继续走主流道路，你也会有同等程度的焦虑。”王小川说，这次转型，让他真正回归到从创业第一天就最想做的事情：造AI医生。 访谈｜邓咏仪 杨轩 文｜邓咏仪 编辑｜张雨忻 一年前，王小川带着百川智能来了一次激烈的“大刹车”：大幅缩减通用模型团队，关闭金融等多条行业线，All in医疗大模型。但与此同时，整个大模型行业却热闹非凡，大厂和创业公司轮番进行“轰炸式更新”——过去半年里，平均3天就有一个新版本的通用大模型面世。 而看起来沉寂的百川在做什么？5月22日，王小川安静地交出答卷：新医疗大模型M4，以及Agent产品“百小医”。 过去3年里，百川逐渐从“要做中国最好的基础大模型”转向“",
-      "keywords": [
-        "llm",
-        "claude",
-        "chatgpt",
-        "openai",
-        "anthropic",
-        "deepmind",
-        "agent",
-        "agi",
-        "人工智能",
-        "大模型",
-        "语言模型"
-      ],
-      "score": 2.65,
-      "analysis": "技术原理基于垂直领域知识图谱与医疗多模态数据的深度微调（SFT+RLHF），创新点在于放弃通用基座内卷，构建“医疗Agent+私有化部署”的轻量化架构。潜在应用场景包括临床辅助决策、患者全周期健康管理及基层医疗资源下沉，显著提升垂直行业模型的精准度与合规性。"
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "圆桌对话：AI浓度与转化率：数字体验的实战增长法则",
-      "url": "https://36kr.com/p/3821519307591811?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T06:53:25.000Z",
-      "summary": "AI浓度并非越高越好，转化率的秘密在于人机共生的平衡点。 “AI应像手机一样贯穿全流程”，而面对亲子游客和老年群体，主动将AI浓度降至50%，却实现了超50%的转化率。浓度的关键是以人为本、文化温度先行。 以下为圆桌对话内容，经36氪整理编辑： 薛冰丨上海蜚语信息科技副总裁（主持） 崔健南丨广州搞搞镇文化科技创始人兼CEO 杨晟丨珀乐互动科技创始人 薛冰：各位嘉宾大家下午好，我是主持人薛冰，很荣幸受到36氪以及北京亦庄的邀请主持下午的圆桌。今天非常开心能够邀请到和我同台的两位重量级嘉宾，崔总、杨总，现在我们直接进入圆桌环节，先请两位嘉宾做一下自我介绍，先从崔总开始。 崔健南：谢谢主持人，大家下",
-      "keywords": [
-        "人工智能",
-        "大模型"
-      ],
-      "score": 2.65,
-      "analysis": "技术原理涉及人机交互（HCI）阈值建模与动态置信度路由，创新点在于提出“AI浓度可控”的自适应交互范式，避免过度自动化导致的信任衰减。潜在应用场景覆盖文旅导览、银发经济服务及复杂B2B销售流程，通过平衡算法推荐与人工介入优化用户体验与商业转化。"
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "36氪首发 | 北大项目孵化，国内首家原生机器人“大脑芯片”企业获数亿元融资",
-      "url": "https://36kr.com/p/3821371042877575?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T04:20:48.000Z",
-      "summary": "作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，北京维泛智能科技有限公司（以下简称“维泛智能”）近日完成数亿元种子轮融资，由中关村资本及旗下启航投资联合领投，上海未来产业基金、石溪资本、佰维存储、燕创集团、海益投资、探元创投共同投资。 维泛智能成立于2025年5月，孵化自北京大学类脑芯片实验室（PAICORE Lab），专注于具身智能“大小脑”融合芯片研发，致力于打造全国产化机器人核心计算方案。 联合创始人殷积磊毕业于北京大学，拥有超过20年半导体行业经验，曾任知存科技COO兼研发副总裁，以及IBM、GlobalFoundries芯片研发总监，并曾在MTK",
-      "keywords": [
-        "transformer",
-        "agi",
-        "人工智能",
-        "大模型",
-        "多模态"
-      ],
-      "score": 1.59,
-      "analysis": "技术原理采用存算一体架构与类脑脉冲神经网络（SNN）融合设计，创新点在于实现“大小脑”协同的端侧低功耗高算力芯片，突破传统GPU在机器人实时控制中的能效瓶颈。潜在应用场景聚焦具身机器人运动规划、多传感器实时融合及边缘自主决策，加速国产机器人核心算力自主化。"
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "星巴克叫停AI库存自动盘点工具：上线9个月，错误频出",
-      "url": "https://36kr.com/newsflashes/3821221746266498?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T03:37:41.000Z",
-      "summary": "星巴克本周正式终止了其在北美地区门店使用的AI库存自动盘点工具。该系统旨在通过平板电脑拍照自动统计牛奶、糖浆等物料库存，但在上线9个月后因频繁出错而被叫停。（新浪财经）",
+      "publishedAt": "2026-06-08T00:19:35.000Z",
+      "summary": "36氪获悉，中信证券指出，AI算力指数级扩张的大背景下，北美单体数据中心电力与土地瓶颈日益突出，驱动算力布局从园区内的Scale Up/Out向跨园区、跨区域的Scale Across演进。Scale Across作为突破数据中心算力墙的核心方向，正加速从早期验证走向规模化部署，有望成为AI时代光互联新兴的高景气赛道。中信证券认为，DCI（数据中心互联）产业链正经历深刻的重构：AI时代对DCI提出高密度、高带宽、低延迟及高可靠性等严苛要求，催生了对高速率相干光模块和高密度光放大器的爆发式需求，产业价值正从传统DCI时代，高度集中于下游系统厂商，向中上游的光模块、光放大器及核心光电芯片环节加速转",
       "keywords": [],
-      "score": 1.29,
-      "analysis": "技术原理依赖轻量化视觉模型与目标检测算法，创新点暴露于复杂光照、遮挡及非标准包装下的长尾分布泛化难题。该案例警示工业级AI需引入主动学习、多模态校验（如RFID+视觉）及人在回路（HITL）机制。潜在应用场景倒逼零售仓储、产线质检向高鲁棒性边缘AI系统升级。"
+      "score": 9.92,
+      "analysis": "原理：依托高速相干光模块与光放大器实现跨域高带宽互联，突破传统Scale Out电力瓶颈。创新：产业价值向中上游光电芯片转移，推动Scale Across架构规模化。应用：支撑超大规模分布式AI训练集群与异地推理，优化算力调度与能耗。"
     },
     {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "用AI来管公司，Moka推出三款AI HR工具｜涌现新栏目",
-      "url": "https://36kr.com/p/3819979202253189?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T02:00:00.000Z",
-      "summary": "作者｜梁键强 编辑｜王毓婵 一句话介绍 Moka为AI人力资源软件服务商，早期从智能化招聘管理系统起步，后逐步扩展至更完整的HR管理系统。5月，Moka上线了招聘Eva、人事Eva和BPEva三款AI HR产品。 招聘Eva覆盖招聘全流程，辅助企业完成识人、筛选和面试；人事Eva聚焦报表处理、流程流转和员工咨询等重复事务；BPEva则用于动态更新人才画像，辅助企业进行人才识别和组织决策。 支撑这三款产品的是Moka AI工坊，它相当于底层能力平台，可以让企业用业务语言描述需求，具有快速响应、个性化定制和安全上线等能力。 图片来源：Moka 团队介绍 Moka联合创始人兼CEO李国兴，本科阶段获",
+      "id": "arxiv-2606.06494v1",
+      "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
+      "url": "https://arxiv.org/abs/2606.06494v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:59:55.000Z",
+      "summary": "Parameter-efficient finetuning methods based on spectral decomposition have enabled progress in Continual Learning. In this paper we introduce TailLoR, which utilizes the singular bases U and V of the pre-trained weights as a fixed reference frame to learn a low-rank update applied to the singular value matrix. A soft spectral penalty discourages updates aligned with dominant singular directions, reducing interference while routing fine-grained adaptation into the highly flexible, long-tail spec",
       "keywords": [
-        "agent",
-        "ai agent"
+        "rag"
       ],
-      "score": 0.62,
-      "analysis": "技术原理基于大语言模型的工作流编排（Agent Orchestration）与结构化数据抽取，创新点在于构建可插拔的“AI工坊”底层平台，支持业务语言到自动化流程的低代码转换。潜在应用场景涵盖智能简历解析、员工全生命周期管理及组织效能动态画像，推动企业SaaS向AI原生架构转型。"
+      "score": 0,
+      "analysis": "原理：利用预训练权重奇异分解的U/V矩阵作固定参考系，对奇异值矩阵进行低秩更新。创新：引入软谱惩罚抑制主成分方向更新，将细粒度适应路由至长尾谱空间，缓解灾难性遗忘。应用：大模型持续微调、边缘设备个性化适配及多任务动态切换。"
+    },
+    {
+      "id": "arxiv-2606.06493v1",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "url": "https://arxiv.org/abs/2606.06493v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:59:50.000Z",
+      "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid",
+      "keywords": [
+        "agent"
+      ],
+      "score": 0,
+      "analysis": "原理：构建紧凑显式任务空间接口，通过蒸馏互补教师网络实现人形机器人全身控制。创新：解耦高层语义规划与底层运动控制，提供模块化高表达力命令空间，提升复杂操作泛化力。应用：具身智能体在家庭服务、工业装配及非结构化环境中的灵巧操作。"
+    },
+    {
+      "id": "arxiv-2606.06481v1",
+      "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
+      "url": "https://arxiv.org/abs/2606.06481v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:58:05.000Z",
+      "summary": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from progressive human-AI co-editing. However, existing AI-text detection benchmarks largely focus on final outputs and provide limited understanding of how AI authorship signals emerge, accumulate, or disappear throughout the revision process. We introduce OpAI-Bench, an operation-guided benchmark for study",
+      "keywords": [
+        "rag"
+      ],
+      "score": 0,
+      "analysis": "原理：构建操作引导的渐进式人机协同编辑基准，追踪AI生成信号在文本迭代中的累积与消解规律。创新：突破仅检测最终输出的局限，实现多粒度过程级AI文本溯源与归因。应用：学术诚信审查、企业合规内容审计及生成内容水印技术验证。"
+    },
+    {
+      "id": "arxiv-2606.06479v1",
+      "title": "Pretraining Recurrent Networks without Recurrence",
+      "url": "https://arxiv.org/abs/2606.06479v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:57:33.000Z",
+      "summary": "Training recurrent neural networks (RNNs) requires assigning credit across long sequences of computations. Standard backpropagation through time (BPTT) addresses this problem poorly: it is sequential in time, limiting parallelism, and suffers from vanishing or exploding gradients, making long-range associations difficult to learn. We propose Supervised Memory Training (SMT), a method for training nonlinear RNNs that sidesteps recurrent credit propagation entirely by reducing RNN training to supe",
+      "keywords": [
+        "transformer"
+      ],
+      "score": 0,
+      "analysis": "原理：提出监督记忆训练，将RNN训练转化为独立监督学习问题，完全规避BPTT的时序信用分配。创新：打破时间步依赖实现全并行化训练，彻底解决梯度消失/爆炸问题。应用：高频实时流数据处理、端侧低功耗序列模型部署及长上下文架构探索。"
+    },
+    {
+      "id": "arxiv-2606.06475v1",
+      "title": "RREDCoT: Segment-Level Reward Redistribution for Reasoning Models",
+      "url": "https://arxiv.org/abs/2606.06475v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:56:31.000Z",
+      "summary": "Recent advancements in reasoning language models have been driven by Reinforcement Learning (RL) fine-tuning. Most often, these rely on the Group Relative Policy Optimization (GRPO) algorithm or modifications thereof to steer the models to produce Chain-of-Thought (CoT) traces. The final answer can only be verified, and the reward assigned, after the CoT trace is complete, making it a delayed reward problem. GRPO and its modifications correspond to Monte Carlo methods in standard RL, which are k",
+      "keywords": [],
+      "score": 0,
+      "analysis": "原理：针对推理模型RL微调的延迟奖励问题，提出分段级奖励重分配机制，优化GRPO采样效率。创新：将终局奖励按思维链逻辑节点细粒度回溯分配，提升策略梯度估计稳定性。应用：复杂数学推导、代码生成及多步逻辑规划模型的强化学习对齐。"
     }
   ],
   "details": [
     {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "圆桌对话：下一个杀手级AI产品，会出现在哪个赛道？| 2026AI Partner·北京亦庄AI+产业大会",
-      "url": "https://36kr.com/p/3821714896408713?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T10:10:00.000Z",
-      "summary": "下一个杀手级AI产品，是眼镜、是Agent，还是某个尚未命名的“物理世界入口”？这场圆桌没有标准答案，却达成一个共识：单纯套壳大模型的应用注定短命，只有长期在线、连接物理世界、能完成真实交互闭环的产品，才可能成为下一个百亿级赛道。从AI眼镜到具身智能，入口之争已悄然打响。 硬件先行还是生态为王？C端规模还是B端付费？最终指向同一个逻辑：纯套壳应用、弱交互硬件注定被淘汰，只有“多模态底座+AI原生智能体+可穿戴硬件”三位一体，才能让AI从聊天框真正走进现实。 以下为圆桌对话内容，经36氪整理编辑： 刘子豪丨杭州颜柯教育联合创始人（主持） 赵维奇丨乐奇全球开放生态负责人 路少卿丨商汤科技研究院技术",
+      "id": "hn-48434312",
+      "title": "LLMs are eroding my software engineering career and I don't know what to do",
+      "url": "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-07T12:49:29.000Z",
+      "score": 12.9,
       "keywords": [
-        "chatgpt",
-        "agent",
-        "人工智能",
-        "大模型",
-        "多模态",
-        "ai agent"
-      ],
-      "score": 4.02
+        "llm"
+      ]
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "圆桌对话：当AI进入产业前线：未来最稀缺的AI人才，会是谁？| 2026AI Partner·北京亦庄AI+产业大会",
-      "url": "https://36kr.com/p/3821542483857801?f=rss",
+      "title": "「华超神控」获亿元天使系列融资，加速打造新一代AI超声脑机接口平台 | 36氪首发",
+      "url": "https://36kr.com/p/3841459663030532?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-23T07:14:29.000Z",
-      "summary": "稀缺的，到底是懂AI的人，还是懂业务的人？ 一个反直觉的判断——懂AI这件事正在快速贬值，而能在关键低频决策中做出判断的人，才是未来的稀缺品。高频重复的工作最容易被AI替代，但在打造爆品、建立品牌等低频高影响力的决策上，人的判断依然不可替代，企业AI转型的最大卡点也不是技术或数据，而是“想不到应用场景”， 当前AI的利润大头仍在基础设施层，应用端的ROI尚未完全释放，但拐点会比预想来得更快。 以下为圆桌对话内容，经36氪整理编辑： 郑王宇丨36氪基金投资副总裁（主持） 龚毅丨尼尔森IQ 通信及科技业务总经理 罗飞丨华科智能AI研究院院长 林海卓丨卓源亚洲创始合伙人、董事长 郑王宇：各位老师好，",
+      "publishedAt": "2026-06-08T00:30:00.000Z",
+      "summary": "文｜胡香赟 编辑｜海若镜 36氪获悉，近日，新一代AI超声脑机公司华超神控（BCI-Sonics）已完成亿元人民币级天使轮系列融资。天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投，循光资本持续担任独家财务顾问。募集资金将用于推动公司的技术验证与产业化落地。 华超神控于2025年创立，创始人李昕是中国科学院与德国弗劳恩霍夫IGD研究所联合培养生物医学工程博士，曾任GE医疗全球科研中心中国区负责人，并连续创立创新科技及医疗公司，在医疗影像、AI、脑机接口与产业转化方面拥有深厚积累。 公司核心团队汇聚了来自清华大学、上海交通大学、帝国理工等海内外高校的人才，覆盖神经科学、声学、医学影",
       "keywords": [
-        "agent",
-        "agi",
-        "人工智能",
-        "大模型"
-      ],
-      "score": 2.8
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "圆桌对话：人才特种兵：“AI原生人才”与“产业老炮”的共生手册| 2026AI Partner·北京亦庄AI+产业大会",
-      "url": "https://36kr.com/p/3821533415985283?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T07:05:47.000Z",
-      "summary": "真正AI原生的人，甚至不会来这个现场。但对于那些积极转型的20%，如何找到、培养并留住他们，这里有一本实战手册。 只有1%的企业是AI原生企业，20%积极拥抱变化，80%在苦苦挣扎；人才亦然。圆桌深入探讨了企业“赶时髦招AI人才”的焦虑、通过黑客松内部挖掘AI人才的方法、以及“事业留人、文化留人”的留存策略。 以下为圆桌对话内容，经36氪整理编辑： 帮主丨36氪《AI局内人》主播（主持） 郑鹏宇丨杭州颜柯教育科技有限公司创始人 肖玛峰丨AI招聘平台TTC创始人 帮主：各位下午好，我是这场圆桌的主持人帮主。这场圆桌不聊技术落地的事，聊一个在座很多老板都非常关心的事——AI人才从哪里来，以及能不能",
-      "keywords": [
-        "claude",
         "openai",
-        "anthropic",
-        "agent",
-        "大模型"
-      ],
-      "score": 2.74
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "对话王小川：离开通用人工智能的主干道之后",
-      "url": "https://36kr.com/p/3821521291038856?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T06:53:35.000Z",
-      "summary": "“如果没有转型，继续走主流道路，你也会有同等程度的焦虑。”王小川说，这次转型，让他真正回归到从创业第一天就最想做的事情：造AI医生。 访谈｜邓咏仪 杨轩 文｜邓咏仪 编辑｜张雨忻 一年前，王小川带着百川智能来了一次激烈的“大刹车”：大幅缩减通用模型团队，关闭金融等多条行业线，All in医疗大模型。但与此同时，整个大模型行业却热闹非凡，大厂和创业公司轮番进行“轰炸式更新”——过去半年里，平均3天就有一个新版本的通用大模型面世。 而看起来沉寂的百川在做什么？5月22日，王小川安静地交出答卷：新医疗大模型M4，以及Agent产品“百小医”。 过去3年里，百川逐渐从“要做中国最好的基础大模型”转向“",
-      "keywords": [
-        "llm",
-        "claude",
-        "chatgpt",
-        "openai",
-        "anthropic",
-        "deepmind",
-        "agent",
-        "agi",
         "人工智能",
-        "大模型",
-        "语言模型"
-      ],
-      "score": 2.65
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "圆桌对话：AI浓度与转化率：数字体验的实战增长法则",
-      "url": "https://36kr.com/p/3821519307591811?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T06:53:25.000Z",
-      "summary": "AI浓度并非越高越好，转化率的秘密在于人机共生的平衡点。 “AI应像手机一样贯穿全流程”，而面对亲子游客和老年群体，主动将AI浓度降至50%，却实现了超50%的转化率。浓度的关键是以人为本、文化温度先行。 以下为圆桌对话内容，经36氪整理编辑： 薛冰丨上海蜚语信息科技副总裁（主持） 崔健南丨广州搞搞镇文化科技创始人兼CEO 杨晟丨珀乐互动科技创始人 薛冰：各位嘉宾大家下午好，我是主持人薛冰，很荣幸受到36氪以及北京亦庄的邀请主持下午的圆桌。今天非常开心能够邀请到和我同台的两位重量级嘉宾，崔总、杨总，现在我们直接进入圆桌环节，先请两位嘉宾做一下自我介绍，先从崔总开始。 崔健南：谢谢主持人，大家下",
-      "keywords": [
-        "人工智能",
-        "大模型"
-      ],
-      "score": 2.65
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "36氪首发 | 北大项目孵化，国内首家原生机器人“大脑芯片”企业获数亿元融资",
-      "url": "https://36kr.com/p/3821371042877575?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-05-23T04:20:48.000Z",
-      "summary": "作者&nbsp;|&nbsp;乔钰杰 编辑&nbsp;|&nbsp;袁斯来 硬氪获悉，北京维泛智能科技有限公司（以下简称“维泛智能”）近日完成数亿元种子轮融资，由中关村资本及旗下启航投资联合领投，上海未来产业基金、石溪资本、佰维存储、燕创集团、海益投资、探元创投共同投资。 维泛智能成立于2025年5月，孵化自北京大学类脑芯片实验室（PAICORE Lab），专注于具身智能“大小脑”融合芯片研发，致力于打造全国产化机器人核心计算方案。 联合创始人殷积磊毕业于北京大学，拥有超过20年半导体行业经验，曾任知存科技COO兼研发副总裁，以及IBM、GlobalFoundries芯片研发总监，并曾在MTK",
-      "keywords": [
-        "transformer",
-        "agi",
-        "人工智能",
-        "大模型",
         "多模态"
       ],
-      "score": 1.59
+      "score": 9.99
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "护航政府债券发行，MLF操作重回净投放",
-      "url": "https://36kr.com/newsflashes/3821222287069568?f=rss",
+      "title": "中信建投：算力板块当前尚未达到中期大级别切换标准，主要是短期再平衡需求",
+      "url": "https://36kr.com/newsflashes/3843791725299976?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-23T03:53:14.000Z",
-      "summary": "央行5月22日发布公告称，为保持银行体系流动性充裕，5月25日将以固定数量、利率招标、多重价位中标方式开展6000亿元MLF（中期借贷便利）操作，期限为1年期。本次操作为加量续作，净投放1000亿元，超出市场预期。中信证券首席经济学家明明表示，5月国债供给放量、同业存单到期压力较大，本次操作体现出对资金面的呵护。（上证报）",
+      "publishedAt": "2026-06-08T00:27:08.000Z",
+      "summary": "36氪获悉，中信建投研报称，近两周算力板块主升但波动加大，监管加强、资金止盈及美韩AI产业链大幅调整导致市场疑虑是否会出现趋势性调整，资金全面切向低位板块。中信建投认为算力板块波动加剧的核心矛盾源于行业基本面具备绝对优势与交易结构绝对拥挤。从基本面、估值、交易结构整体来看，当前尚未达到中期大级别切换的标准，主要是短期再平衡的需求。后续行情拐点取决于估值中枢变动与基本面收敛信号，一是算力自身基本面增速放缓，二是其他行业基本面显著修复。短期市场可能大幅低开后快速企稳，总体呈现“科技跌、防御涨”的轮动特征。中期看海外科技股企稳后可继续布局算力环节内部轮动，其他景气线索关注煤炭和工业金属。",
       "keywords": [],
-      "score": 1.4
+      "score": 9.97
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "星巴克叫停AI库存自动盘点工具：上线9个月，错误频出",
-      "url": "https://36kr.com/newsflashes/3821221746266498?f=rss",
+      "title": "中信证券：分布式拓展光互联边界，DCI产业链迎系统性重构",
+      "url": "https://36kr.com/newsflashes/3843784304134403?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-23T03:37:41.000Z",
-      "summary": "星巴克本周正式终止了其在北美地区门店使用的AI库存自动盘点工具。该系统旨在通过平板电脑拍照自动统计牛奶、糖浆等物料库存，但在上线9个月后因频繁出错而被叫停。（新浪财经）",
+      "publishedAt": "2026-06-08T00:19:35.000Z",
+      "summary": "36氪获悉，中信证券指出，AI算力指数级扩张的大背景下，北美单体数据中心电力与土地瓶颈日益突出，驱动算力布局从园区内的Scale Up/Out向跨园区、跨区域的Scale Across演进。Scale Across作为突破数据中心算力墙的核心方向，正加速从早期验证走向规模化部署，有望成为AI时代光互联新兴的高景气赛道。中信证券认为，DCI（数据中心互联）产业链正经历深刻的重构：AI时代对DCI提出高密度、高带宽、低延迟及高可靠性等严苛要求，催生了对高速率相干光模块和高密度光放大器的爆发式需求，产业价值正从传统DCI时代，高度集中于下游系统厂商，向中上游的光模块、光放大器及核心光电芯片环节加速转",
       "keywords": [],
-      "score": 1.29
+      "score": 9.92
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "用AI来管公司，Moka推出三款AI HR工具｜涌现新栏目",
-      "url": "https://36kr.com/p/3819979202253189?f=rss",
+      "title": "华泰证券A股策略：短期继续保持均衡配置",
+      "url": "https://36kr.com/newsflashes/3843748135979272?f=rss",
       "source": "rss",
-      "publishedAt": "2026-05-23T02:00:00.000Z",
-      "summary": "作者｜梁键强 编辑｜王毓婵 一句话介绍 Moka为AI人力资源软件服务商，早期从智能化招聘管理系统起步，后逐步扩展至更完整的HR管理系统。5月，Moka上线了招聘Eva、人事Eva和BPEva三款AI HR产品。 招聘Eva覆盖招聘全流程，辅助企业完成识人、筛选和面试；人事Eva聚焦报表处理、流程流转和员工咨询等重复事务；BPEva则用于动态更新人才画像，辅助企业进行人才识别和组织决策。 支撑这三款产品的是Moka AI工坊，它相当于底层能力平台，可以让企业用业务语言描述需求，具有快速响应、个性化定制和安全上线等能力。 图片来源：Moka 团队介绍 Moka联合创始人兼CEO李国兴，本科阶段获",
+      "publishedAt": "2026-06-08T00:03:50.000Z",
+      "summary": "36氪获悉，华泰证券发布A股策略指出，短期A股进入AI链产业催化相对真空与宏观风险再定价的叠加窗口。上周五远超预期的非农数据触发全球流动性收紧定价，美债收益率与美元指数大幅上行，纳指100等风险资产显著回调，叠加AI链海外龙头指引不及预期与短期筹码拥挤,市场风格出现再平衡迹象,主要矛盾由产业景气转向宏观风险定价。复盘纳指100强动量行情后跌超2%+美债上行的情形，A股月度维度承压概率较高，金融/价值占优、成长承压。因此，配置上，建议适度止盈AI链，待波动率回落后再吸筹，向宏观再定价中期望收益较高的银行及一季报后超额收益相对EPS变化有性价比的小金属、包装印刷等再平衡。",
+      "keywords": [],
+      "score": 9.81
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "8点1氪丨八家上市公司集中公告“补税”；ChatGPT将迎来史上最大幅度升级；高考新增AI监考员，自动截取异常录像",
+      "url": "https://36kr.com/p/3843764238174729?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-06-08T00:01:39.000Z",
+      "summary": "今日热点导览 AI等机器网络请求量首超人类 瑞幸咖啡回应拿铁去冰仅半杯 宗馥莉自有品牌KELLYONE回归 多家低成本航空公司对登机箱登机收费 黄仁勋会见韩国两大游戏商代表共商游戏AI合作方案 TOP3大新闻 八家上市公司集中公告“补税”&nbsp; 6月1日至6日，不到一周内，八家A股上市公司先后披露补缴税款公告。这八家公司合计补缴税款及滞纳金约4亿元。其中，苹果中国最大授权经销商爱施德（002416.SZ）一家补缴3.08亿元，占八家总额的近八成，该公司披露，仅滞纳金就达1.23亿元。对部分公司而言，这笔补缴金额已接近甚至超过去年一整年的利润。如电子材料企业宏昌电子（603002.SH）需",
       "keywords": [
+        "chatgpt",
+        "openai",
+        "anthropic",
         "agent",
+        "人工智能",
+        "大模型",
         "ai agent"
       ],
-      "score": 0.62
+      "score": 9.8
+    },
+    {
+      "id": "hn-48437568",
+      "title": "If LLMs Have Human-Like Attributes, Then So Does Age of Empires II",
+      "url": "https://arxiv.org/abs/2605.31514",
+      "source": "hackernews",
+      "publishedAt": "2026-06-07T18:54:55.000Z",
+      "score": 8.63,
+      "keywords": [
+        "llm"
+      ]
+    },
+    {
+      "id": "hn-48431981",
+      "title": "I design with Claude more than Figma now",
+      "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-07T05:04:24.000Z",
+      "score": 4.43,
+      "keywords": [
+        "claude"
+      ]
+    },
+    {
+      "id": "arxiv-2606.06494v1",
+      "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
+      "url": "https://arxiv.org/abs/2606.06494v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:59:55.000Z",
+      "summary": "Parameter-efficient finetuning methods based on spectral decomposition have enabled progress in Continual Learning. In this paper we introduce TailLoR, which utilizes the singular bases U and V of the pre-trained weights as a fixed reference frame to learn a low-rank update applied to the singular value matrix. A soft spectral penalty discourages updates aligned with dominant singular directions, reducing interference while routing fine-grained adaptation into the highly flexible, long-tail spec",
+      "keywords": [
+        "rag"
+      ],
+      "score": 0
+    },
+    {
+      "id": "arxiv-2606.06493v1",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "url": "https://arxiv.org/abs/2606.06493v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-04T17:59:50.000Z",
+      "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid",
+      "keywords": [
+        "agent"
+      ],
+      "score": 0
     }
   ],
   "hotTopics": [
-    "具身智能与端侧芯片融合",
-    "AI原生智能体工作流编排",
-    "垂直领域大模型深耕与去通用化",
-    "复杂场景CV泛化瓶颈与工程鲁棒性"
+    "分布式算力互联与Scale Across架构",
+    "大模型持续学习与参数高效微调",
+    "具身智能全身控制与任务空间解耦",
+    "推理模型强化学习与奖励重分配"
   ],
   "metadata": {
-    "totalCount": 9,
+    "totalCount": 23,
     "sources": [
-      "rss"
+      "hackernews",
+      "rss",
+      "arxiv"
     ],
-    "generatedAt": "2026-05-24T00:31:21.557Z"
+    "generatedAt": "2026-06-08T00:31:06.258Z"
   },
   "technicalInsights": [
-    "大模型竞争正从“参数量与基准分数”转向“场景闭环与ROI验证”，缺乏物理世界数据反馈与长尾处理能力的应用将面临淘汰。",
-    "端云协同与专用AI芯片（如存算一体、SNN）将成为具身智能与可穿戴设备的算力底座，解决实时推理延迟与功耗矛盾是核心工程挑战。",
-    "AI产品落地需建立“浓度控制”与“人在回路”机制，过度追求自动化会引发信任危机，动态置信度路由与多模态冗余校验是提升工业级可靠性的关键。"
+    "训练范式正从“时序依赖”向“全并行/解耦”演进，SMT与分段奖励机制表明长程信用分配是突破模型推理与序列建模瓶颈的关键。",
+    "具身智能与大模型规划接口正走向显式化与模块化，HANDOFF等研究验证了高层语义与底层运动控制解耦是落地复杂物理交互的必由之路。",
+    "AI安全评估从“静态结果判别”转向“动态过程归因”，OpAI-Bench揭示未来内容治理需嵌入人机协同工作流，实现细粒度操作级溯源。"
   ]
 }
