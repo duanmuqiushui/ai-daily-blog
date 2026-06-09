@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🏆 GitHub Trending 周报 | 2026-W24</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #0a0a0f;
+      --bg-secondary: #12121a;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-color: rgba(168, 85, 247, 0.2);
+      --border-color-hover: rgba(168, 85, 247, 0.5);
+      --accent: #A855F7;
+      --accent-soft: rgba(168, 85, 247, 0.15);
+      --text-primary: #f0f0f5;
+      --text-secondary: #8b8b9a;
+      --text-muted: #5a5a6a;
+      --pill-bg: rgba(168, 85, 247, 0.15);
+      --pill-border: rgba(168, 85, 247, 0.3);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      min-height: 100vh;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    .back-link { margin-bottom: 24px; }
+    .back-link a { color: var(--accent); font-size: 0.9rem; }
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 24px;
+      backdrop-filter: blur(20px);
+    }
+    .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+    .card-title-group { display: flex; align-items: center; gap: 12px; }
+    .card-icon { font-size: 1.5rem; }
+    .card-title { font-size: 1.3rem; font-weight: 600; }
+    .card-badge { font-size: 0.7rem; padding: 4px 10px; background: var(--pill-bg); border: 1px solid var(--pill-border); border-radius: 20px; color: var(--accent); }
+    .intro { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 20px; }
+    .stats-row { display: flex; gap: 24px; margin-bottom: 20px; }
+    .stat-item { display: flex; flex-direction: column; gap: 4px; }
+    .stat-label { font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+    .stat-value { font-family: 'JetBrains Mono', monospace; font-size: 1.2rem; font-weight: 600; color: var(--accent); }
+    .pill { display: inline-flex; align-items: center; padding: 4px 10px; background: var(--pill-bg); border: 1px solid var(--pill-border); border-radius: 20px; font-size: 0.8rem; color: var(--accent); font-family: 'JetBrains Mono', monospace; }
+    .repo-list { margin-top: 16px; }
+    .repo-item { display: flex; align-items: flex-start; gap: 16px; padding: 16px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .repo-item:last-child { border-bottom: none; }
+    .repo-rank { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; font-weight: 600; color: var(--accent); min-width: 32px; }
+    .repo-info { flex: 1; min-width: 0; }
+    .repo-name { font-size: 1rem; font-weight: 600; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .repo-name a { color: var(--text-primary); }
+    .repo-name a:hover { color: var(--accent); }
+    .repo-desc { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 10px; line-height: 1.5; }
+    .repo-meta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+    .repo-lang { font-size: 0.8rem; color: var(--text-secondary); }
+    .topic-tag { font-size: 0.7rem; padding: 2px 8px; background: rgba(255,255,255,0.05); border-radius: 4px; color: var(--text-muted); margin-right: 6px; }
+    .lang-section { margin-top: 24px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.05); }
+    .lang-title { font-size: 0.8rem; font-weight: 600; color: var(--text-muted); text-transform: uppercase; margin-bottom: 12px; }
+    .lang-stats { display: flex; gap: 16px; flex-wrap: wrap; }
+    .lang-stat { display: flex; align-items: center; gap: 8px; }
+    .lang-name { font-size: 0.85rem; color: var(--accent); }
+    .lang-count { font-size: 0.8rem; color: var(--text-muted); }
+    .footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-muted); font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="back-link"><a href="/ai-daily-blog/">← 返回首页</a></div>
+
+    <article class="card">
+      <div class="card-header">
+        <div class="card-title-group">
+          <span class="card-icon">🏆</span>
+          <h1 class="card-title">GitHub Trending 周报</h1>
+        </div>
+        <span class="card-badge">2026-W24</span>
+      </div>
+
+      <p class="intro">
+        本周 GitHub 热门仓库榜单揭晓！共收录 <strong>10</strong> 个热门项目，其中 <strong>skylight</strong> 以 <strong>2,258</strong> 颗新增 Star 领跑榜单。本周总新增 Star 达 <strong>8,077</strong>。
+      </p>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-label">热门仓库</span>
+          <span class="stat-value">10</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">本周新增 Star</span>
+          <span class="stat-value">8,077</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Top 语言</span>
+          <span class="stat-value" style="font-family: 'Inter', sans-serif; font-size: 1rem;">TypeScript</span>
+        </div>
+      </div>
+
+      <div class="repo-list">
+        
+      <div class="repo-item">
+        <span class="repo-rank">#1</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/cpaczek/skylight" target="_blank">cpaczek/skylight</a>
+            <span class="pill">⭐ 2,258</span>
+          </div>
+          <div class="repo-desc">Project the aircraft passing overhead onto your ceiling in real time, from an RTL-SDR — with a live sky layer (sun, moon, stars, ISS) and where each plane is headed.</div>
+          <div class="repo-meta">
+            <span class="pill">TypeScript</span>
+            <span class="repo-lang">📈 本周 +2,258</span>
+            <span class="topics"><span class="topic-tag">ads-b</span><span class="topic-tag">aircraft</span><span class="topic-tag">art-installation</span></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#2</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/b-nnett/goose" target="_blank">b-nnett/goose</a>
+            <span class="pill">⭐ 2,252</span>
+          </div>
+          <div class="repo-desc">Goose Swift proof-of-concept README</div>
+          <div class="repo-meta">
+            <span class="pill">Rust</span>
+            <span class="repo-lang">📈 本周 +2,252</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#3</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/jd-opensource/JoyAI-Echo" target="_blank">jd-opensource/JoyAI-Echo</a>
+            <span class="pill">⭐ 848</span>
+          </div>
+          <div class="repo-desc">JoyAI-Echo: Pushing the Frontier of Long Audio-Visual Generation</div>
+          <div class="repo-meta">
+            <span class="pill">Python</span>
+            <span class="repo-lang">📈 本周 +848</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#4</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/tastyeffectco/sandboxd" target="_blank">tastyeffectco/sandboxd</a>
+            <span class="pill">⭐ 496</span>
+          </div>
+          <div class="repo-desc">Self-hosted dev sandboxes with preview URLs. One command. No Kubernetes, perfect for coding agents and Saas factories</div>
+          <div class="repo-meta">
+            <span class="pill">Go</span>
+            <span class="repo-lang">📈 本周 +496</span>
+            <span class="topics"><span class="topic-tag">ai</span><span class="topic-tag">ai-agent</span><span class="topic-tag">dev-environment</span></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#5</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/Jane-xiaoer/xiaoer-videolab" target="_blank">Jane-xiaoer/xiaoer-videolab</a>
+            <span class="pill">⭐ 466</span>
+          </div>
+          <div class="repo-desc">One click on the toolbar grabs the current page's video into ~/Downloads — local yt-dlp daemon, 1800+ sites. 小耳抓视频：一键把当前页视频抓到本地。</div>
+          <div class="repo-meta">
+            <span class="pill">JavaScript</span>
+            <span class="repo-lang">📈 本周 +466</span>
+            <span class="topics"><span class="topic-tag">bilibili</span><span class="topic-tag">chrome-extension</span><span class="topic-tag">launchd</span></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#6</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/zenhosta/9drive" target="_blank">zenhosta/9drive</a>
+            <span class="pill">⭐ 395</span>
+          </div>
+          <div class="repo-desc">9Drive is a storage gateway web app for connecting multiple Google Drive accounts into one virtual storage dashboard. Users can connect Google Drive accounts, track quota, upload files, organize files with virtual folders, preview files, and let the backend route uploads to the Drive account with enough free space.</div>
+          <div class="repo-meta">
+            <span class="pill">TypeScript</span>
+            <span class="repo-lang">📈 本周 +395</span>
+            <span class="topics"><span class="topic-tag">drive</span><span class="topic-tag">gateway</span><span class="topic-tag">google</span></span>
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#7</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/jeff141/meatshell" target="_blank">jeff141/meatshell</a>
+            <span class="pill">⭐ 385</span>
+          </div>
+          <div class="repo-desc">一个轻量级、低内存占用的 SSH / 终端客户端（A lightweight, low-memory SSH / terminal client）</div>
+          <div class="repo-meta">
+            <span class="pill">Rust</span>
+            <span class="repo-lang">📈 本周 +385</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#8</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/SenhorH/tab-labeler" target="_blank">SenhorH/tab-labeler</a>
+            <span class="pill">⭐ 328</span>
+          </div>
+          <div class="repo-desc">Rename browser tabs locally and bring order to chaotic sessions.</div>
+          <div class="repo-meta">
+            <span class="pill">TypeScript</span>
+            <span class="repo-lang">📈 本周 +328</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#9</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/nevertoday/zhongguo-traditional-colors" target="_blank">nevertoday/zhongguo-traditional-colors</a>
+            <span class="pill">⭐ 327</span>
+          </div>
+          <div class="repo-desc">中华传统色演示、色卡浏览与颜色知识科普开源项目</div>
+          <div class="repo-meta">
+            <span class="pill">JavaScript</span>
+            <span class="repo-lang">📈 本周 +327</span>
+            
+          </div>
+        </div>
+      </div>
+    
+      <div class="repo-item">
+        <span class="repo-rank">#10</span>
+        <div class="repo-info">
+          <div class="repo-name">
+            <a href="https://github.com/amElnagdy/guard-skills" target="_blank">amElnagdy/guard-skills</a>
+            <span class="pill">⭐ 322</span>
+          </div>
+          <div class="repo-desc">Guard skills for coding agents, quality gates that catch AI-generated failure modes in code, tests, and docs</div>
+          <div class="repo-meta">
+            <span class="pill">Unknown</span>
+            <span class="repo-lang">📈 本周 +322</span>
+            <span class="topics"><span class="topic-tag">agent-skills</span><span class="topic-tag">ai</span><span class="topic-tag">claude</span></span>
+          </div>
+        </div>
+      </div>
+    
+      </div>
+
+      <div class="lang-section">
+        <div class="lang-title">📈 语言分布</div>
+        <div class="lang-stats">
+          
+      <div class="lang-stat">
+        <span class="lang-name">TypeScript</span>
+        <span class="lang-count">3 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">Rust</span>
+        <span class="lang-count">2 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">JavaScript</span>
+        <span class="lang-count">2 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">Python</span>
+        <span class="lang-count">1 个仓库</span>
+      </div>
+    
+      <div class="lang-stat">
+        <span class="lang-name">Go</span>
+        <span class="lang-count">1 个仓库</span>
+      </div>
+    
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <p>由 GitHub Trending Agent 自动生成 | 生成时间：2026/6/8 09:07:30</p>
+    </footer>
+  </div>
+</body>
+</html>

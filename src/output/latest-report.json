@@ -1,222 +1,233 @@
 {
-  "date": "2026年6月8日",
-  "title": "🤖 2026年6月8日 AI 技术日报",
-  "summary": "本期AI技术演进呈现“底层架构重构、训练范式跃迁与工程流重塑”三大主线。基础设施端，算力瓶颈驱动互联架构向跨域Scale Across演进，光通信产业链价值重心上移。算法层面，持续学习通过谱分解保护主成分以抗遗忘，RNN训练范式突破BPTT实现全并行化，推理模型RL微调引入分段奖励重分配以优化信用分配。具身智能聚焦任务空间解耦与全身控制蒸馏。同时，人机协同编辑的细粒度检测基准推动内容安全向过程溯源演进。整体技术正从单点性能堆叠转向高效、可解释与系统级协同。",
+  "date": "2026年6月9日",
+  "title": "🤖 2026年6月9日 AI 技术日报",
+  "summary": "本期技术趋势聚焦于AI架构的工程化重构与垂直领域的深度渗透。产业端，Apple通过Core AI框架与Gemini云端协同，确立了端云异构调度的新范式；Bio AI赛道以GeoFlow为代表的微观世界模型正推动生命科学从序列生成迈向物理可微分模拟。学术端，长视频理解通过感知-推理解耦与分层图记忆突破上下文瓶颈，持续学习借助稀疏子空间专家路由缓解灾难性遗忘。同时，LLM概率推理的可靠性研究揭示了启发式偏差边界。整体呈现从通用能力堆叠向架构解耦、物理先验融合与工程可验证性演进的明确趋势。",
   "highlights": [
     {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "中信证券：分布式拓展光互联边界，DCI产业链迎系统性重构",
-      "url": "https://36kr.com/newsflashes/3843784304134403?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-06-08T00:19:35.000Z",
-      "summary": "36氪获悉，中信证券指出，AI算力指数级扩张的大背景下，北美单体数据中心电力与土地瓶颈日益突出，驱动算力布局从园区内的Scale Up/Out向跨园区、跨区域的Scale Across演进。Scale Across作为突破数据中心算力墙的核心方向，正加速从早期验证走向规模化部署，有望成为AI时代光互联新兴的高景气赛道。中信证券认为，DCI（数据中心互联）产业链正经历深刻的重构：AI时代对DCI提出高密度、高带宽、低延迟及高可靠性等严苛要求，催生了对高速率相干光模块和高密度光放大器的爆发式需求，产业价值正从传统DCI时代，高度集中于下游系统厂商，向中上游的光模块、光放大器及核心光电芯片环节加速转",
-      "keywords": [],
-      "score": 9.92,
-      "analysis": "原理：依托高速相干光模块与光放大器实现跨域高带宽互联，突破传统Scale Out电力瓶颈。创新：产业价值向中上游光电芯片转移，推动Scale Across架构规模化。应用：支撑超大规模分布式AI训练集群与异地推理，优化算力调度与能耗。"
+      "id": "hn-48450142",
+      "title": "Apple reveals new AI architecture built around Google Gemini models",
+      "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-08T19:14:47.000Z",
+      "score": 10.92,
+      "keywords": [
+        "gemini"
+      ],
+      "analysis": "技术原理：采用端云协同路由架构，本地小模型处理高频低延迟请求，复杂推理动态卸载至云端Gemini集群。创新点在于打破单一模型依赖，实现异构大模型的统一调度与隐私分级过滤。应用场景：iOS 27系统级AI服务、跨端智能体协作及高隐私要求的个人数据管理。"
     },
     {
-      "id": "arxiv-2606.06494v1",
-      "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
-      "url": "https://arxiv.org/abs/2606.06494v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-04T17:59:55.000Z",
-      "summary": "Parameter-efficient finetuning methods based on spectral decomposition have enabled progress in Continual Learning. In this paper we introduce TailLoR, which utilizes the singular bases U and V of the pre-trained weights as a fixed reference frame to learn a low-rank update applied to the singular value matrix. A soft spectral penalty discourages updates aligned with dominant singular directions, reducing interference while routing fine-grained adaptation into the highly flexible, long-tail spec",
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "「百奥几何」完成数亿元战略融资，打造生命科学\"微观世界模型\"｜36氪首发",
+      "url": "https://36kr.com/p/3839626642344454?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-06-09T00:30:00.000Z",
+      "summary": "文｜胡香赟 编辑｜海若镜 36氪获悉，近日，AI原生生物科技公司百奥几何已完成数亿元战略融资。由上海生物医药创新转化基金、国科投资、达晨财智、星连资本联合领投，高榕资本、指数人工智能产业创新基金跟投。指数资本担任独家财务顾问。另据介绍，本轮募集资金将重点用于生命科学微观世界模型GeoFlow的持续迭代，以及自研药物管线的推进。 当前，人工智能正沿两条主线加速演进：以大语言模型与多模态模型为代表的数字AI（Digital AI），以自动驾驶与人形机器人为代表的物理AI（Physical AI）。而生命AI（Bio AI）或将成为下一个最具想象力的疆域，这一判断，正被全球顶级资本与科学界持续确认。",
       "keywords": [
+        "agent",
+        "自动驾驶",
+        "人工智能",
+        "机器学习",
+        "大模型",
+        "语言模型",
+        "多模态",
+        "ai agent"
+      ],
+      "score": 9.99,
+      "analysis": "技术原理：基于GeoFlow微观世界模型，融合几何深度学习与分子动力学模拟，将生物物理过程转化为可微分计算图。创新点在于突破传统序列生成局限，实现原子级空间构象的端到端预测与逆向设计。应用场景：创新靶点发现、AI原生药物管线推进及合成生物学路径优化。"
+    },
+    {
+      "id": "hn-48449665",
+      "title": "Apple Core AI Framework",
+      "url": "https://developer.apple.com/documentation/coreai/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-08T18:47:38.000Z",
+      "score": 9.24,
+      "keywords": [],
+      "analysis": "技术原理：提供标准化的端侧模型加载、上下文管理与硬件加速接口，支持Neural Engine与GPU异构调度，内置差分隐私机制。创新点在于将底层AI推理抽象为系统级服务，实现模型热插拔与资源动态分配。应用场景：第三方App无缝集成Apple Intelligence、边缘设备实时多模态交互及企业级私有化部署。"
+    },
+    {
+      "id": "arxiv-2606.07515v1",
+      "title": "How reliable are LLMs when it comes to playing dice?",
+      "url": "https://arxiv.org/abs/2606.07515v1",
+      "source": "arxiv",
+      "publishedAt": "2026-06-05T17:59:42.000Z",
+      "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuiti",
+      "keywords": [
+        "llm",
         "rag"
       ],
       "score": 0,
-      "analysis": "原理：利用预训练权重奇异分解的U/V矩阵作固定参考系，对奇异值矩阵进行低秩更新。创新：引入软谱惩罚抑制主成分方向更新，将细粒度适应路由至长尾谱空间，缓解灾难性遗忘。应用：大模型持续微调、边缘设备个性化适配及多任务动态切换。"
+      "analysis": "技术原理：通过构建标准与反直觉离散概率数据集，系统评估LLM在条件概率与贝叶斯推理中的表现，对比零样本与CoT提示策略的激活路径。创新点在于揭示大模型概率直觉的启发式偏差，量化思维链在复杂分布下的校准失效边界。应用场景：高风险决策辅助系统优化、金融风控模型可靠性验证及教育领域概率逻辑训练。"
     },
     {
-      "id": "arxiv-2606.06493v1",
-      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
-      "url": "https://arxiv.org/abs/2606.06493v1",
+      "id": "arxiv-2606.07512v1",
+      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
+      "url": "https://arxiv.org/abs/2606.07512v1",
       "source": "arxiv",
-      "publishedAt": "2026-06-04T17:59:50.000Z",
-      "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid",
+      "publishedAt": "2026-06-05T17:59:21.000Z",
+      "summary": "Current Vision-Language Models struggle with hours-long videos because processing full-length visual sequences induces prohibitive token explosion and attention dilution. To overcome this, we introduce MemDreamer to decouple perception and reasoning, shifting long-video understanding into an agentic exploration process. As a plug-and-play framework, it incrementally streams videos to construct a Hierarchical Graph Memory, a top-down three-tier architecture for semantic abstraction, anchored by a",
       "keywords": [
         "agent"
       ],
       "score": 0,
-      "analysis": "原理：构建紧凑显式任务空间接口，通过蒸馏互补教师网络实现人形机器人全身控制。创新：解耦高层语义规划与底层运动控制，提供模块化高表达力命令空间，提升复杂操作泛化力。应用：具身智能体在家庭服务、工业装配及非结构化环境中的灵巧操作。"
+      "analysis": "技术原理：采用感知-推理解耦范式，通过流式视频输入构建分层图记忆，结合智能体检索机制按需激活上下文。创新点在于突破全序列注意力导致的Token爆炸与注意力稀释，实现长视频语义的增量式压缩与动态召回。应用场景：长视频内容摘要、安防监控异常检测及自动驾驶场景记忆回溯。"
     },
     {
-      "id": "arxiv-2606.06481v1",
-      "title": "Operation-Guided Progressive Human-to-AI Text Transformation Benchmark for Multi-Granularity AI-Text Detection",
-      "url": "https://arxiv.org/abs/2606.06481v1",
+      "id": "arxiv-2606.07500v1",
+      "title": "Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning",
+      "url": "https://arxiv.org/abs/2606.07500v1",
       "source": "arxiv",
-      "publishedAt": "2026-06-04T17:58:05.000Z",
-      "summary": "As AI writing assistants become increasingly integrated into real-world drafting and revision workflows, many documents are no longer purely human-written or AI-generated, but instead result from progressive human-AI co-editing. However, existing AI-text detection benchmarks largely focus on final outputs and provide limited understanding of how AI authorship signals emerge, accumulate, or disappear throughout the revision process. We introduce OpAI-Bench, an operation-guided benchmark for study",
+      "publishedAt": "2026-06-05T17:53:52.000Z",
+      "summary": "Continual learning in Large Language Models (LLMs) is hindered by the plasticity-stability dilemma, where acquiring new capabilities often leads to catastrophic forgetting of previous knowledge. Existing methods typically treat parameters uniformly, failing to distinguish between specific task knowledge and shared capabilities. We introduce Mixture of Sparse Experts for Task Agnostic Continual Learning (SETA), a framework that resolves the plasticity-stability conflict through adaptive sparse su",
       "keywords": [
-        "rag"
+        "llm"
       ],
       "score": 0,
-      "analysis": "原理：构建操作引导的渐进式人机协同编辑基准，追踪AI生成信号在文本迭代中的累积与消解规律。创新：突破仅检测最终输出的局限，实现多粒度过程级AI文本溯源与归因。应用：学术诚信审查、企业合规内容审计及生成内容水印技术验证。"
-    },
-    {
-      "id": "arxiv-2606.06479v1",
-      "title": "Pretraining Recurrent Networks without Recurrence",
-      "url": "https://arxiv.org/abs/2606.06479v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-04T17:57:33.000Z",
-      "summary": "Training recurrent neural networks (RNNs) requires assigning credit across long sequences of computations. Standard backpropagation through time (BPTT) addresses this problem poorly: it is sequential in time, limiting parallelism, and suffers from vanishing or exploding gradients, making long-range associations difficult to learn. We propose Supervised Memory Training (SMT), a method for training nonlinear RNNs that sidesteps recurrent credit propagation entirely by reducing RNN training to supe",
-      "keywords": [
-        "transformer"
-      ],
-      "score": 0,
-      "analysis": "原理：提出监督记忆训练，将RNN训练转化为独立监督学习问题，完全规避BPTT的时序信用分配。创新：打破时间步依赖实现全并行化训练，彻底解决梯度消失/爆炸问题。应用：高频实时流数据处理、端侧低功耗序列模型部署及长上下文架构探索。"
-    },
-    {
-      "id": "arxiv-2606.06475v1",
-      "title": "RREDCoT: Segment-Level Reward Redistribution for Reasoning Models",
-      "url": "https://arxiv.org/abs/2606.06475v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-04T17:56:31.000Z",
-      "summary": "Recent advancements in reasoning language models have been driven by Reinforcement Learning (RL) fine-tuning. Most often, these rely on the Group Relative Policy Optimization (GRPO) algorithm or modifications thereof to steer the models to produce Chain-of-Thought (CoT) traces. The final answer can only be verified, and the reward assigned, after the CoT trace is complete, making it a delayed reward problem. GRPO and its modifications correspond to Monte Carlo methods in standard RL, which are k",
-      "keywords": [],
-      "score": 0,
-      "analysis": "原理：针对推理模型RL微调的延迟奖励问题，提出分段级奖励重分配机制，优化GRPO采样效率。创新：将终局奖励按思维链逻辑节点细粒度回溯分配，提升策略梯度估计稳定性。应用：复杂数学推导、代码生成及多步逻辑规划模型的强化学习对齐。"
+      "analysis": "技术原理：提出SETA框架，将模型参数空间划分为任务专属稀疏子空间与全局共享专家池，通过门控网络动态路由新任务特征。创新点在于以稀疏正交投影解决持续学习中的可塑性-稳定性冲突，无需重放数据即可抑制灾难性遗忘。应用场景：终身学习机器人控制、多领域垂直大模型迭代及边缘设备自适应微调。"
     }
   ],
   "details": [
     {
-      "id": "hn-48434312",
-      "title": "LLMs are eroding my software engineering career and I don't know what to do",
-      "url": "https://human-in-the-loop.bearblog.dev/llms-are-eroding-my-software-engineering-career-and-i-dont-know-what-to-do/",
+      "id": "hn-48452317",
+      "title": "OpenAI Submits S-1 Draft to SEC",
+      "url": "https://openai.com/index/openai-submits-confidential-s-1/",
       "source": "hackernews",
-      "publishedAt": "2026-06-07T12:49:29.000Z",
-      "score": 12.9,
+      "publishedAt": "2026-06-08T21:22:43.000Z",
+      "score": 11.18,
       "keywords": [
-        "llm"
+        "openai"
+      ]
+    },
+    {
+      "id": "hn-48450142",
+      "title": "Apple reveals new AI architecture built around Google Gemini models",
+      "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-08T19:14:47.000Z",
+      "score": 10.92,
+      "keywords": [
+        "gemini"
       ]
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "「华超神控」获亿元天使系列融资，加速打造新一代AI超声脑机接口平台 | 36氪首发",
-      "url": "https://36kr.com/p/3841459663030532?f=rss",
+      "title": "「百奥几何」完成数亿元战略融资，打造生命科学\"微观世界模型\"｜36氪首发",
+      "url": "https://36kr.com/p/3839626642344454?f=rss",
       "source": "rss",
-      "publishedAt": "2026-06-08T00:30:00.000Z",
-      "summary": "文｜胡香赟 编辑｜海若镜 36氪获悉，近日，新一代AI超声脑机公司华超神控（BCI-Sonics）已完成亿元人民币级天使轮系列融资。天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投，循光资本持续担任独家财务顾问。募集资金将用于推动公司的技术验证与产业化落地。 华超神控于2025年创立，创始人李昕是中国科学院与德国弗劳恩霍夫IGD研究所联合培养生物医学工程博士，曾任GE医疗全球科研中心中国区负责人，并连续创立创新科技及医疗公司，在医疗影像、AI、脑机接口与产业转化方面拥有深厚积累。 公司核心团队汇聚了来自清华大学、上海交通大学、帝国理工等海内外高校的人才，覆盖神经科学、声学、医学影",
+      "publishedAt": "2026-06-09T00:30:00.000Z",
+      "summary": "文｜胡香赟 编辑｜海若镜 36氪获悉，近日，AI原生生物科技公司百奥几何已完成数亿元战略融资。由上海生物医药创新转化基金、国科投资、达晨财智、星连资本联合领投，高榕资本、指数人工智能产业创新基金跟投。指数资本担任独家财务顾问。另据介绍，本轮募集资金将重点用于生命科学微观世界模型GeoFlow的持续迭代，以及自研药物管线的推进。 当前，人工智能正沿两条主线加速演进：以大语言模型与多模态模型为代表的数字AI（Digital AI），以自动驾驶与人形机器人为代表的物理AI（Physical AI）。而生命AI（Bio AI）或将成为下一个最具想象力的疆域，这一判断，正被全球顶级资本与科学界持续确认。",
       "keywords": [
-        "openai",
+        "agent",
+        "自动驾驶",
         "人工智能",
-        "多模态"
+        "机器学习",
+        "大模型",
+        "语言模型",
+        "多模态",
+        "ai agent"
       ],
       "score": 9.99
     },
     {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "中信建投：算力板块当前尚未达到中期大级别切换标准，主要是短期再平衡需求",
-      "url": "https://36kr.com/newsflashes/3843791725299976?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-06-08T00:27:08.000Z",
-      "summary": "36氪获悉，中信建投研报称，近两周算力板块主升但波动加大，监管加强、资金止盈及美韩AI产业链大幅调整导致市场疑虑是否会出现趋势性调整，资金全面切向低位板块。中信建投认为算力板块波动加剧的核心矛盾源于行业基本面具备绝对优势与交易结构绝对拥挤。从基本面、估值、交易结构整体来看，当前尚未达到中期大级别切换的标准，主要是短期再平衡的需求。后续行情拐点取决于估值中枢变动与基本面收敛信号，一是算力自身基本面增速放缓，二是其他行业基本面显著修复。短期市场可能大幅低开后快速企稳，总体呈现“科技跌、防御涨”的轮动特征。中期看海外科技股企稳后可继续布局算力环节内部轮动，其他景气线索关注煤炭和工业金属。",
-      "keywords": [],
-      "score": 9.97
+      "id": "hn-48446893",
+      "title": "AI is slowing down",
+      "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-08T15:46:37.000Z",
+      "score": 9.98,
+      "keywords": []
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "中信证券：分布式拓展光互联边界，DCI产业链迎系统性重构",
-      "url": "https://36kr.com/newsflashes/3843784304134403?f=rss",
+      "title": "8点1氪丨苹果推出全新Siri AI；ROKID回应“智能眼镜偷拍空姐”事件；OpenAI秘密提交IPO文件",
+      "url": "https://36kr.com/p/3845196412193284?f=rss",
       "source": "rss",
-      "publishedAt": "2026-06-08T00:19:35.000Z",
-      "summary": "36氪获悉，中信证券指出，AI算力指数级扩张的大背景下，北美单体数据中心电力与土地瓶颈日益突出，驱动算力布局从园区内的Scale Up/Out向跨园区、跨区域的Scale Across演进。Scale Across作为突破数据中心算力墙的核心方向，正加速从早期验证走向规模化部署，有望成为AI时代光互联新兴的高景气赛道。中信证券认为，DCI（数据中心互联）产业链正经历深刻的重构：AI时代对DCI提出高密度、高带宽、低延迟及高可靠性等严苛要求，催生了对高速率相干光模块和高密度光放大器的爆发式需求，产业价值正从传统DCI时代，高度集中于下游系统厂商，向中上游的光模块、光放大器及核心光电芯片环节加速转",
-      "keywords": [],
-      "score": 9.92
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "华泰证券A股策略：短期继续保持均衡配置",
-      "url": "https://36kr.com/newsflashes/3843748135979272?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-06-08T00:03:50.000Z",
-      "summary": "36氪获悉，华泰证券发布A股策略指出，短期A股进入AI链产业催化相对真空与宏观风险再定价的叠加窗口。上周五远超预期的非农数据触发全球流动性收紧定价，美债收益率与美元指数大幅上行，纳指100等风险资产显著回调，叠加AI链海外龙头指引不及预期与短期筹码拥挤,市场风格出现再平衡迹象,主要矛盾由产业景气转向宏观风险定价。复盘纳指100强动量行情后跌超2%+美债上行的情形，A股月度维度承压概率较高，金融/价值占优、成长承压。因此，配置上，建议适度止盈AI链，待波动率回落后再吸筹，向宏观再定价中期望收益较高的银行及一季报后超额收益相对EPS变化有性价比的小金属、包装印刷等再平衡。",
-      "keywords": [],
-      "score": 9.81
-    },
-    {
-      "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "8点1氪丨八家上市公司集中公告“补税”；ChatGPT将迎来史上最大幅度升级；高考新增AI监考员，自动截取异常录像",
-      "url": "https://36kr.com/p/3843764238174729?f=rss",
-      "source": "rss",
-      "publishedAt": "2026-06-08T00:01:39.000Z",
-      "summary": "今日热点导览 AI等机器网络请求量首超人类 瑞幸咖啡回应拿铁去冰仅半杯 宗馥莉自有品牌KELLYONE回归 多家低成本航空公司对登机箱登机收费 黄仁勋会见韩国两大游戏商代表共商游戏AI合作方案 TOP3大新闻 八家上市公司集中公告“补税”&nbsp; 6月1日至6日，不到一周内，八家A股上市公司先后披露补缴税款公告。这八家公司合计补缴税款及滞纳金约4亿元。其中，苹果中国最大授权经销商爱施德（002416.SZ）一家补缴3.08亿元，占八家总额的近八成，该公司披露，仅滞纳金就达1.23亿元。对部分公司而言，这笔补缴金额已接近甚至超过去年一整年的利润。如电子材料企业宏昌电子（603002.SH）需",
+      "publishedAt": "2026-06-09T00:19:03.000Z",
+      "summary": "今日热点导览 阿里巴巴成立Token Foundry事业部 微信宣布面向开发者提供接入微信AI生态的能力 全球70%PPE树脂断供，PCB价格大涨 英伟达与LG集团合建AI工厂，合作推进机器人、自动驾驶及自主AI TOP3大新闻 苹果推出全新Siri AI，新一代操作系统iOS 27正式发布 在WWDC 2026开发者大会上，新一代操作系统iOS 27正式发布，本次iOS 27的升级重点，是新一代Apple Intelligence（苹果智能）以及全新Siri AI。&nbsp; 苹果宣布，Apple Intelligence与谷歌合作，引入Gemini大模型，并采用全新的AI架构，进一步提升",
       "keywords": [
+        "llm",
+        "gemini",
         "chatgpt",
         "openai",
         "anthropic",
-        "agent",
+        "agi",
+        "自动驾驶",
         "人工智能",
-        "大模型",
-        "ai agent"
+        "大模型"
       ],
-      "score": 9.8
+      "score": 9.91
     },
     {
-      "id": "hn-48437568",
-      "title": "If LLMs Have Human-Like Attributes, Then So Does Age of Empires II",
-      "url": "https://arxiv.org/abs/2605.31514",
+      "id": "hn-48446428",
+      "title": "xAI is looking more like a datacentre REIT than a frontier lab",
+      "url": "https://martinalderson.com/posts/xais-new-rental-business/",
       "source": "hackernews",
-      "publishedAt": "2026-06-07T18:54:55.000Z",
-      "score": 8.63,
-      "keywords": [
-        "llm"
-      ]
+      "publishedAt": "2026-06-08T15:13:43.000Z",
+      "score": 9.86,
+      "keywords": []
     },
     {
-      "id": "hn-48431981",
-      "title": "I design with Claude more than Figma now",
-      "url": "https://blog.janestreet.com/i-design-with-claude-code-more-than-figma-now-index/",
+      "id": "hn-48449665",
+      "title": "Apple Core AI Framework",
+      "url": "https://developer.apple.com/documentation/coreai/",
       "source": "hackernews",
-      "publishedAt": "2026-06-07T05:04:24.000Z",
-      "score": 4.43,
-      "keywords": [
-        "claude"
-      ]
+      "publishedAt": "2026-06-08T18:47:38.000Z",
+      "score": 9.24,
+      "keywords": []
     },
     {
-      "id": "arxiv-2606.06494v1",
-      "title": "TailLoR: Protecting Principal Components in Parameter-Efficient Continual Learning",
-      "url": "https://arxiv.org/abs/2606.06494v1",
+      "id": "rss-aHR0cHM6Ly93d3cu",
+      "title": "The Download: how the World Cup ball will fly and OpenAI’s “super app”",
+      "url": "https://www.technologyreview.com/2026/06/08/1138485/the-download-world-cup-ball-openai-super-app/",
+      "source": "rss",
+      "publishedAt": "2026-06-08T12:10:00.000Z",
+      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this year’s World Cup ball may not fly as far Much is new about this month’s FIFA World Cup tournament. It hosts more teams than ever before. It’s",
+      "keywords": [
+        "openai"
+      ],
+      "score": 4.85
+    },
+    {
+      "id": "hn-48402137",
+      "title": "OCaml Onboarding: Introduction to the Dune build system",
+      "url": "https://ocamlpro.com/blog/2025_07_29_ocaml_onboarding_introduction_to_dune/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-04T17:52:29.000Z",
+      "score": 1.4,
+      "keywords": []
+    },
+    {
+      "id": "arxiv-2606.07515v1",
+      "title": "How reliable are LLMs when it comes to playing dice?",
+      "url": "https://arxiv.org/abs/2606.07515v1",
       "source": "arxiv",
-      "publishedAt": "2026-06-04T17:59:55.000Z",
-      "summary": "Parameter-efficient finetuning methods based on spectral decomposition have enabled progress in Continual Learning. In this paper we introduce TailLoR, which utilizes the singular bases U and V of the pre-trained weights as a fixed reference frame to learn a low-rank update applied to the singular value matrix. A soft spectral penalty discourages updates aligned with dominant singular directions, reducing interference while routing fine-grained adaptation into the highly flexible, long-tail spec",
+      "publishedAt": "2026-06-05T17:59:42.000Z",
+      "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuiti",
       "keywords": [
+        "llm",
         "rag"
-      ],
-      "score": 0
-    },
-    {
-      "id": "arxiv-2606.06493v1",
-      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
-      "url": "https://arxiv.org/abs/2606.06493v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-04T17:59:50.000Z",
-      "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid",
-      "keywords": [
-        "agent"
       ],
       "score": 0
     }
   ],
   "hotTopics": [
-    "分布式算力互联与Scale Across架构",
-    "大模型持续学习与参数高效微调",
-    "具身智能全身控制与任务空间解耦",
-    "推理模型强化学习与奖励重分配"
+    "端云协同与异构模型调度架构",
+    "物理可微分与生命AI微观建模",
+    "长序列视觉理解的解耦与记忆机制",
+    "持续学习中的稀疏专家路由与防遗忘"
   ],
   "metadata": {
-    "totalCount": 23,
+    "totalCount": 26,
     "sources": [
       "hackernews",
       "rss",
       "arxiv"
     ],
-    "generatedAt": "2026-06-08T00:31:06.258Z"
+    "generatedAt": "2026-06-09T00:32:02.239Z"
   },
   "technicalInsights": [
-    "训练范式正从“时序依赖”向“全并行/解耦”演进，SMT与分段奖励机制表明长程信用分配是突破模型推理与序列建模瓶颈的关键。",
-    "具身智能与大模型规划接口正走向显式化与模块化，HANDOFF等研究验证了高层语义与底层运动控制解耦是落地复杂物理交互的必由之路。",
-    "AI安全评估从“静态结果判别”转向“动态过程归因”，OpAI-Bench揭示未来内容治理需嵌入人机协同工作流，实现细粒度操作级溯源。"
+    "大模型竞争正从单纯参数规模转向系统级架构设计，端侧框架标准化与云端异构路由将成为下一代操作系统的核心壁垒。",
+    "垂直领域AI的突破依赖于将物理与化学先验知识硬编码进可微分计算图，纯数据驱动的生成范式在科学计算中已逼近性能瓶颈。",
+    "持续学习与长上下文处理的本质是信息压缩与动态检索的平衡，图结构记忆与稀疏子空间隔离为突破Transformer架构局限提供了可行路径。"
   ]
 }
