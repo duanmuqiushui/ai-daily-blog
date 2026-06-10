@@ -1,233 +1,217 @@
 {
-  "date": "2026年6月9日",
-  "title": "🤖 2026年6月9日 AI 技术日报",
-  "summary": "本期技术趋势聚焦于AI架构的工程化重构与垂直领域的深度渗透。产业端，Apple通过Core AI框架与Gemini云端协同，确立了端云异构调度的新范式；Bio AI赛道以GeoFlow为代表的微观世界模型正推动生命科学从序列生成迈向物理可微分模拟。学术端，长视频理解通过感知-推理解耦与分层图记忆突破上下文瓶颈，持续学习借助稀疏子空间专家路由缓解灾难性遗忘。同时，LLM概率推理的可靠性研究揭示了启发式偏差边界。整体呈现从通用能力堆叠向架构解耦、物理先验融合与工程可验证性演进的明确趋势。",
+  "date": "2026年6月10日",
+  "title": "🤖 2026年6月10日 AI 技术日报",
+  "summary": "今日AI领域呈现“安全对齐内生化、算力基建泛在化、Agent驱动工程化”三大趋势。Anthropic通过动态路由架构实现能力与安全硬隔离，标志着大模型从单一性能竞赛转向可信系统级设计。底层算力网络向光纤互联与异构加速演进，KAN在FPGA上的部署验证了算法-硬件协同优化的潜力。同时，OpenCV 5与Git重写项目凸显AI正深度重构传统软件栈，Agentic Search范式则试图以显式逻辑替代黑盒检索。整体技术演进正从“模型中心”向“系统智能与工程落地”纵深推进。",
   "highlights": [
     {
-      "id": "hn-48450142",
-      "title": "Apple reveals new AI architecture built around Google Gemini models",
-      "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+      "id": "hn-48463808",
+      "title": "Claude Fable 5 and Claude Mythos 5 \\ Anthropic",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "source": "hackernews",
-      "publishedAt": "2026-06-08T19:14:47.000Z",
-      "score": 10.92,
+      "publishedAt": "2026-06-09T16:58:01.000Z",
+      "score": 23.8,
       "keywords": [
-        "gemini"
+        "claude",
+        "anthropic"
       ],
-      "analysis": "技术原理：采用端云协同路由架构，本地小模型处理高频低延迟请求，复杂推理动态卸载至云端Gemini集群。创新点在于打破单一模型依赖，实现异构大模型的统一调度与隐私分级过滤。应用场景：iOS 27系统级AI服务、跨端智能体协作及高隐私要求的个人数据管理。"
+      "analysis": "技术原理采用动态路由架构，常规请求由Fable 5处理，高风险请求自动降级至安全隔离的Mythos 5。创新点在于首创能力解耦与硬隔离管线，通过策略层拦截实现细粒度对齐。潜在应用于企业合规Agent、自动化代码审计及高敏感行业智能助手。"
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "「百奥几何」完成数亿元战略融资，打造生命科学\"微观世界模型\"｜36氪首发",
-      "url": "https://36kr.com/p/3839626642344454?f=rss",
+      "title": "光纤巨头再签亿级大单，中国光纤光缆厂商开始系统性出海",
+      "url": "https://36kr.com/newsflashes/3846605334546697?f=rss",
       "source": "rss",
-      "publishedAt": "2026-06-09T00:30:00.000Z",
-      "summary": "文｜胡香赟 编辑｜海若镜 36氪获悉，近日，AI原生生物科技公司百奥几何已完成数亿元战略融资。由上海生物医药创新转化基金、国科投资、达晨财智、星连资本联合领投，高榕资本、指数人工智能产业创新基金跟投。指数资本担任独家财务顾问。另据介绍，本轮募集资金将重点用于生命科学微观世界模型GeoFlow的持续迭代，以及自研药物管线的推进。 当前，人工智能正沿两条主线加速演进：以大语言模型与多模态模型为代表的数字AI（Digital AI），以自动驾驶与人形机器人为代表的物理AI（Physical AI）。而生命AI（Bio AI）或将成为下一个最具想象力的疆域，这一判断，正被全球顶级资本与科学界持续确认。",
-      "keywords": [
-        "agent",
-        "自动驾驶",
-        "人工智能",
-        "机器学习",
-        "大模型",
-        "语言模型",
-        "多模态",
-        "ai agent"
-      ],
-      "score": 9.99,
-      "analysis": "技术原理：基于GeoFlow微观世界模型，融合几何深度学习与分子动力学模拟，将生物物理过程转化为可微分计算图。创新点在于突破传统序列生成局限，实现原子级空间构象的端到端预测与逆向设计。应用场景：创新靶点发现、AI原生药物管线推进及合成生物学路径优化。"
-    },
-    {
-      "id": "hn-48449665",
-      "title": "Apple Core AI Framework",
-      "url": "https://developer.apple.com/documentation/coreai/",
-      "source": "hackernews",
-      "publishedAt": "2026-06-08T18:47:38.000Z",
-      "score": 9.24,
+      "publishedAt": "2026-06-10T00:21:08.000Z",
+      "summary": "6月9日，光纤概念持续走强，亨通光电午后秒涨停，斩获6天3板。长飞光纤再度涨停，收于484.33元/股。此外，中天科技、烽火通信等涨超8%。消息面上，当地时间6月8日，亚马逊宣布与康宁公司签署数十亿美元协议，采购光纤、光缆及连接解决方案，以支持其全美数据中心扩张。协议将为康宁北卡罗来纳州工厂新增1000个高技能岗位及数百个建筑岗位。此举系亚马逊去年宣布在该州追加100亿美元云基建投资的延续。有行业资深分析师表示，光纤正在被赋予类似光模块和PCB的AI属性，正从传统通信传输介质，升级为支撑AI算力网络的关键部件，这种底层需求驱动力的重构支撑了本轮行业景气程度。（证券时报）",
       "keywords": [],
-      "analysis": "技术原理：提供标准化的端侧模型加载、上下文管理与硬件加速接口，支持Neural Engine与GPU异构调度，内置差分隐私机制。创新点在于将底层AI推理抽象为系统级服务，实现模型热插拔与资源动态分配。应用场景：第三方App无缝集成Apple Intelligence、边缘设备实时多模态交互及企业级私有化部署。"
+      "score": 9.9,
+      "analysis": "技术原理基于低延迟高带宽光互连，将光纤升级为匹配GPU集群Scale-out架构的关键组件。创新点在于引入新型空分复用与低损耗材料提升传输密度。潜在应用于万卡智算中心互联、边缘AI节点组网及下一代光交换网络。"
     },
     {
-      "id": "arxiv-2606.07515v1",
-      "title": "How reliable are LLMs when it comes to playing dice?",
-      "url": "https://arxiv.org/abs/2606.07515v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-05T17:59:42.000Z",
-      "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuiti",
-      "keywords": [
-        "llm",
-        "rag"
-      ],
-      "score": 0,
-      "analysis": "技术原理：通过构建标准与反直觉离散概率数据集，系统评估LLM在条件概率与贝叶斯推理中的表现，对比零样本与CoT提示策略的激活路径。创新点在于揭示大模型概率直觉的启发式偏差，量化思维链在复杂分布下的校准失效边界。应用场景：高风险决策辅助系统优化、金融风控模型可靠性验证及教育领域概率逻辑训练。"
+      "id": "hn-48466277",
+      "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+      "url": "https://aarushgupta.io/posts/kan-fpga/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-09T19:21:45.000Z",
+      "score": 9.28,
+      "keywords": [],
+      "analysis": "技术原理利用KAN的一维B样条激活函数特性，在FPGA上实现高度并行的可重构逻辑单元。创新点在于将数学表达映射为硬件友好的查找表结构，显著降低访存延迟。潜在应用于端侧超低功耗推理、实时信号处理及工业物联网边缘AI。"
     },
     {
-      "id": "arxiv-2606.07512v1",
-      "title": "MemDreamer: Decoupling Perception and Reasoning for Long Video Understanding via Hierarchical Graph Memory and Agentic Retrieval Mechanism",
-      "url": "https://arxiv.org/abs/2606.07512v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-05T17:59:21.000Z",
-      "summary": "Current Vision-Language Models struggle with hours-long videos because processing full-length visual sequences induces prohibitive token explosion and attention dilution. To overcome this, we introduce MemDreamer to decouple perception and reasoning, shifting long-video understanding into an agentic exploration process. As a plug-and-play framework, it incrementally streams videos to construct a Hierarchical Graph Memory, a top-down three-tier architecture for semantic abstraction, anchored by a",
+      "id": "hn-48466812",
+      "title": "Grit: Rewriting Git in Rust with Agents",
+      "url": "https://blog.gitbutler.com/true-grit",
+      "source": "hackernews",
+      "publishedAt": "2026-06-09T19:58:21.000Z",
+      "score": 8.68,
       "keywords": [
         "agent"
       ],
-      "score": 0,
-      "analysis": "技术原理：采用感知-推理解耦范式，通过流式视频输入构建分层图记忆，结合智能体检索机制按需激活上下文。创新点在于突破全序列注意力导致的Token爆炸与注意力稀释，实现长视频语义的增量式压缩与动态召回。应用场景：长视频内容摘要、安防监控异常检测及自动驾驶场景记忆回溯。"
+      "analysis": "技术原理基于Rust内存安全模型，结合LLM Agent的代码理解能力自动化重写Git底层数据结构。创新点在于引入Agent-in-the-loop范式与形式化验证保障重构正确性。潜在应用于遗留系统现代化改造、底层基础设施演进及自动化DevOps。"
     },
     {
-      "id": "arxiv-2606.07500v1",
-      "title": "Sparse Subspace-to-Expert Sharing for Task-Agnostic Continual Learning",
-      "url": "https://arxiv.org/abs/2606.07500v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-05T17:53:52.000Z",
-      "summary": "Continual learning in Large Language Models (LLMs) is hindered by the plasticity-stability dilemma, where acquiring new capabilities often leads to catastrophic forgetting of previous knowledge. Existing methods typically treat parameters uniformly, failing to distinguish between specific task knowledge and shared capabilities. We introduce Mixture of Sparse Experts for Task Agnostic Continual Learning (SETA), a framework that resolves the plasticity-stability conflict through adaptive sparse su",
+      "id": "hn-48421858",
+      "title": "OpenCV 5 Is Here: The Biggest Leap in Years for Computer Vision",
+      "url": "https://opencv.org/opencv-5/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-06T06:02:28.000Z",
+      "score": 6.81,
       "keywords": [
-        "llm"
+        "cv"
       ],
-      "score": 0,
-      "analysis": "技术原理：提出SETA框架，将模型参数空间划分为任务专属稀疏子空间与全局共享专家池，通过门控网络动态路由新任务特征。创新点在于以稀疏正交投影解决持续学习中的可塑性-稳定性冲突，无需重放数据即可抑制灾难性遗忘。应用场景：终身学习机器人控制、多领域垂直大模型迭代及边缘设备自适应微调。"
+      "analysis": "技术原理底层转向现代C++与硬件抽象层，集成深度学习推理引擎与图优化调度支持异构计算。创新点在于打破CPU依赖，原生支持NPU/GPU加速管线并提供大模型插件接口。潜在应用于自动驾驶感知、工业机器视觉及AR/VR实时渲染。"
+    },
+    {
+      "id": "hn-48460863",
+      "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
+      "url": "https://arxiv.org/abs/2605.15184",
+      "source": "hackernews",
+      "publishedAt": "2026-06-09T13:27:03.000Z",
+      "score": 6.53,
+      "keywords": [
+        "agent"
+      ],
+      "analysis": "技术原理将传统全文检索与Agent规划结合，利用结构化查询生成与上下文剪枝替代黑盒向量检索。创新点在于提出显式意图解析加确定性过滤范式，解决向量搜索幻觉问题。潜在应用于开发者知识检索、企业合规文档审计及多模态信息抽取。"
     }
   ],
   "details": [
     {
-      "id": "hn-48452317",
-      "title": "OpenAI Submits S-1 Draft to SEC",
-      "url": "https://openai.com/index/openai-submits-confidential-s-1/",
+      "id": "hn-48463808",
+      "title": "Claude Fable 5 and Claude Mythos 5 \\ Anthropic",
+      "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
       "source": "hackernews",
-      "publishedAt": "2026-06-08T21:22:43.000Z",
-      "score": 11.18,
+      "publishedAt": "2026-06-09T16:58:01.000Z",
+      "score": 23.8,
       "keywords": [
-        "openai"
+        "claude",
+        "anthropic"
       ]
     },
     {
-      "id": "hn-48450142",
-      "title": "Apple reveals new AI architecture built around Google Gemini models",
-      "url": "https://www.macrumors.com/2026/06/08/apple-reveals-new-ai-architecture/",
+      "id": "hn-48467896",
+      "title": "If Claude Fable stops helping you, you'll never know",
+      "url": "https://jonready.com/blog/posts/claude-fable5-is-allowed-to-sabotage-your-app-if-youre-a-competitor.html",
       "source": "hackernews",
-      "publishedAt": "2026-06-08T19:14:47.000Z",
-      "score": 10.92,
+      "publishedAt": "2026-06-09T21:19:11.000Z",
+      "score": 12.46,
       "keywords": [
-        "gemini"
+        "claude"
       ]
+    },
+    {
+      "id": "hn-48465675",
+      "title": "CEOs Who Think AI Replaces Their Employees Are Just Bad CEOs",
+      "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
+      "source": "hackernews",
+      "publishedAt": "2026-06-09T18:45:59.000Z",
+      "score": 11.38,
+      "keywords": []
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "「百奥几何」完成数亿元战略融资，打造生命科学\"微观世界模型\"｜36氪首发",
-      "url": "https://36kr.com/p/3839626642344454?f=rss",
+      "title": "国信证券：目前基本面改善扩散中，增量资金逐渐入场，这轮牛市有望出现轮涨",
+      "url": "https://36kr.com/newsflashes/3846613211335176?f=rss",
       "source": "rss",
-      "publishedAt": "2026-06-09T00:30:00.000Z",
-      "summary": "文｜胡香赟 编辑｜海若镜 36氪获悉，近日，AI原生生物科技公司百奥几何已完成数亿元战略融资。由上海生物医药创新转化基金、国科投资、达晨财智、星连资本联合领投，高榕资本、指数人工智能产业创新基金跟投。指数资本担任独家财务顾问。另据介绍，本轮募集资金将重点用于生命科学微观世界模型GeoFlow的持续迭代，以及自研药物管线的推进。 当前，人工智能正沿两条主线加速演进：以大语言模型与多模态模型为代表的数字AI（Digital AI），以自动驾驶与人形机器人为代表的物理AI（Physical AI）。而生命AI（Bio AI）或将成为下一个最具想象力的疆域，这一判断，正被全球顶级资本与科学界持续确认。",
+      "publishedAt": "2026-06-10T00:28:14.000Z",
+      "summary": "36氪获悉，国信证券发布研报称，从涨跌幅和成交结构看，这轮牛市分化已经很极致。分化后是否轮涨看基本面和资金面，12-15、19-21年有轮涨，16-18年没有。目前基本面改善扩散中，增量资金逐渐入场，这轮牛市有望出现轮涨。可能路径：科技硬件-AI应用、智能制造、创新药-地产白酒券商等。",
+      "keywords": [],
+      "score": 9.95
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "光纤巨头再签亿级大单，中国光纤光缆厂商开始系统性出海",
+      "url": "https://36kr.com/newsflashes/3846605334546697?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-06-10T00:21:08.000Z",
+      "summary": "6月9日，光纤概念持续走强，亨通光电午后秒涨停，斩获6天3板。长飞光纤再度涨停，收于484.33元/股。此外，中天科技、烽火通信等涨超8%。消息面上，当地时间6月8日，亚马逊宣布与康宁公司签署数十亿美元协议，采购光纤、光缆及连接解决方案，以支持其全美数据中心扩张。协议将为康宁北卡罗来纳州工厂新增1000个高技能岗位及数百个建筑岗位。此举系亚马逊去年宣布在该州追加100亿美元云基建投资的延续。有行业资深分析师表示，光纤正在被赋予类似光模块和PCB的AI属性，正从传统通信传输介质，升级为支撑AI算力网络的关键部件，这种底层需求驱动力的重构支撑了本轮行业景气程度。（证券时报）",
+      "keywords": [],
+      "score": 9.9
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "中国软件国际：签订人民币10亿元高端AI算力设备销售协议",
+      "url": "https://36kr.com/newsflashes/3846599148177922?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-06-10T00:12:59.000Z",
+      "summary": "36氪获悉，中国软件国际在港交所公告，继本公司正式进军算力业务后，为推动本集团高价值Token运营商业模式的探索与战略转型，本公司全资附属公司北京中软国际信息技术有限公司近期与若干名独立第三方客户订立高端AI算力设备销售协议。根据该等协议，本集团将向客户供应高端AI算力设备及配套资源，合约总金额约人民币10亿元。相关设备将主要应用于客户人工智能研发、高性能计算及AI算力基础设施建设场景。",
       "keywords": [
+        "人工智能"
+      ],
+      "score": 9.84
+    },
+    {
+      "id": "rss-aHR0cHM6Ly8zNmty",
+      "title": "8点1氪丨致3人永久失明，膳魔师紧急召回百万件产品；发布会后苹果市值蒸发超1.587万亿；Anthropic发布最强模型：Claude Fable 5正式上线",
+      "url": "https://36kr.com/p/3846601462073600?f=rss",
+      "source": "rss",
+      "publishedAt": "2026-06-10T00:08:16.000Z",
+      "summary": "今日热点导览 清仓美高梅国际持股，何超琼套现逾1.4亿美元 任天堂在法国遭2.7亿元重罚 王传福回应股价被低估：还没能反映比亚迪潜力 5月汽车销量公布：前十已无燃油车 TOP3大新闻 已致3人永久失明，膳魔师紧急召回百万件产品 因产品瓶塞存在弹出的风险，近段时间，德国知名真空保温品牌膳魔师（Thermos）在中美多国各召回百万件食物罐等产品，据美国消费品安全委员会披露的公告，有三名消费者因眼睛被击中而导致永久性视力丧失。 5月29日，国家市场监管总局官网发布公告称，日前，膳魔师（中国）家庭制品有限公司召回2011年-2023年期间制造的部分SK3000、SK3020型高真空不锈钢食物罐，涉及数",
+      "keywords": [
+        "claude",
+        "gemini",
+        "openai",
+        "anthropic",
+        "deepmind",
         "agent",
-        "自动驾驶",
         "人工智能",
-        "机器学习",
         "大模型",
-        "语言模型",
         "多模态",
         "ai agent"
       ],
-      "score": 9.99
-    },
-    {
-      "id": "hn-48446893",
-      "title": "AI is slowing down",
-      "url": "https://www.wheresyoured.at/ai-is-slowing-down/",
-      "source": "hackernews",
-      "publishedAt": "2026-06-08T15:46:37.000Z",
-      "score": 9.98,
-      "keywords": []
+      "score": 9.81
     },
     {
       "id": "rss-aHR0cHM6Ly8zNmty",
-      "title": "8点1氪丨苹果推出全新Siri AI；ROKID回应“智能眼镜偷拍空姐”事件；OpenAI秘密提交IPO文件",
-      "url": "https://36kr.com/p/3845196412193284?f=rss",
+      "title": "Anthropic发布不具备执行网络安全任务能力的Mythos模型",
+      "url": "https://36kr.com/newsflashes/3846589381085696?f=rss",
       "source": "rss",
-      "publishedAt": "2026-06-09T00:19:03.000Z",
-      "summary": "今日热点导览 阿里巴巴成立Token Foundry事业部 微信宣布面向开发者提供接入微信AI生态的能力 全球70%PPE树脂断供，PCB价格大涨 英伟达与LG集团合建AI工厂，合作推进机器人、自动驾驶及自主AI TOP3大新闻 苹果推出全新Siri AI，新一代操作系统iOS 27正式发布 在WWDC 2026开发者大会上，新一代操作系统iOS 27正式发布，本次iOS 27的升级重点，是新一代Apple Intelligence（苹果智能）以及全新Siri AI。&nbsp; 苹果宣布，Apple Intelligence与谷歌合作，引入Gemini大模型，并采用全新的AI架构，进一步提升",
+      "publishedAt": "2026-06-10T00:05:01.000Z",
+      "summary": "Anthropic PBC正广泛发布Mythos模型的一个版本，该版本将被禁止执行网络安全任务。数月前，该公司曾警告称，这款强大的人工智能模型能够发现并利用关键软件中的漏洞。这款名为Fable 5的新模型将于周二推出，并配备防护措施，防止其回应某些类型的询问，包括与网络安全和生物学相关的询问。Anthropic表示，在这些情况下，其Claude聊天机器人将通过另一款名为Opus 4.8的模型来处理回应。（新浪财经）",
       "keywords": [
-        "llm",
-        "gemini",
-        "chatgpt",
-        "openai",
+        "claude",
         "anthropic",
-        "agi",
-        "自动驾驶",
-        "人工智能",
-        "大模型"
+        "人工智能"
       ],
-      "score": 9.91
+      "score": 9.79
     },
     {
-      "id": "hn-48446428",
-      "title": "xAI is looking more like a datacentre REIT than a frontier lab",
-      "url": "https://martinalderson.com/posts/xais-new-rental-business/",
+      "id": "hn-48468789",
+      "title": "AI misidentification results in wrongful arrest; man seeks justice",
+      "url": "https://www.wsoctv.com/news/local/ai-misidentification-results-wrongful-arrest-man-seeks-justice/I7UQJWV33FBN3LMKHCSXI6FIVA/",
       "source": "hackernews",
-      "publishedAt": "2026-06-08T15:13:43.000Z",
-      "score": 9.86,
+      "publishedAt": "2026-06-09T22:37:49.000Z",
+      "score": 9.68,
       "keywords": []
     },
     {
-      "id": "hn-48449665",
-      "title": "Apple Core AI Framework",
-      "url": "https://developer.apple.com/documentation/coreai/",
+      "id": "hn-48467712",
+      "title": "Company Will Add Phone, AirPod, and Smartwatch Trackers to ALPRs",
+      "url": "https://www.404media.co/this-company-will-add-phone-airpod-and-smartwatch-trackers-to-license-plate-readers/",
       "source": "hackernews",
-      "publishedAt": "2026-06-08T18:47:38.000Z",
-      "score": 9.24,
+      "publishedAt": "2026-06-09T21:01:40.000Z",
+      "score": 9.3,
       "keywords": []
-    },
-    {
-      "id": "rss-aHR0cHM6Ly93d3cu",
-      "title": "The Download: how the World Cup ball will fly and OpenAI’s “super app”",
-      "url": "https://www.technologyreview.com/2026/06/08/1138485/the-download-world-cup-ball-openai-super-app/",
-      "source": "rss",
-      "publishedAt": "2026-06-08T12:10:00.000Z",
-      "summary": "This is today&#8217;s edition of The Download, our weekday newsletter that provides a daily dose of what&#8217;s going on in the world of technology. Why this year’s World Cup ball may not fly as far Much is new about this month’s FIFA World Cup tournament. It hosts more teams than ever before. It’s",
-      "keywords": [
-        "openai"
-      ],
-      "score": 4.85
-    },
-    {
-      "id": "hn-48402137",
-      "title": "OCaml Onboarding: Introduction to the Dune build system",
-      "url": "https://ocamlpro.com/blog/2025_07_29_ocaml_onboarding_introduction_to_dune/",
-      "source": "hackernews",
-      "publishedAt": "2026-06-04T17:52:29.000Z",
-      "score": 1.4,
-      "keywords": []
-    },
-    {
-      "id": "arxiv-2606.07515v1",
-      "title": "How reliable are LLMs when it comes to playing dice?",
-      "url": "https://arxiv.org/abs/2606.07515v1",
-      "source": "arxiv",
-      "publishedAt": "2026-06-05T17:59:42.000Z",
-      "summary": "We investigate the probabilistic reasoning capabilities of large language models through a controlled benchmarking study on discrete probability problems. We constructed two datasets, respectively a set of standard exercises and a set of counterintuitive exercises, designed to trigger heuristic reasoning, and evaluated 8 state-of-the-art models, each tested with and without Chain-of-Thought prompting. Models achieve an average accuracy of 0.96 on standard problems but only 0.59 on counterintuiti",
-      "keywords": [
-        "llm",
-        "rag"
-      ],
-      "score": 0
     }
   ],
   "hotTopics": [
-    "端云协同与异构模型调度架构",
-    "物理可微分与生命AI微观建模",
-    "长序列视觉理解的解耦与记忆机制",
-    "持续学习中的稀疏专家路由与防遗忘"
+    "大模型安全路由与能力隔离",
+    "算法-硬件协同优化与边缘AI",
+    "Agent原生开发与检索范式演进",
+    "AI算力底层光互连基建"
   ],
   "metadata": {
-    "totalCount": 26,
+    "totalCount": 30,
     "sources": [
       "hackernews",
       "rss",
       "arxiv"
     ],
-    "generatedAt": "2026-06-09T00:32:02.239Z"
+    "generatedAt": "2026-06-10T00:35:52.020Z"
   },
   "technicalInsights": [
-    "大模型竞争正从单纯参数规模转向系统级架构设计，端侧框架标准化与云端异构路由将成为下一代操作系统的核心壁垒。",
-    "垂直领域AI的突破依赖于将物理与化学先验知识硬编码进可微分计算图，纯数据驱动的生成范式在科学计算中已逼近性能瓶颈。",
-    "持续学习与长上下文处理的本质是信息压缩与动态检索的平衡，图结构记忆与稀疏子空间隔离为突破Transformer架构局限提供了可行路径。"
+    "安全对齐正从提示词工程转向架构级硬隔离，动态路由与策略网关将成为下一代企业级大模型的标准基础设施。",
+    "传统视觉库与底层工具链经历AI原生重构，表明AI技术栈正从应用层下沉至编译器、框架与系统级中间件。",
+    "检索技术从稠密向量近似回归确定性符号与Agent规划的混合范式，以精准满足工业场景对可解释性与零幻觉的刚需。",
+    "算力瓶颈核心正从单卡FLOPs向互连带宽与能效转移，光纤拓扑与FPGA专用加速将重塑智算中心硬件架构。"
   ]
 }
